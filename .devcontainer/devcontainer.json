@@ -1,0 +1,22 @@
+{
+    "name": "tft-wizard",
+    "dockerFile": "Dockerfile",
+    "appPort": [3000],
+    "runArgs": ["-u", "node"],
+    "settings": {
+        "workbench.colorTheme": "Solarized Dark",
+        "terminal.integrated.profiles.linux": {
+            "bash": {
+                "path": "bash"
+            },
+        },
+        "terminal.integrated.defaultProfile.linux": "bash",
+        "postCreateCommand": "npm install",
+        "extensions": [
+            "esbenp.prettier-vscode"
+        ]
+	},
+	"extensions": [
+		"rvest.vs-code-prettier-eslint"
+	]
+}

@@ -1,0 +1,16 @@
+{
+    "compilerOptions": {
+        "lib": ["es6", "DOM"],
+        "module": "ES2020",
+        "target": "es2020",
+        "outDir": "./out/",
+        "sourceMap": true,
+        "noImplicitAny": true,
+        "allowJs": true,
+        "moduleResolution": "node",
+        "preserveConstEnums": true,
+        "allowSyntheticDefaultImports": true
+    },
+    "include": ["src/**/*"],
+    "exclude": ["node_modules", "**/*.spec.ts"]
+}

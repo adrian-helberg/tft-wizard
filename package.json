@@ -1,0 +1,39 @@
+{
+  "name": "tft-wizard",
+  "version": "0.0.1",
+  "description": "This web app offers a TFT (game) build generator",
+  "private": true,
+  "scripts": {
+    "build": "webpack",
+    "start": "webpack serve --hot"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adrian-helberg/tft-wizard.git"
+  },
+  "keywords": [
+    "tft",
+    "tft builds",
+    "tft generator",
+    "team fight tactics"
+  ],
+  "author": "Adrian Helberg",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/adrian-helberg/tft-wizard/issues"
+  },
+  "homepage": "https://github.com/adrian-helberg/tft-wizard#readme",
+  "devDependencies": {
+    "@tsconfig/node14": "^1.0.1",
+    "@types/lodash": "^4.14.170",
+    "html-webpack-plugin": "^5.3.2",
+    "lodash": "^4.17.21",
+    "ts-loader": "^9.2.3",
+    "typescript": "^4.3.5",
+    "webpack": "^5.0.0",
+    "webpack-cli": "^4.7.2",
+    "webpack-dev-server": "^3.11.2"
+  },
+  "dependencies": {},
+  "main": "webpack.config.js"
+}
