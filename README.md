@@ -1,1 +1,1 @@
-# tft-wizard
+# TFT-Wizard
