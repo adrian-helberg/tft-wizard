@@ -15,3 +15,53 @@
 <a :href="`?id=${index}`">...</a> ist die Kurzschreibweise für <a v-bind:href="`?id=${index}`">...</a> also v-bind kann weggelassen werden
 # Methoden
 <button @click="fun"></button> ist die Kurzform von <button v-on:click="test">Test</button> Methoden können dynamisch über ein '@' gebinded werden
+# Komponenten auslagern
+MyComponent.vue:
+<template>
+    ...
+</template>
+<script>
+export default {
+  name: "MyComponent",
+  ...,
+}
+</script>
+App.vue:
+import MyComponent from "./components/MyComponent.vue";
+export default {
+    ...,
+    components: {
+        MyComponent
+    }
+}
+# Attribute über Events ansprechen
+element-component:
+<template>
+    <button @click="buttonClick"></button>
+</template>
+<script>
+export default {
+    ...,
+    props: ["item"],
+    methods: {
+        buttonClick() { this.$emit('someEvent', this.item); }
+    }
+}
+</script>
+list-component:
+<template>
+    <div @someEvent="doStuff"></div>
+</template>
+<script>
+export default {
+    ...,
+    methods: {
+        doStuff(el) { 
+            console.log(el);
+        }
+    }
+}
+</script>
+# Scoped styles
+<style> ... </style> Globale Styles
+<style scoped> ... </style> Scoped Styles

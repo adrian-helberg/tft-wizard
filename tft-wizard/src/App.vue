@@ -15,19 +15,15 @@
 
     <span v-for="n in 10" v-bind:key="n">{{ n }}</span>
 
-    <ul>
-      <li v-for="(todo, index) in todos" v-bind:key="todo.id" :class="{'finished': todo.finished}">
-        <input type="checkbox" :checked="todo.finished" />
-        <a :href="`?id=${index}`">Show</a>
-        {{ ++index }}. {{ todo.name }}
-      </li>
-    </ul>
+    <TodoList />
 
     <button @click="test">Test</button>
   </div>
 </template>
 
 <script lang="ts">
+import TodoList from "./components/TodoList.vue";
+
 export default {
   name: "App",
   data: () => ({
@@ -40,12 +36,6 @@ export default {
       { id: 3, name: "Berlin" },
       { id: 4, name: "Köln" },
     ],
-    todos: [
-      { id: 0, name: "Todo #1", finished: false },
-      { id: 1, name: "Todo #2", finished: true },
-      { id: 2, name: "Todo #3", finished: false },
-      { id: 3, name: "Todo #4", finished: false },
-    ],
   }),
   methods: {
     test() { 
@@ -57,6 +47,9 @@ export default {
       return `Hi, ${this.vorname} ${this.nachname}!`;
     },
   },
+  components: {
+    TodoList
+  }
 };
 </script>
 
