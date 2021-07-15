@@ -4,5 +4,5 @@ COPY package*.json ./
 COPY . .
 RUN apk add --no-cache git
 RUN npm install --global --unsafe-perm npm @vue/cli @vue/cli-service-global
-RUN npm install
+RUN cd ./tft-wizard && npm install
 EXPOSE 8080

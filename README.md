@@ -65,3 +65,10 @@ export default {
 # Scoped styles
 <style> ... </style> Globale Styles
 <style scoped> ... </style> Scoped Styles
+# Event modifier
+<div @click.prevent="fun">Click me</div> @click.prevent is equivalent of calling event.preventDefault() when the click event is triggered
+Event modifier lassen sich verketten: @click.right.prevent feuert das click-event nur mit der rechten Maustaste
+Alle HTML-Events lassen sich mit @ ansprechen: <div @mouseup="fun"></div>
+# Slots
+<slot></slot> ist ein Platzhalter für das beim Aufrufen einer Komponente zwischen den Komponenten-Tags steht
+<MyComponent>Test</MyComponent> für <template><div><slot></slot></div></template> -> slot wird zu Test 

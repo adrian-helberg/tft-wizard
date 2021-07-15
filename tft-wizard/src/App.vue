@@ -18,11 +18,28 @@
     <TodoList />
 
     <button @click="test">Test</button>
+    <br />
+    <a href="?seite=23" @click.right.prevent="hello">Gehe zu Seite 23</a>
+    <br />
+    <a href="?seite=24" @mouseup="adios">Gehe zu Seite 24</a>
+    <br />
+    <input type="text" @keydown.enter.esc="yeah" />
+    <br />
+    <br />
+    <NavigationLink url="www.google.de">
+      <template v-slot:image>
+        <div>
+          <div>Test</div>
+        </div>
+      </template>
+      Zum Profil
+    </NavigationLink>
   </div>
 </template>
 
 <script lang="ts">
 import TodoList from "./components/TodoList.vue";
+import NavigationLink from "./components/NavigationLink.vue";
 
 export default {
   name: "App",
@@ -40,6 +57,15 @@ export default {
   methods: {
     test() { 
       alert("Hi!"); 
+    },
+    hello() {
+      alert("Hello!");
+    },
+    adios() {
+      alert("Adios!");
+    },
+    yeah() {
+      alert("yeah!");
     }
   },
   computed: {
@@ -48,7 +74,7 @@ export default {
     },
   },
   components: {
-    TodoList
+    TodoList, NavigationLink
   }
 };
 </script>
