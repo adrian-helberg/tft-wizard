@@ -71,4 +71,20 @@ Event modifier lassen sich verketten: @click.right.prevent feuert das click-even
 Alle HTML-Events lassen sich mit @ ansprechen: <div @mouseup="fun"></div>
 # Slots
 <slot></slot> ist ein Platzhalter für das beim Aufrufen einer Komponente zwischen den Komponenten-Tags steht
-<MyComponent>Test</MyComponent> für <template><div><slot></slot></div></template> -> slot wird zu Test 
+<MyComponent>Test</MyComponent> für <template><div><slot></slot></div></template> -> slot wird zu Test
+Child.vue: <slot>Default Text</slot> der default text lässt sich durch das 'Befüllen' des slots überschreiben, dazu
+der Aufruf in der parent-komponente: <Parent><Child>Kein default Text</Child></Parent> (Slots sind zum 'Tauschen' von Elementen)
+SLots können beliebig durch Kind-Komponenten durchgereicht werden, wenn alle den entsprechenden Slot definieren
+# Plugins
+import Plugin from ""; Vue.use(Plugin); Einbinden von Plugins
+# Allgemein
+export class Test {
+    // public variables kommen in das 'data'-objekt von Vue
+    constructor() {}
+    // public methods kommen in das 'methods'-objekt von Vue
+}
+# Axios
+Kümmert sich um anynchronen Kram
+this.axios.get(url).then((r) => {...});
+# Electron
+Website als OS Programm, also praktische eine Website mit Zugriff auf das OS Dateisystem

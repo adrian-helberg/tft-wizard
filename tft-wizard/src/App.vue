@@ -28,9 +28,7 @@
     <br />
     <NavigationLink url="www.google.de">
       <template v-slot:image>
-        <div>
-          <div>Test</div>
-        </div>
+        <img src="https://rerollcdn.com/characters/Skin/5/Kalista.png" alt="Kalista" width="50px" height="50px" />
       </template>
       Zum Profil
     </NavigationLink>
