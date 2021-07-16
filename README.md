@@ -15,6 +15,7 @@
 <a :href="`?id=${index}`">...</a> ist die Kurzschreibweise für <a v-bind:href="`?id=${index}`">...</a> also v-bind kann weggelassen werden
 # Methoden
 <button @click="fun"></button> ist die Kurzform von <button v-on:click="test">Test</button> Methoden können dynamisch über ein '@' gebinded werden
+Die Methoden im "data"-Objekt müssen "function()"-Blöcke sein, keine Arrow-functions
 # Komponenten auslagern
 MyComponent.vue:
 <template>
@@ -88,3 +89,13 @@ Kümmert sich um anynchronen Kram
 this.axios.get(url).then((r) => {...});
 # Electron
 Website als OS Programm, also praktische eine Website mit Zugriff auf das OS Dateisystem
+# Watchers
+Watchers sind praktisch die Subscriptions von Knockout, die ans Vue-Objekt attached werden:
+new Vue({
+    ...,
+    watch: {
+        fun: function() {
+            ...
+        }
+    }
+});

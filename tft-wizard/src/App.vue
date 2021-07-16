@@ -1,83 +1,64 @@
 <template>
   <div id="app">
-    {{ greetings }}
-    <div class="age">
-      <span v-if="alter < 18">minderjährig</span>
-      <span v-else-if="alter >= 18">volljährig</span>
+    <h1>TFT-WIZARD</h1>
+    <hr />
+    <div class="tiles">
+      <Tile width="50px" height="80px" />
+      <Tile width="30px" height="120px" />
+      <Tile width="30px" height="120px" />
+      <Tile width="30px" height="12px" />
+      <Tile width="30px" height="120px" />
+      <Tile width="130px" height="120px" />
+      <Tile width="130px" height="120px" />
+      <Tile width="130px" height="120px" />
+      <Tile width="130px" height="120px" />
+      <Tile width="130px" height="120px" />
+      <Tile width="130px" height="120px" />
+      <Tile width="130px" height="120px" />
+      <Tile width="130px" height="120px" />
+      <Tile width="130px" height="120px" />
+      <Tile width="130px" height="120px" />
+      <Tile width="130px" height="120px" />
+      <Tile width="130px" height="120px" />
+      <Tile width="130px" height="120px" />
+      <Tile width="130px" height="120px" />
+      <Tile width="130px" height="120px" />
+      <Tile width="130px" height="120px" />
     </div>
-
-    <h3>Wohnorte:</h3>
-    <ul>
-      <li v-for="city in cities" v-bind:key="city.id">
-        {{ city.id }}. {{ city.name }}
-      </li>
-    </ul>
-
-    <span v-for="n in 10" v-bind:key="n">{{ n }}</span>
-
-    <TodoList />
-
-    <button @click="test">Test</button>
-    <br />
-    <a href="?seite=23" @click.right.prevent="hello">Gehe zu Seite 23</a>
-    <br />
-    <a href="?seite=24" @mouseup="adios">Gehe zu Seite 24</a>
-    <br />
-    <input type="text" @keydown.enter.esc="yeah" />
-    <br />
-    <br />
-    <NavigationLink url="www.google.de">
-      <template v-slot:image>
-        <img src="https://rerollcdn.com/characters/Skin/5/Kalista.png" alt="Kalista" width="50px" height="50px" />
-      </template>
-      Zum Profil
-    </NavigationLink>
+    <hr />
   </div>
 </template>
 
 <script lang="ts">
-import TodoList from "./components/TodoList.vue";
-import NavigationLink from "./components/NavigationLink.vue";
+import Tile from "./components/Tile.vue";
+import Importer from "./components/Importer.vue";
 
 export default {
   name: "App",
   data: () => ({
-    vorname: "Adrian",
-    nachname: "Helberg",
-    alter: 29,
-    cities: [
-      { id: 1, name: "Stuttgart" },
-      { id: 2, name: "Hamburg" },
-      { id: 3, name: "Berlin" },
-      { id: 4, name: "Köln" },
-    ],
+    
   }),
   methods: {
-    test() { 
-      alert("Hi!"); 
-    },
-    hello() {
-      alert("Hello!");
-    },
-    adios() {
-      alert("Adios!");
-    },
-    yeah() {
-      alert("yeah!");
-    }
+
   },
   computed: {
-    greetings() {
-      return `Hi, ${this.vorname} ${this.nachname}!`;
-    },
+
   },
   components: {
-    TodoList, NavigationLink
+    Tile
+  },
+  mixins: [Importer],
+  created: function() {
+    this.result();
   }
 };
 </script>
 
 <style>
+.tiles {
+  display: flex;
+  flex-wrap: wrap;
+}
 .finished {
   text-decoration: line-through;
 }
