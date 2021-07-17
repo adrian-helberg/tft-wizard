@@ -141,3 +141,9 @@ new Vue({
     }
 });
 ```
+
+## Vuex
+Application state management
+```
+
+```
