@@ -2,14 +2,16 @@
   <div id="root">
     <div class="App">
       <header>
-        <img src="../assets/wizard.png" width="30px" height="30px" alt="tft-wizard" />
-        <h1>tft-wizard</h1>
+        <div class="head-line">
+          <img src="../assets/wizard.png" width="30px" height="30px" alt="tft-wizard" />
+          <div id="heading">tft-wizard</div>
+        </div>        
         <div class="navigation">
-          <Navigation href="/">Home</Navigation>
-          <Navigation href="/wizard">Wizard</Navigation>
-          <Navigation href="/champions">Champions</Navigation>
-          <Navigation href="/items">Items</Navigation>
-          <Navigation href="/builds">Builds</Navigation>
+          <Link href="/">Home</Link>
+          <Link href="/wizard">Wizard</Link>
+          <Link href="/champions">Champions</Link>
+          <Link href="/items">Items</Link>
+          <Link href="/builds">Builds</Link>
         </div>
       </header>
       <content>
@@ -23,41 +25,63 @@
 </template>
 
 <script>
-import Navigation from "../components/Navigation.vue";
+import Link from "../components/Link.vue";
 export default {
   name: "MainLayout",
   components: {
-    Navigation,
+    Link,
   },
 };
 </script>
 
 <style lang="scss">
-// Color palette
-$orange: #F4D06F;
-$orange-dark: #FF8811;
-$background: #392F5A;
-$font: #fff8f0;
-$border: #9DD9D2;
+@import "../styles/colors.scss";
+@import "../styles/sizes.scss";
+
+body {
+  margin: 0;
+}
 
 .App {
-  display: flex;
   flex-direction: column;
+  background-color: $c4;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 header {
-  // TODO: remove
-  background-color: green;
+  color: $c5;
+  
+  .head-line {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    > * {
+      margin: 6px;
+    }
+  }
+
+  #heading {
+    font-size: 1.4em;
+  }
+
+  .navigation {
+    padding: 12px;
+    border-top: $layout-border-size solid $c2;
+    border-bottom: $layout-border-size solid $c2;
+    background-color: $c3;
+  }
 }
 
 content {
-  // TODO: remove
-  background-color: blue;
-  flex: 1 0 auto;
+  display: flex;
+  padding: 12px;
 }
 
 footer {
-  // TODO: remove
-  background-color: red;
+  padding: 12px;
+  border-top: $layout-border-size solid $c2;
+  border-bottom: $layout-border-size solid $c2;
+  background-color: $c3;
 }
 </style>
