@@ -1,12 +1,12 @@
 <template>
-  <a class="navigation" :href="href" :class="{ active: isActive }">
+  <a class="link" :href="href" :class="{ active: isActive }">
     <slot></slot>
   </a>
 </template>
 
 <script>
-  export default {
-    name: "Navigation",
+export default {
+    name: "Link",
     props: {
       href: {
         type: String,
@@ -18,16 +18,19 @@
         return this.href === this.$root.currentRoute
       }
     },
-    methods: {
-    }
-  }
+}
 </script>
 
-<style scoped>
-  .active {
-    color: cornflowerblue;
-  }
-  .navigation {
-    padding: 12px;
-  }
+<style lang="scss">
+@import '../styles/colors.scss';
+
+.link {
+    color: $c2;
+    text-decoration: none;
+    padding: 6px;
+}
+
+.active {
+  color: $c1;
+}
 </style>
