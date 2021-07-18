@@ -3,9 +3,7 @@
     <div>
       <h2>Champions</h2>
       <div class="champions">
-        <div v-for="champion of this.$store.state.champions" :key="champion.id">
-          <Champion :champion="champion" :size="30" />
-        </div>
+        <ElementList :elements="this.$store.state.champions" :size="60" />
       </div>
     </div>
   </MainLayout>
@@ -13,17 +11,17 @@
 
 <script>
   import MainLayout from '../layouts/MainLayout.vue'
-  import Champion from '../components/Champion.vue';
+  import ElementList from '../components/ElementList.vue';
 
   export default {
     name: "Champions",
     components: {
-      MainLayout, Champion
+      MainLayout, ElementList
     }
   }
 </script>
 
-<style>
+<style lang="scss">
 .champions {
   display: flex;
   flex-wrap: wrap;
