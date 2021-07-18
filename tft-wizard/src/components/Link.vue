@@ -1,7 +1,7 @@
 <template>
-  <a class="link" :href="href" :class="{ active: isActive }">
+  <router-link class="link" :to="href" :class="{ active: isActive }">
     <slot></slot>
-  </a>
+  </router-link>
 </template>
 
 <script>

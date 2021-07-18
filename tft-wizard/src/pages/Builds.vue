@@ -5,7 +5,7 @@
     </template>
     <template v-slot:content>
         <div v-for="build in $store.state.builds" :key="build.id">
-          <Build :build="build" />
+          <Build :build="build" :size="60" />
         </div>
     </template>
     <template v-slot:footer>
