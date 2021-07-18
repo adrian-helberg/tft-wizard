@@ -3,11 +3,12 @@
     <div class="App">
       <header>
         <div class="head-line">
-          <img src="../assets/wizard.png" width="30px" height="30px" alt="tft-wizard" />
-          <div id="heading">tft-wizard</div>
+          <a href="/">
+            <img src="../assets/wizard.png" width="30px" height="30px" alt="tft-wizard" />
+            <div id="heading">tft-wizard</div>
+          </a>
         </div>        
         <div class="navigation">
-          <Link href="/">Home</Link>
           <Link href="/wizard">Wizard</Link>
           <Link href="/champions">Champions</Link>
           <Link href="/items">Items</Link>
@@ -26,10 +27,11 @@
 
 <script>
 import Link from "../components/Link.vue";
+
 export default {
   name: "MainLayout",
   components: {
-    Link,
+    Link
   },
 };
 </script>
@@ -43,21 +45,36 @@ body {
 }
 
 .App {
+  display: flex;
   flex-direction: column;
-  background-color: $c4;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  height: 100vh;
 }
 
 header {
-  color: $c5;
+  color: $heading;
   
   .head-line {
     display: flex;
     justify-content: center;
-    align-items: center;
 
-    > * {
-      margin: 6px;
+    > a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-decoration: none;
+
+      > * {
+        margin: 6px;
+      }
+
+      &:link, &:visited, &:hover, &:active {
+          color: $text;
+      }
+
+      &:hover {
+        color: $text
+      }
     }
   }
 
@@ -66,22 +83,29 @@ header {
   }
 
   .navigation {
-    padding: 12px;
-    border-top: $layout-border-size solid $c2;
-    border-bottom: $layout-border-size solid $c2;
-    background-color: $c3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: $layout-border-size solid $background-dark;
+    border-bottom: $layout-border-size solid $background-dark;
   }
 }
 
 content {
   display: flex;
+  justify-content: center;
+  flex-grow: 1;
   padding: 12px;
+  overflow-y: auto;
+  color: $text;
 }
 
 footer {
+  display: flex;
+  justify-content: center;
   padding: 12px;
-  border-top: $layout-border-size solid $c2;
-  border-bottom: $layout-border-size solid $c2;
-  background-color: $c3;
+  border-top: $layout-border-size solid $background-dark;
+  border-bottom: $layout-border-size solid $background-dark;
+  color: $text;
 }
 </style>

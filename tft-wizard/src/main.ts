@@ -9,6 +9,7 @@ import NotFound from "./pages/404.vue";
 import Axios from "axios";
 import BuildsJSON from "./assets/builds.json";
 import ChampionsJSON from "./assets/champions.json";
+import ItemsJSON from "./assets/items.json";
 
 // Make axios globally available
 Vue.prototype.$axios = Axios;
@@ -40,6 +41,7 @@ type team = {
 
 const GET_BUILDS = "GET_BUILDS";
 const GET_CHAMPIONS = "GET_CHAMPIONS";
+const GET_ITEMS = "GET_ITEMS";
 const GET_SET_VERSION = "GET_SET_VERSION";
 
 const store = new Vuex.Store({
@@ -47,6 +49,7 @@ const store = new Vuex.Store({
     version: 0,
     builds: [] as team[],
     champions: [] as champion[],
+    items: [] as item[]
   },
   mutations: {
     [GET_SET_VERSION](state, version) {
@@ -58,12 +61,16 @@ const store = new Vuex.Store({
     [GET_CHAMPIONS](state, champions) {
       state.champions = champions;
     },
+    [GET_ITEMS](state, items) {
+      state.items = items;
+    },
   },
   actions: {
     load({ commit }, config) {
       commit(GET_SET_VERSION, process.env.VUE_APP_SET_VERSION);
       commit(GET_BUILDS, BuildsJSON);
       commit(GET_CHAMPIONS, ChampionsJSON);
+      commit(GET_ITEMS, ItemsJSON);
     },
   },
 });

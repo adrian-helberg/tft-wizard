@@ -25,12 +25,19 @@ export default {
 @import '../styles/colors.scss';
 
 .link {
-    color: $c2;
+    display: flex;
+    justify-content: center;
+    color: $text;
     text-decoration: none;
     padding: 6px;
+    width: 100px;
+
+    &:hover {
+      
+    }
 }
 
 .active {
-  color: $c1;
+  background-color: $background-light;
 }
 </style>
