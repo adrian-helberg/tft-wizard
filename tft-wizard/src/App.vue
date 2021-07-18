@@ -1,19 +1,17 @@
 <template>
   <div id="app">
     <MainLayout>
-      <div class="content">
-        <div class="content-header">
-            <div class="title padding">Learning by doing great at Teamfight Tactics</div>
-            <div class="subtitle padding">Get better while you play</div>
-        </div>
-        <div class="content-text padding">
-            Use the tft-wizard to get build suggestions for<br> the current state of your game
-            to climb the ladder
-        </div>
-        <div class="content-footer padding">
-          Content Footer
-        </div>
-      </div>
+      <template v-slot:header>
+          <div>Learning by doing great at Teamfight Tactics
+            <div class="subtitle">- Get better while you play -</div>
+          </div>
+      </template>
+      <template v-slot:content>
+          <div class="text">Use the tft-wizard to get build suggestions for the current state of your game to climb the ladder</div>
+      </template>
+      <template v-slot:footer>
+        Content Footer
+      </template>
     </MainLayout>
   </div>
 </template>
@@ -28,47 +26,13 @@ export default {
 };
 </script>
 
-<style scoped lang="scss">
-@import "./styles/colors.scss";
-.content {
+<style lang="scss">
+.subtitle {
+  text-align: center;
+}
+
+.text {
   display: flex;
-  flex-direction: column;
-  color: $text;
-
-  .padding {
-    padding: 12px;
-  }
-
-  .content-header {
-    display: flex;
-    flex-direction: column;
-
-    .title, .subtitle {
-      color: $heading;
-      align-self: center;
-    }
-
-    .title {
-      font-size: 2em;
-    }
-
-    .subtitle {
-      align-self: center;
-      font-size: 1em;
-    }
-  }
-
-  .content-text {
-    display: flex;
-    flex-grow: 1;
-    justify-content: center;
-    border-top: 1px solid $background-dark;
-    border-bottom: 1px solid $background-dark;
-  }
-
-  .content-footer {
-    display: flex;
-    justify-content: center;
-  }
+  justify-content: center;
 }
 </style>

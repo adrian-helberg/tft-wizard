@@ -1,11 +1,16 @@
 <template>
   <MainLayout>
-    <div>
-      <h2>Champions</h2>
+    <template v-slot:header>
+        <div>Champion Overview</div>
+    </template>
+    <template v-slot:content>
       <div class="champions">
-        <ElementList :elements="this.$store.state.champions" :size="60" />
+        <ElementList :elements="$store.state.champions" :size="60" />
       </div>
-    </div>
+    </template>
+    <template v-slot:footer>
+      <div></div>
+    </template>
   </MainLayout>
 </template>
 

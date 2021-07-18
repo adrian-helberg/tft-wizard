@@ -33,11 +33,12 @@ export default {
     width: 100px;
 
     &:hover {
-      
+      background-color: $heading;
     }
 }
 
 .active {
-  background-color: $background-light;
+  background-color: $heading;
+  color: $background;
 }
 </style>

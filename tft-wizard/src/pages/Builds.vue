@@ -1,13 +1,16 @@
 <template>
   <MainLayout>
-    <div>
-      <h2>Builds</h2>
-      <div class="builds">
-        <div v-for="build in this.$store.state.builds" :key="build.id">
+    <template v-slot:header>
+        <div>Build Overview</div>
+    </template>
+    <template v-slot:content>
+        <div v-for="build in $store.state.builds" :key="build.id">
           <Build :build="build" />
         </div>
-      </div>
-    </div>    
+    </template>
+    <template v-slot:footer>
+
+    </template>  
   </MainLayout>
 </template>
 

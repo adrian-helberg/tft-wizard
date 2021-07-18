@@ -1,11 +1,16 @@
 <template>
   <MainLayout>
-      <div>
-        <h2>Items</h2>
+      <template v-slot:header>
+        <div>Item Overview</div>
+        </template>
+        <template v-slot:content>
         <div class="items">
-            <ElementList :elements="this.$store.state.items" :size="60" />
-          </div>
-      </div>
+            <ElementList :elements="$store.state.items" :size="60" />
+        </div>
+        </template>
+        <template v-slot:footer>
+        <div></div>
+        </template>
   </MainLayout>
 </template>
 
@@ -17,7 +22,7 @@ export default {
     name: "Items",
     components: {
         MainLayout, ElementList
-    }
+    },
 }
 </script>
 

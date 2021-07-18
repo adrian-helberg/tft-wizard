@@ -1,6 +1,8 @@
 <template>
-  <MainLayout>
-    <p>404 Page not found</p>
+  <MainLayout>    
+    <template v-slot:header>404 Not Found</template>
+    <template v-slot:content>Requested page was not found</template>
+    <template v-slot:footer>¯\_(ツ)_/¯</template>
   </MainLayout>
 </template>
 
