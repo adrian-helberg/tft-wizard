@@ -5,7 +5,9 @@
         </template>
         <template v-slot:content>
         <div class="items">
-            <ElementList :elements="$store.state.items" :size="60" />
+            <ElementList :elements="$store.state.baseItems" :size="60" />
+            <hr width="100%">
+            <ElementList :elements="$store.state.combinedItems" :size="60" />
         </div>
         </template>
         <template v-slot:footer>

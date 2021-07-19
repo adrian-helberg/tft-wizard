@@ -1,5 +1,8 @@
 <template>
   <div class="build">
+    <div class="stats">
+      {{ build.completedItems }}
+    </div>
     <div class="tier">{{ build.tier }}</div>
     <div class="comb">
       <div>{{ build.name }}</div>

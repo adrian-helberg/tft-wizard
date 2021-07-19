@@ -1,6 +1,6 @@
 <template>
   <div class="list">
-      <div v-for="element in elements" :key="element.id" @click="clickFun(element)">
+      <div v-for="(element, index) in elements" :key="index" @click="clickFun(element)">
           <img  :src="element.img" 
                 :alt="element.name" 
                 :title="element.name" 

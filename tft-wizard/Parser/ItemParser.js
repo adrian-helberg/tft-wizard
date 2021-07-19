@@ -1,3 +1,4 @@
+// tftactics
 let items = [];
 let idCounter = 0;
 let listsElement = document.getElementsByClassName("characters-list");

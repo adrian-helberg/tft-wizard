@@ -1,3 +1,4 @@
+// tftactics Team Comps
 let teams = [];
 let idCounter = 0;
 let characterListElement = document.getElementsByClassName("characters-list");
@@ -16,18 +17,15 @@ for (let characterElement of characterListElement) {
             champions: []
         }
         let currentTeamElement = teamElement.getElementsByClassName("team-characters")[0];
-        let championCounter = 0;
         for (let c of currentTeamElement.children) {
             let elements = c.getElementsByClassName("character-icon");
             let champion = {
-                id: championCounter++,
                 name: elements[0].getAttribute('alt'),
                 img: elements[0].getAttribute('src'),
                 items: []
             };
             for (let i = 1; i < elements.length; i++) {
                 champion.items.push({
-                    id: i - 1,
                     name: elements[i].getAttribute('alt'),
                     img: elements[i].getAttribute('src'),
                 });

@@ -121,8 +121,6 @@ content {
     flex-grow: 1;
     margin-top: 24px;
   }
-
-  .content-footer {}
 }
 
 footer {

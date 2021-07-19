@@ -1,3 +1,4 @@
+// tftactics
 let champions = [];
 let idCounter = 0;
 let charactersElement = document.getElementsByClassName("characters-item");

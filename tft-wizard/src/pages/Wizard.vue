@@ -8,6 +8,7 @@
       </template>
       <template v-slot:content>
           <div class="wizard">
+              <button class="button-clear" @click="clear">Clear</button>
               <hr width="100%">
               <div class="wizard-grid">
                 <div class="c1">Current champions:</div>
@@ -26,14 +27,16 @@
                     <ElementList :elements="$store.state.champions" :size="40" :clickFun="addCurrentChampion" />
                 </div>
                 <div class="c8">
-                    <ElementList :elements="$store.state.items" :size="40" :clickFun="addCurrentItem" />
+                    <ElementList :elements="$store.state.baseItems" :size="40" :clickFun="addCurrentItem" />
+                    <hr>
+                    <ElementList :elements="$store.state.combinedItems" :size="40" :clickFun="addCurrentItem" />
                 </div>
             </div>
             <hr width="100%">
             <div>Build suggestions:</div>
             <hr width="100%">
             <div class="suggestions">
-                  <div v-for="suggestion of suggestions" :key="suggestion.id">
+                  <div v-for="suggestion of $store.state.suggestions" :key="suggestion.id">
                       <Build :build="suggestion" :size="50" /> 
                   </div>
               </div>
@@ -49,9 +52,6 @@ import Build from '../components/Build.vue';
 
 export default {
     name: "Wizard",
-    created: function() {
-        this.suggestions = this.$store.state.builds
-    },
     methods: {
         addCurrentChampion(champion) {
             this.$store.dispatch("addCurrentChampion", champion);
@@ -64,6 +64,9 @@ export default {
         },
         removeCurrentItem(item) {
             this.$store.dispatch("removeCurrentItem", item);
+        },
+        clear() {
+            this.$store.dispatch("clearCurrentLists");
         }
     },
     components: {
@@ -79,6 +82,13 @@ export default {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+
+    .button-clear {
+        cursor: pointer;
+        align-self: flex-end;
+        //color: $text;
+        background-color: $heading;
+    }
 
     .suggestions {
         display: flex;
@@ -114,11 +124,13 @@ export default {
         }
 
         .c5 {
+            margin-top: 24px;
             grid-column: 1/2;
             grid-row: 3;
         }
 
         .c6 {
+            margin-top: 24px;
             grid-column: 2/2;
             grid-row: 3;
         }
