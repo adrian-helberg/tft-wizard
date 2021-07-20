@@ -48,8 +48,7 @@ type stats = {
   completedItems: number;
   maxComponents: number;
   currentComponents: number;
-  itemPercentage: number;
-  componentPercentage: number;
+  score: number;
 }
 
 type team = {
@@ -59,6 +58,13 @@ type team = {
   playstyle: string;
   stats: stats;
   champions: champion[];
+  components: item[];
+};
+
+const tierRatings: { [id: string]: number } = {
+  "S": 3,
+  "A": 2,
+  "B": 1,
 };
 
 const GET_BUILDS = "GET_BUILDS";
@@ -88,29 +94,28 @@ const store = new Vuex.Store({
     },
     [GET_BUILDS](state, builds) {
       state.builds = builds;
+      state.builds.forEach((build: team) => {
+        let components:item[] = [];
+        build.champions.forEach((champion: champion) => {
+          const foundChampion = state.champions.filter(x => x.name == champion.name)[0];
+          champion.id = foundChampion.id;
+          const tmp: item[] = [];
+          champion.items.forEach((item: item) => {
+            const asd = state.combinedItems.filter(x => x.name == item.name);            
+            if (asd.length > 0) {
+              tmp.push(asd[0]);
+
+              for (const r of asd[0].receipe) {
+                const foundBaseItem = state.baseItems.filter(x => x.name == r.name)
+              }
+              components = components.concat(asd[0].receipe);
+            }
+          });
+          champion.items = tmp;
+        });
+        build.components = components;
+      });
       state.suggestions = JSON.parse(JSON.stringify(builds));
-      // Add item components to builds
-      // state.suggestions.forEach((build: team) => {
-      //   const _champions: champion[] = [];
-      //   build.champions.forEach((champion: champion) => {
-      //     const foundChampion = state.champions.filter(x => x.name == champion.name)[0];
-      //     // copy champion to prevent overriding them for the champions tab
-      //     const _champion: champion = {
-      //         id: foundChampion.id,
-      //         img: foundChampion.img,
-      //         name: foundChampion.name,
-      //         items: [],
-      //     };
-      //     champion.items.forEach((item: item) => {
-      //       const findItem = state.combinedItems.filter(x => x.name == item.name);
-      //       if (findItem.length > 0) {
-      //         _champion.items.push(findItem[0]);
-      //       }
-      //     });
-      //     _champions.push(_champion);
-      //   });
-      //   build.champions = _champions;
-      // });
     },
     [GET_CHAMPIONS](state, champions) {
       state.champions = champions;
@@ -135,24 +140,29 @@ const store = new Vuex.Store({
     [UPDATE_SUGGESTIONS](state) {
       const s: team[] = JSON.parse(JSON.stringify(state.builds));
       for (const suggestion of s) {
+        // Stats
         let maxItems = 0;
         let completedItems = 0;
+        const maxComponents = suggestion.components.length;
+        let currentComponents = 0;
+
         for (const champion of suggestion.champions) {
-           maxItems += champion.items?.length;
+           maxItems += champion.items.length;
+
            for (const suggestedItem of state.currentItems) {
-            completedItems += champion.items.filter((x: item) => x.name == suggestedItem.name).length;
+              completedItems += champion.items.filter((x: item) => x.name == suggestedItem.name).length;
+              currentComponents += suggestion.components.filter((x:item) => x.name == suggestedItem.name).length;
            }
         }
         suggestion.stats = {
             maxItems: maxItems,
             completedItems: completedItems,
-            maxComponents: 0,
+            maxComponents: maxComponents,
             currentComponents: 0,
-            itemPercentage: completedItems / maxItems * 100,
-            componentPercentage: 0//currentComponents / maxComponents
+            score: ((completedItems / maxItems) * 10) + ((currentComponents / maxComponents) * 10) + tierRatings[suggestion.tier]
         };        
       }
-      state.suggestions = s.sort((a, b) => ( a.stats.itemPercentage <= b.stats.itemPercentage) ? 1 : ( (b.stats.itemPercentage < a.stats.itemPercentage) ? -1 : 0 ));
+      state.suggestions = s.sort((a, b) => ( a.stats.score <= b.stats.score) ? 1 : ( (b.stats.score < a.stats.score) ? -1 : 0 ));
     }
   },
   actions: {
