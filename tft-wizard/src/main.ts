@@ -43,13 +43,19 @@ type champion = {
   items: item[];
 };
 
+type stats = {
+  maxItems: number;
+  completedItems: number;
+  maxComponents: number;
+  currentComponents: number;
+}
+
 type team = {
   id: number;
-  itemPercentage: number;
-  completedItems: string;
   name: string;
   tier: string;
   playstyle: string;
+  stats: stats;
   champions: champion[];
 };
 
@@ -88,15 +94,20 @@ const store = new Vuex.Store({
       builds.forEach((build: team) => {
         const _champions: champion[] = [];
         build.champions.forEach((champion: champion) => {
-          const _champion = state.champions.filter(x => x.name == champion.name)[0];
-          const _items: item[] = [];
+          const foundChampion = state.champions.filter(x => x.name == champion.name)[0];
+          // copy champion to prevent overriding them for the champions tab
+          const _champion: champion = {
+              id: foundChampion.id,
+              img: foundChampion.img,
+              name: foundChampion.name,
+              items: [],
+          };
           champion.items.forEach((item: item) => {
             const findItem = state.combinedItems.filter(x => x.name == item.name);
             if (findItem.length > 0) {
-              _items.push(findItem[0]);
+              _champion.items.push(findItem[0]);
             }
           });
-          _champion.items = _items;
           _champions.push(_champion);
         });
         build.champions = _champions;
@@ -163,11 +174,15 @@ const store = new Vuex.Store({
         }
         suggestions.push({
             id: build.id,
-            itemPercentage: 0,
-            completedItems: `(${completedItems}/${maxItems})`,
             name: build.name,
             tier: build.tier,
             playstyle: build.playstyle,
+            stats: {
+              maxItems: maxItems,
+              completedItems: completedItems,
+              maxComponents: 0,
+              currentComponents: 0
+            },
             champions: build.champions
           } as team);        
       }

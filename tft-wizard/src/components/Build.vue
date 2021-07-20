@@ -1,12 +1,15 @@
 <template>
   <div class="build">
-    <div class="stats">
-      {{ build.completedItems }}
-    </div>
     <div class="tier">{{ build.tier }}</div>
     <div class="comb">
       <div>{{ build.name }}</div>
       <div>{{ build.playstyle }}</div>
+      <div v-if="build.stats">
+        {{ `(${build.stats.completedItems}/${build.stats.maxItems}) items` }}
+      </div>
+      <div v-if="build.stats">
+        {{ `(${build.stats.currentComponents}/${build.stats.maxComponents}) components` }}
+      </div>
     </div>
     <div class="champions">
       <ElementList :size="size" :elements="build.champions" />
@@ -47,13 +50,17 @@ export default {
   }
 
   .comb {
-    flex-basis: 28%;
+    flex-basis: 38%;
     display: flex;
     flex-direction: column;
+
+    > div:nth-child(2) {
+        color: $text;
+    }
   }
 
   .champions {
-    flex-basis: 70%;
+    flex-basis: 60%;
   }
 }
 </style>

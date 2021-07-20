@@ -45,6 +45,7 @@ export default {
     }
 
     .item {
+        height: 23px;
         margin-top: -20px;
     }
 }

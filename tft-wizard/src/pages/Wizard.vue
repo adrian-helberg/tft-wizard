@@ -8,38 +8,31 @@
       </template>
       <template v-slot:content>
           <div class="wizard">
-              <button class="button-clear" @click="clear">Clear</button>
-              <hr width="100%">
-              <div class="wizard-grid">
-                <div class="c1">Current champions:</div>
-                <div class="c2">
-                    <div class="placeholder" v-if="$store.state.currentChampions.length == 0">Select Champions to get better suggestions!</div>
-                    <ElementList :elements="$store.state.currentChampions" :size="40" :clickFun="removeCurrentChampion" />
+            <button class="button-clear" @click="clear">Clear</button>
+            <hr width="100%">
+            <div class="container">
+                <div class="left">
+                    <div class="left-title-1">Current Items</div>
+                    <div class="left-content-1">
+                        <div class="placeholder" v-if="$store.state.currentItems.length == 0">Select Items to get better suggestions!</div>
+                        <ElementList :elements="$store.state.currentItems" :size="40" :clickFun="removeCurrentItem" />
+                    </div>
+                    <div class="left-title-2">Items</div>
+                    <div class="left-content-2">
+                        <ElementList :elements="$store.state.baseItems" :size="40" :clickFun="addCurrentItem" />
+                        <hr>
+                        <ElementList :elements="$store.state.combinedItems" :size="40" :clickFun="addCurrentItem" />
+                    </div>
                 </div>
-                <div class="c3">Current items:</div>
-                <div class="c4">
-                    <div class="placeholder" v-if="$store.state.currentItems.length == 0">Select Items to get better suggestions!</div>
-                    <ElementList :elements="$store.state.currentItems" :size="40" :clickFun="removeCurrentItem" />
-                </div>
-                <div class="c5">Champions</div>
-                <div class="c6">Items</div>
-                <div class="c7">
-                    <ElementList :elements="$store.state.champions" :size="40" :clickFun="addCurrentChampion" />
-                </div>
-                <div class="c8">
-                    <ElementList :elements="$store.state.baseItems" :size="40" :clickFun="addCurrentItem" />
-                    <hr>
-                    <ElementList :elements="$store.state.combinedItems" :size="40" :clickFun="addCurrentItem" />
+                <div class="right">
+                    <div class="right-title">Build Suggestions</div>
+                    <div class="right-content">
+                        <div v-for="suggestion of $store.state.suggestions" :key="suggestion.id">
+                            <Build :build="suggestion" :size="56" /> 
+                        </div>
+                    </div>
                 </div>
             </div>
-            <hr width="100%">
-            <div>Build suggestions:</div>
-            <hr width="100%">
-            <div class="suggestions">
-                  <div v-for="suggestion of $store.state.suggestions" :key="suggestion.id">
-                      <Build :build="suggestion" :size="50" /> 
-                  </div>
-              </div>
           </div>
       </template>
   </MainLayout>
@@ -75,79 +68,76 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style scoped lang="scss">
 @import "../styles/colors.scss";
-.wizard {
+
+.button-clear {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-
-    .button-clear {
-        cursor: pointer;
-        align-self: flex-end;
-        //color: $text;
-        background-color: $heading;
-    }
-
-    .suggestions {
-        display: flex;
-        flex-direction: column;
-        padding-top: 6px;
-    }
-
-    .wizard-grid {
-        display: grid;
-
-        > div {
-            padding: 6px;
-        }
-
-        .c1 {
-            grid-column: 1/2;
-            grid-row: 1;
-        }
-
-        .c2 {
-            grid-column: 2/2;
-            grid-row: 1;
-        }
-
-        .c3 {
-            grid-column: 1/2;
-            grid-row: 2;
-        }
-
-        .c4 {
-            grid-column: 2/2;
-            grid-row: 2;
-        }
-
-        .c5 {
-            margin-top: 24px;
-            grid-column: 1/2;
-            grid-row: 3;
-        }
-
-        .c6 {
-            margin-top: 24px;
-            grid-column: 2/2;
-            grid-row: 3;
-        }
-
-        .c7 {
-            grid-column: 1/2;
-            grid-row: 4;
-        }
-
-        .c8 {
-            grid-column: 2/2;
-            grid-row: 4;
-        }
-    }
+    cursor: pointer;
+    align-self: flex-end;
+    background-color: $heading;
 }
 
 .placeholder {
     color: $text;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 0.6fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+    "left right";
+}
+
+.left {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 30px minmax(30px, min-content) 30px min-content;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+    "left-title-1"
+    "left-content-1"
+    "left-title-2"
+    "left-content-2";
+    grid-area: left;
+}
+
+.left-title-1 { 
+    grid-area: left-title-1; 
+}
+
+.left-content-1 { 
+    grid-area: left-content-1; 
+}
+
+.left-title-2 { 
+    grid-area: left-title-2; 
+}
+
+.left-content-2 { grid-area: left-content-2; }
+
+.right {
+    margin-left: 12px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 30px auto;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+    "right-title"
+    "right-content";
+    grid-area: right;
+}
+
+.right-title {
+    grid-area: right-title; 
+}
+
+.right-content { 
+    grid-area: right-content; 
 }
 </style>

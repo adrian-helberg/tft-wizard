@@ -106,7 +106,7 @@ content {
   flex-direction: column;
   align-items: center;
   flex-grow: 1;
-  flex-basis: 800px;
+  flex-basis: 1000px;
   padding: 12px;
   overflow-y: auto;
   color: $heading;
