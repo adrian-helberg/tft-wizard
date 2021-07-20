@@ -46,12 +46,6 @@ import Build from '../components/Build.vue';
 export default {
     name: "Wizard",
     methods: {
-        addCurrentChampion(champion) {
-            this.$store.dispatch("addCurrentChampion", champion);
-        },
-        removeCurrentChampion(champion) {
-            this.$store.dispatch("removeCurrentChampion", champion);
-        },
         addCurrentItem(item) {
             this.$store.dispatch("addCurrentItem", item);
         },

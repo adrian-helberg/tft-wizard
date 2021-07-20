@@ -48,6 +48,8 @@ type stats = {
   completedItems: number;
   maxComponents: number;
   currentComponents: number;
+  itemPercentage: number;
+  componentPercentage: number;
 }
 
 type team = {
@@ -67,11 +69,7 @@ const GET_COMBINED_ITEMS = "GET_COMBINED_ITEMS";
 
 const ADD_CURRENT_ITEM = "SET_CURRENT_ITEMS";
 const REMOVE_CURRENT_ITEM = "REMOVE_CURRENT_ITEMS";
-const ADD_CURRENT_CHAMPION = "ADD_CURRENT_CHAMPION";
-const REMOVE_CURRENT_CHAMPION = "REMOVE_CURRENT_CHAMPION";
-
 const CLEAR_CURRENT_LISTS = "CLEAR_CURRENT_LISTS";
-
 const UPDATE_SUGGESTIONS = "UPDATE_SUGGESTIONS";
 
 const store = new Vuex.Store({
@@ -81,7 +79,6 @@ const store = new Vuex.Store({
     champions: [] as champion[],
     baseItems: [] as item[],
     combinedItems: [] as item[],
-    currentChampions: [] as champion[],
     currentItems: [] as item[],
     suggestions: [] as team[]
   },
@@ -90,30 +87,30 @@ const store = new Vuex.Store({
         state.version = version
     },
     [GET_BUILDS](state, builds) {
-      // Add item components to builds
-      builds.forEach((build: team) => {
-        const _champions: champion[] = [];
-        build.champions.forEach((champion: champion) => {
-          const foundChampion = state.champions.filter(x => x.name == champion.name)[0];
-          // copy champion to prevent overriding them for the champions tab
-          const _champion: champion = {
-              id: foundChampion.id,
-              img: foundChampion.img,
-              name: foundChampion.name,
-              items: [],
-          };
-          champion.items.forEach((item: item) => {
-            const findItem = state.combinedItems.filter(x => x.name == item.name);
-            if (findItem.length > 0) {
-              _champion.items.push(findItem[0]);
-            }
-          });
-          _champions.push(_champion);
-        });
-        build.champions = _champions;
-      });
       state.builds = builds;
-      state.suggestions = builds;
+      state.suggestions = JSON.parse(JSON.stringify(builds));
+      // Add item components to builds
+      // state.suggestions.forEach((build: team) => {
+      //   const _champions: champion[] = [];
+      //   build.champions.forEach((champion: champion) => {
+      //     const foundChampion = state.champions.filter(x => x.name == champion.name)[0];
+      //     // copy champion to prevent overriding them for the champions tab
+      //     const _champion: champion = {
+      //         id: foundChampion.id,
+      //         img: foundChampion.img,
+      //         name: foundChampion.name,
+      //         items: [],
+      //     };
+      //     champion.items.forEach((item: item) => {
+      //       const findItem = state.combinedItems.filter(x => x.name == item.name);
+      //       if (findItem.length > 0) {
+      //         _champion.items.push(findItem[0]);
+      //       }
+      //     });
+      //     _champions.push(_champion);
+      //   });
+      //   build.champions = _champions;
+      // });
     },
     [GET_CHAMPIONS](state, champions) {
       state.champions = champions;
@@ -131,19 +128,31 @@ const store = new Vuex.Store({
       const index = state.currentItems.indexOf(item);
       if (index > -1) state.currentItems.splice(index, 1);
     },
-    [ADD_CURRENT_CHAMPION](state, champion) {
-      state.currentChampions.push(champion);
-    },
-    [REMOVE_CURRENT_CHAMPION](state, champion) {
-      const index = state.currentChampions.indexOf(champion);
-      if (index > -1) state.currentChampions.splice(index, 1);
-    },
     [CLEAR_CURRENT_LISTS](state) {
-      state.currentChampions = [];
       state.currentItems = [];
+      state.suggestions = JSON.parse(JSON.stringify(state.builds));
     },
-    [UPDATE_SUGGESTIONS](state, s) {
-      state.suggestions = s;
+    [UPDATE_SUGGESTIONS](state) {
+      const s: team[] = JSON.parse(JSON.stringify(state.builds));
+      for (const suggestion of s) {
+        let maxItems = 0;
+        let completedItems = 0;
+        for (const champion of suggestion.champions) {
+           maxItems += champion.items?.length;
+           for (const suggestedItem of state.currentItems) {
+            completedItems += champion.items.filter((x: item) => x.name == suggestedItem.name).length;
+           }
+        }
+        suggestion.stats = {
+            maxItems: maxItems,
+            completedItems: completedItems,
+            maxComponents: 0,
+            currentComponents: 0,
+            itemPercentage: completedItems / maxItems * 100,
+            componentPercentage: 0//currentComponents / maxComponents
+        };        
+      }
+      state.suggestions = s.sort((a, b) => ( a.stats.itemPercentage <= b.stats.itemPercentage) ? 1 : ( (b.stats.itemPercentage < a.stats.itemPercentage) ? -1 : 0 ));
     }
   },
   actions: {
@@ -155,57 +164,16 @@ const store = new Vuex.Store({
       commit(GET_BUILDS, BuildsJSON);
     },
     addCurrentItem({ commit }, item) {
-      const i = {
-        id: this.state.currentItems.length,
-        name: item.name,
-        img: item.img
-      };
-      commit(ADD_CURRENT_ITEM, i);
-
-      const suggestions: team[] = [];
-      for (const build of this.state.builds) {
-        let maxItems = 0;
-        let completedItems = 0;
-        for (const champion of build.champions) {
-           maxItems += champion.items?.length;
-           for (const suggestedItem of this.state.currentItems) {
-            completedItems += champion.items.filter(x => x.name == suggestedItem.name).length;
-           }
-        }
-        suggestions.push({
-            id: build.id,
-            name: build.name,
-            tier: build.tier,
-            playstyle: build.playstyle,
-            stats: {
-              maxItems: maxItems,
-              completedItems: completedItems,
-              maxComponents: 0,
-              currentComponents: 0
-            },
-            champions: build.champions
-          } as team);        
-      }
-      commit(UPDATE_SUGGESTIONS, suggestions);
+      commit(ADD_CURRENT_ITEM, item);
+      commit(UPDATE_SUGGESTIONS);
     },
     removeCurrentItem({ commit }, item) {
       commit(REMOVE_CURRENT_ITEM, item);
       commit(UPDATE_SUGGESTIONS);
     },
-    addCurrentChampion({ commit }, champion) {
-      const c = {
-        id: this.state.currentChampions.length,
-        name: champion.name,
-        img: champion.img
-      };
-      commit(ADD_CURRENT_CHAMPION, c);
-    },
-    removeCurrentChampion({ commit }, champion) {
-      commit(REMOVE_CURRENT_CHAMPION, champion);
-    },
     clearCurrentLists({ commit }, config) {
       commit(CLEAR_CURRENT_LISTS);
-      commit(UPDATE_SUGGESTIONS, this.state.builds);
+      commit(UPDATE_SUGGESTIONS);
     }
   },
 });
