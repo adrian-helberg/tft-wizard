@@ -1,6 +1,8 @@
 <template>
   <div class="build">
-    <div class="tier">{{ build.tier }}</div>
+    <div class="tier">
+      <img :src="build.tier.src" :title="build.tier.name" />
+    </div>
     <div class="comb">
       <div>{{ build.name }}</div>
       <div>{{ build.playstyle }}</div>
@@ -46,7 +48,6 @@ export default {
     flex-basis: 2%;
     justify-content: center;
     align-items: center;
-    border: 1px solid $text;
     padding: 6px;
     margin: 6px;
   }

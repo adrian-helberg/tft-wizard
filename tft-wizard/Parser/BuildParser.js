@@ -1,38 +1,34 @@
-// tftactics Team Comps
-let teams = [];
+// https://app.mobalytics.gg/tft/team-comps
+let comps = [];
 let idCounter = 0;
-let characterListElement = document.getElementsByClassName("characters-list");
-for (let characterElement of characterListElement) {
-    let teamsElement = characterElement.getElementsByClassName("team-portrait");
-    for (let teamElement of teamsElement) {
-        let teamInfoElement = teamElement.getElementsByClassName("team-name-elipsis")[0]
-        let name = teamInfoElement.firstChild.textContent;
-        let playstyle = teamInfoElement.lastChild.firstChild.textContent;
-        let tier = teamElement.getElementsByClassName("team-rank")[0].innerHTML;
-        let team = {
-            id: idCounter++,
-            name: name,
-            tier: tier,
-            playstyle: playstyle,
-            champions: []
+let compListElement = document.getElementsByClassName("e1yyksvk7");
+for (const compElement of compListElement) {    
+    const info = compElement.children[1];
+    const champions = compElement.children[2];
+    const _c = [];
+    for (const champion of champions.children) {
+        const _i = [];
+        const items = champion.children[0].children[1];
+        if (items) {
+            for (const item of items.children) {
+                _i.push(item.getAttribute('alt'));
+            }
         }
-        let currentTeamElement = teamElement.getElementsByClassName("team-characters")[0];
-        for (let c of currentTeamElement.children) {
-            let elements = c.getElementsByClassName("character-icon");
-            let champion = {
-                name: elements[0].getAttribute('alt'),
-                img: elements[0].getAttribute('src'),
-                items: []
-            };
-            for (let i = 1; i < elements.length; i++) {
-                champion.items.push({
-                    name: elements[i].getAttribute('alt'),
-                    img: elements[i].getAttribute('src'),
-                });
-            }        
-            team.champions.push(champion);
-        }
-        teams.push(team);
+        _c.push({
+            name: champion.children[1].textContent,
+            src: champion.children[0].children[0].children[0].children[0].getAttribute('src'),
+            items: _i
+        });
     }
+    comps.push({
+        name: info.children[0].textContent,
+        playstyle: info.children[1].children[0].textContent,
+        difficulty: info.children[1].children[1].textContent,
+        tier: {
+            name: info.children[2].getAttribute('alt'),
+            src: info.children[2].getAttribute('src')
+        },
+        champions: _c
+    });
 }
-copy(teams);
+copy(comps);

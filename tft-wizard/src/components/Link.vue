@@ -39,6 +39,6 @@ export default {
 
 .active {
   background-color: $heading;
-  color: $background;
+  color: $text;
 }
 </style>

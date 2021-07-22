@@ -29,13 +29,7 @@
             <div class="left-title-2">Items</div>
             <div class="left-content-2">
               <ElementList
-                :elements="$store.state.baseItems"
-                :size="40"
-                :clickFun="addCurrentItem"
-              />
-              <hr />
-              <ElementList
-                :elements="$store.state.combinedItems"
+                :elements="$store.state.items"
                 :size="40"
                 :clickFun="addCurrentItem"
               />
@@ -45,8 +39,8 @@
             <div class="right-title">Build Suggestions</div>
             <div class="right-content">
               <div
-                v-for="suggestion of $store.state.suggestions"
-                :key="suggestion.id"
+                v-for="(suggestion, index) of $store.state.suggestions"
+                :key="index"
               >
                 <Build :build="suggestion" :size="56" />
               </div>

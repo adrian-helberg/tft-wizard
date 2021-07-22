@@ -8,7 +8,7 @@
       <img
         :src="element.src"
         :alt="element.name"
-        :title="element.displayName"
+        :title="element.name"
         :style="{ width: size + 'px', height: size + 'px' }"
       />
       <div class="item" v-if="element.hasOwnProperty('items')">

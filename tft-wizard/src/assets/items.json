@@ -2,49 +2,49 @@
     {
         "id": 0,
         "name": "recurve-bow",
-        "displayName": "Recurve bow",
+        "displayName": "Recurve Bow",
         "src": "https://fastcdn.mobalytics.gg/assets/tft/images/game-items/set5-5/recurve-bow.png?v1"
     },
     {
         "id": 1,
         "name": "chain-vest",
-        "displayName": "Chain vest",
+        "displayName": "Chain Vest",
         "src": "https://fastcdn.mobalytics.gg/assets/tft/images/game-items/set5-5/chain-vest.png?v1"
     },
     {
         "id": 2,
         "name": "giants-belt",
-        "displayName": "Giants belt",
+        "displayName": "Giants Belt",
         "src": "https://fastcdn.mobalytics.gg/assets/tft/images/game-items/set5-5/giants-belt.png?v1"
     },
     {
         "id": 3,
         "name": "tear-of-the-goddess",
-        "displayName": "Tear of",
+        "displayName": "Tear Of The Goddess",
         "src": "https://fastcdn.mobalytics.gg/assets/tft/images/game-items/set5-5/tear-of-the-goddess.png?v1"
     },
     {
         "id": 4,
         "name": "sparring-gloves",
-        "displayName": "Sparring gloves",
+        "displayName": "Sparring Gloves",
         "src": "https://fastcdn.mobalytics.gg/assets/tft/images/game-items/set5-5/sparring-gloves.png?v1"
     },
     {
         "id": 5,
         "name": "negatron-cloak",
-        "displayName": "Negatron cloak",
+        "displayName": "Negatron Cloak",
         "src": "https://fastcdn.mobalytics.gg/assets/tft/images/game-items/set5-5/negatron-cloak.png?v1"
     },
     {
         "id": 6,
         "name": "bf-sword",
-        "displayName": "Bf sword",
+        "displayName": "Bf Sword",
         "src": "https://fastcdn.mobalytics.gg/assets/tft/images/game-items/set5-5/bf-sword.png?v1"
     },
     {
         "id": 7,
         "name": "needlessly-large-rod",
-        "displayName": "Needlessly large",
+        "displayName": "Needlessly Large Rod",
         "src": "https://fastcdn.mobalytics.gg/assets/tft/images/game-items/set5-5/needlessly-large-rod.png?v1"
     },
     {
@@ -67,13 +67,13 @@
             {
                 "id": 3,
                 "name": "tear-of-the-goddess",
-                "displayName": "Tear of",
+                "displayName": "Tear Of The Goddess",
                 "src": "https://fastcdn.mobalytics.gg/assets/tft/images/game-items/set5-5/tear-of-the-goddess.png?v1"
             },
             {
                 "id": 7,
                 "name": "needlessly-large-rod",
-                "displayName": "Needlessly large",
+                "displayName": "Needlessly Large Rod",
                 "src": "https://fastcdn.mobalytics.gg/assets/tft/images/game-items/set5-5/needlessly-large-rod.png?v1"
             }
         ]
@@ -98,7 +98,7 @@
             {
                 "id": 4,
                 "name": "sparring-gloves",
-                "displayName": "Sparring gloves",
+                "displayName": "Sparring Gloves",
                 "src": "https://fastcdn.mobalytics.gg/assets/tft/images/game-items/set5-5/sparring-gloves.png?v1"
             }
         ]
@@ -117,13 +117,13 @@
             {
                 "id": 4,
                 "name": "sparring-gloves",
-                "displayName": "Sparring gloves",
+                "displayName": "Sparring Gloves",
                 "src": "https://fastcdn.mobalytics.gg/assets/tft/images/game-items/set5-5/sparring-gloves.png?v1"
             },
             {
                 "id": 2,
                 "name": "giants-belt",
-                "displayName": "Giants belt",
+                "displayName": "Giants Belt",
                 "src": "https://fastcdn.mobalytics.gg/assets/tft/images/game-items/set5-5/giants-belt.png?v1"
             }
         ]
@@ -142,13 +142,13 @@
             {
                 "id": 6,
                 "name": "bf-sword",
-                "displayName": "Bf sword",
+                "displayName": "Bf Sword",
                 "src": "https://fastcdn.mobalytics.gg/assets/tft/images/game-items/set5-5/bf-sword.png?v1"
             },
             {
                 "id": 5,
                 "name": "negatron-cloak",
-                "displayName": "Negatron cloak",
+                "displayName": "Negatron Cloak",
                 "src": "https://fastcdn.mobalytics.gg/assets/tft/images/game-items/set5-5/negatron-cloak.png?v1"
             }
         ]
@@ -167,13 +167,13 @@
             {
                 "id": 3,
                 "name": "tear-of-the-goddess",
-                "displayName": "Tear of",
+                "displayName": "Tear Of The Goddess",
                 "src": "https://fastcdn.mobalytics.gg/assets/tft/images/game-items/set5-5/tear-of-the-goddess.png?v1"
             },
             {
                 "id": 3,
                 "name": "tear-of-the-goddess",
-                "displayName": "Tear of",
+                "displayName": "Tear Of The Goddess",
                 "src": "https://fastcdn.mobalytics.gg/assets/tft/images/game-items/set5-5/tear-of-the-goddess.png?v1"
             }
         ]
@@ -192,13 +192,13 @@
             {
                 "id": 1,
                 "name": "chain-vest",
-                "displayName": "Chain vest",
+                "displayName": "Chain Vest",
                 "src": "https://fastcdn.mobalytics.gg/assets/tft/images/game-items/set5-5/chain-vest.png?v1"
             },
             {
                 "id": 1,
                 "name": "chain-vest",
-                "displayName": "Chain vest",
+                "displayName": "Chain Vest",
                 "src": "https://fastcdn.mobalytics.gg/assets/tft/images/game-items/set5-5/chain-vest.png?v1"
             }
         ]
@@ -217,7 +217,7 @@
             {
                 "id": 1,
                 "name": "chain-vest",
-                "displayName": "Chain vest",
+                "displayName": "Chain Vest",
                 "src": "https://fastcdn.mobalytics.gg/assets/tft/images/game-items/set5-5/chain-vest.png?v1"
             },
             {
@@ -242,13 +242,13 @@
             {
                 "id": 3,
                 "name": "tear-of-the-goddess",
-                "displayName": "Tear of",
+                "displayName": "Tear Of The Goddess",
                 "src": "https://fastcdn.mobalytics.gg/assets/tft/images/game-items/set5-5/tear-of-the-goddess.png?v1"
             },
             {
                 "id": 5,
                 "name": "negatron-cloak",
-                "displayName": "Negatron cloak",
+                "displayName": "Negatron Cloak",
                 "src": "https://fastcdn.mobalytics.gg/assets/tft/images/game-items/set5-5/negatron-cloak.png?v1"
             }
         ]
@@ -273,7 +273,7 @@
             {
                 "id": 2,
                 "name": "giants-belt",
-                "displayName": "Giants belt",
+                "displayName": "Giants Belt",
                 "src": "https://fastcdn.mobalytics.gg/assets/tft/images/game-items/set5-5/giants-belt.png?v1"
             }
         ]
@@ -292,13 +292,13 @@
             {
                 "id": 6,
                 "name": "bf-sword",
-                "displayName": "Bf sword",
+                "displayName": "Bf Sword",
                 "src": "https://fastcdn.mobalytics.gg/assets/tft/images/game-items/set5-5/bf-sword.png?v1"
             },
             {
                 "id": 6,
                 "name": "bf-sword",
-                "displayName": "Bf sword",
+                "displayName": "Bf Sword",
                 "src": "https://fastcdn.mobalytics.gg/assets/tft/images/game-items/set5-5/bf-sword.png?v1"
             }
         ]
@@ -317,13 +317,13 @@
             {
                 "id": 5,
                 "name": "negatron-cloak",
-                "displayName": "Negatron cloak",
+                "displayName": "Negatron Cloak",
                 "src": "https://fastcdn.mobalytics.gg/assets/tft/images/game-items/set5-5/negatron-cloak.png?v1"
             },
             {
                 "id": 5,
                 "name": "negatron-cloak",
-                "displayName": "Negatron cloak",
+                "displayName": "Negatron Cloak",
                 "src": "https://fastcdn.mobalytics.gg/assets/tft/images/game-items/set5-5/negatron-cloak.png?v1"
             }
         ]
@@ -367,13 +367,13 @@
             {
                 "id": 3,
                 "name": "tear-of-the-goddess",
-                "displayName": "Tear of",
+                "displayName": "Tear Of The Goddess",
                 "src": "https://fastcdn.mobalytics.gg/assets/tft/images/game-items/set5-5/tear-of-the-goddess.png?v1"
             },
             {
                 "id": 1,
                 "name": "chain-vest",
-                "displayName": "Chain vest",
+                "displayName": "Chain Vest",
                 "src": "https://fastcdn.mobalytics.gg/assets/tft/images/game-items/set5-5/chain-vest.png?v1"
             }
         ]
@@ -392,13 +392,13 @@
             {
                 "id": 1,
                 "name": "chain-vest",
-                "displayName": "Chain vest",
+                "displayName": "Chain Vest",
                 "src": "https://fastcdn.mobalytics.gg/assets/tft/images/game-items/set5-5/chain-vest.png?v1"
             },
             {
                 "id": 5,
                 "name": "negatron-cloak",
-                "displayName": "Negatron cloak",
+                "displayName": "Negatron Cloak",
                 "src": "https://fastcdn.mobalytics.gg/assets/tft/images/game-items/set5-5/negatron-cloak.png?v1"
             }
         ]
@@ -417,13 +417,13 @@
             {
                 "id": 6,
                 "name": "bf-sword",
-                "displayName": "Bf sword",
+                "displayName": "Bf Sword",
                 "src": "https://fastcdn.mobalytics.gg/assets/tft/images/game-items/set5-5/bf-sword.png?v1"
             },
             {
                 "id": 0,
                 "name": "recurve-bow",
-                "displayName": "Recurve bow",
+                "displayName": "Recurve Bow",
                 "src": "https://fastcdn.mobalytics.gg/assets/tft/images/game-items/set5-5/recurve-bow.png?v1"
             }
         ]
@@ -442,13 +442,13 @@
             {
                 "id": 1,
                 "name": "chain-vest",
-                "displayName": "Chain vest",
+                "displayName": "Chain Vest",
                 "src": "https://fastcdn.mobalytics.gg/assets/tft/images/game-items/set5-5/chain-vest.png?v1"
             },
             {
                 "id": 6,
                 "name": "bf-sword",
-                "displayName": "Bf sword",
+                "displayName": "Bf Sword",
                 "src": "https://fastcdn.mobalytics.gg/assets/tft/images/game-items/set5-5/bf-sword.png?v1"
             }
         ]
@@ -467,13 +467,13 @@
             {
                 "id": 7,
                 "name": "needlessly-large-rod",
-                "displayName": "Needlessly large",
+                "displayName": "Needlessly Large Rod",
                 "src": "https://fastcdn.mobalytics.gg/assets/tft/images/game-items/set5-5/needlessly-large-rod.png?v1"
             },
             {
                 "id": 0,
                 "name": "recurve-bow",
-                "displayName": "Recurve bow",
+                "displayName": "Recurve Bow",
                 "src": "https://fastcdn.mobalytics.gg/assets/tft/images/game-items/set5-5/recurve-bow.png?v1"
             }
         ]
@@ -492,13 +492,13 @@
             {
                 "id": 3,
                 "name": "tear-of-the-goddess",
-                "displayName": "Tear of",
+                "displayName": "Tear Of The Goddess",
                 "src": "https://fastcdn.mobalytics.gg/assets/tft/images/game-items/set5-5/tear-of-the-goddess.png?v1"
             },
             {
                 "id": 4,
                 "name": "sparring-gloves",
-                "displayName": "Sparring gloves",
+                "displayName": "Sparring Gloves",
                 "src": "https://fastcdn.mobalytics.gg/assets/tft/images/game-items/set5-5/sparring-gloves.png?v1"
             }
         ]
@@ -517,7 +517,7 @@
             {
                 "id": 0,
                 "name": "recurve-bow",
-                "displayName": "Recurve bow",
+                "displayName": "Recurve Bow",
                 "src": "https://fastcdn.mobalytics.gg/assets/tft/images/game-items/set5-5/recurve-bow.png?v1"
             },
             {
@@ -542,13 +542,13 @@
             {
                 "id": 6,
                 "name": "bf-sword",
-                "displayName": "Bf sword",
+                "displayName": "Bf Sword",
                 "src": "https://fastcdn.mobalytics.gg/assets/tft/images/game-items/set5-5/bf-sword.png?v1"
             },
             {
                 "id": 7,
                 "name": "needlessly-large-rod",
-                "displayName": "Needlessly large",
+                "displayName": "Needlessly Large Rod",
                 "src": "https://fastcdn.mobalytics.gg/assets/tft/images/game-items/set5-5/needlessly-large-rod.png?v1"
             }
         ]
@@ -567,13 +567,13 @@
             {
                 "id": 6,
                 "name": "bf-sword",
-                "displayName": "Bf sword",
+                "displayName": "Bf Sword",
                 "src": "https://fastcdn.mobalytics.gg/assets/tft/images/game-items/set5-5/bf-sword.png?v1"
             },
             {
                 "id": 4,
                 "name": "sparring-gloves",
-                "displayName": "Sparring gloves",
+                "displayName": "Sparring Gloves",
                 "src": "https://fastcdn.mobalytics.gg/assets/tft/images/game-items/set5-5/sparring-gloves.png?v1"
             }
         ]
@@ -592,13 +592,13 @@
             {
                 "id": 7,
                 "name": "needlessly-large-rod",
-                "displayName": "Needlessly large",
+                "displayName": "Needlessly Large Rod",
                 "src": "https://fastcdn.mobalytics.gg/assets/tft/images/game-items/set5-5/needlessly-large-rod.png?v1"
             },
             {
                 "id": 5,
                 "name": "negatron-cloak",
-                "displayName": "Negatron cloak",
+                "displayName": "Negatron Cloak",
                 "src": "https://fastcdn.mobalytics.gg/assets/tft/images/game-items/set5-5/negatron-cloak.png?v1"
             }
         ]
@@ -617,13 +617,13 @@
             {
                 "id": 7,
                 "name": "needlessly-large-rod",
-                "displayName": "Needlessly large",
+                "displayName": "Needlessly Large Rod",
                 "src": "https://fastcdn.mobalytics.gg/assets/tft/images/game-items/set5-5/needlessly-large-rod.png?v1"
             },
             {
                 "id": 4,
                 "name": "sparring-gloves",
-                "displayName": "Sparring gloves",
+                "displayName": "Sparring Gloves",
                 "src": "https://fastcdn.mobalytics.gg/assets/tft/images/game-items/set5-5/sparring-gloves.png?v1"
             }
         ]
@@ -642,13 +642,13 @@
             {
                 "id": 0,
                 "name": "recurve-bow",
-                "displayName": "Recurve bow",
+                "displayName": "Recurve Bow",
                 "src": "https://fastcdn.mobalytics.gg/assets/tft/images/game-items/set5-5/recurve-bow.png?v1"
             },
             {
                 "id": 4,
                 "name": "sparring-gloves",
-                "displayName": "Sparring gloves",
+                "displayName": "Sparring Gloves",
                 "src": "https://fastcdn.mobalytics.gg/assets/tft/images/game-items/set5-5/sparring-gloves.png?v1"
             }
         ]
@@ -667,13 +667,13 @@
             {
                 "id": 7,
                 "name": "needlessly-large-rod",
-                "displayName": "Needlessly large",
+                "displayName": "Needlessly Large Rod",
                 "src": "https://fastcdn.mobalytics.gg/assets/tft/images/game-items/set5-5/needlessly-large-rod.png?v1"
             },
             {
                 "id": 1,
                 "name": "chain-vest",
-                "displayName": "Chain vest",
+                "displayName": "Chain Vest",
                 "src": "https://fastcdn.mobalytics.gg/assets/tft/images/game-items/set5-5/chain-vest.png?v1"
             }
         ]
@@ -692,13 +692,13 @@
             {
                 "id": 7,
                 "name": "needlessly-large-rod",
-                "displayName": "Needlessly large",
+                "displayName": "Needlessly Large Rod",
                 "src": "https://fastcdn.mobalytics.gg/assets/tft/images/game-items/set5-5/needlessly-large-rod.png?v1"
             },
             {
                 "id": 2,
                 "name": "giants-belt",
-                "displayName": "Giants belt",
+                "displayName": "Giants Belt",
                 "src": "https://fastcdn.mobalytics.gg/assets/tft/images/game-items/set5-5/giants-belt.png?v1"
             }
         ]
@@ -717,13 +717,13 @@
             {
                 "id": 4,
                 "name": "sparring-gloves",
-                "displayName": "Sparring gloves",
+                "displayName": "Sparring Gloves",
                 "src": "https://fastcdn.mobalytics.gg/assets/tft/images/game-items/set5-5/sparring-gloves.png?v1"
             },
             {
                 "id": 5,
                 "name": "negatron-cloak",
-                "displayName": "Negatron cloak",
+                "displayName": "Negatron Cloak",
                 "src": "https://fastcdn.mobalytics.gg/assets/tft/images/game-items/set5-5/negatron-cloak.png?v1"
             }
         ]
@@ -742,13 +742,13 @@
             {
                 "id": 7,
                 "name": "needlessly-large-rod",
-                "displayName": "Needlessly large",
+                "displayName": "Needlessly Large Rod",
                 "src": "https://fastcdn.mobalytics.gg/assets/tft/images/game-items/set5-5/needlessly-large-rod.png?v1"
             },
             {
                 "id": 7,
                 "name": "needlessly-large-rod",
-                "displayName": "Needlessly large",
+                "displayName": "Needlessly Large Rod",
                 "src": "https://fastcdn.mobalytics.gg/assets/tft/images/game-items/set5-5/needlessly-large-rod.png?v1"
             }
         ]
@@ -767,13 +767,13 @@
             {
                 "id": 0,
                 "name": "recurve-bow",
-                "displayName": "Recurve bow",
+                "displayName": "Recurve Bow",
                 "src": "https://fastcdn.mobalytics.gg/assets/tft/images/game-items/set5-5/recurve-bow.png?v1"
             },
             {
                 "id": 0,
                 "name": "recurve-bow",
-                "displayName": "Recurve bow",
+                "displayName": "Recurve Bow",
                 "src": "https://fastcdn.mobalytics.gg/assets/tft/images/game-items/set5-5/recurve-bow.png?v1"
             }
         ]
@@ -798,7 +798,7 @@
             {
                 "id": 5,
                 "name": "negatron-cloak",
-                "displayName": "Negatron cloak",
+                "displayName": "Negatron Cloak",
                 "src": "https://fastcdn.mobalytics.gg/assets/tft/images/game-items/set5-5/negatron-cloak.png?v1"
             }
         ]
@@ -817,13 +817,13 @@
             {
                 "id": 3,
                 "name": "tear-of-the-goddess",
-                "displayName": "Tear of",
+                "displayName": "Tear Of The Goddess",
                 "src": "https://fastcdn.mobalytics.gg/assets/tft/images/game-items/set5-5/tear-of-the-goddess.png?v1"
             },
             {
                 "id": 2,
                 "name": "giants-belt",
-                "displayName": "Giants belt",
+                "displayName": "Giants Belt",
                 "src": "https://fastcdn.mobalytics.gg/assets/tft/images/game-items/set5-5/giants-belt.png?v1"
             }
         ]
@@ -848,7 +848,7 @@
             {
                 "id": 3,
                 "name": "tear-of-the-goddess",
-                "displayName": "Tear of",
+                "displayName": "Tear Of The Goddess",
                 "src": "https://fastcdn.mobalytics.gg/assets/tft/images/game-items/set5-5/tear-of-the-goddess.png?v1"
             }
         ]
@@ -867,13 +867,13 @@
             {
                 "id": 0,
                 "name": "recurve-bow",
-                "displayName": "Recurve bow",
+                "displayName": "Recurve Bow",
                 "src": "https://fastcdn.mobalytics.gg/assets/tft/images/game-items/set5-5/recurve-bow.png?v1"
             },
             {
                 "id": 5,
                 "name": "negatron-cloak",
-                "displayName": "Negatron cloak",
+                "displayName": "Negatron Cloak",
                 "src": "https://fastcdn.mobalytics.gg/assets/tft/images/game-items/set5-5/negatron-cloak.png?v1"
             }
         ]
@@ -892,13 +892,13 @@
             {
                 "id": 4,
                 "name": "sparring-gloves",
-                "displayName": "Sparring gloves",
+                "displayName": "Sparring Gloves",
                 "src": "https://fastcdn.mobalytics.gg/assets/tft/images/game-items/set5-5/sparring-gloves.png?v1"
             },
             {
                 "id": 1,
                 "name": "chain-vest",
-                "displayName": "Chain vest",
+                "displayName": "Chain Vest",
                 "src": "https://fastcdn.mobalytics.gg/assets/tft/images/game-items/set5-5/chain-vest.png?v1"
             }
         ]
@@ -923,7 +923,7 @@
             {
                 "id": 6,
                 "name": "bf-sword",
-                "displayName": "Bf sword",
+                "displayName": "Bf Sword",
                 "src": "https://fastcdn.mobalytics.gg/assets/tft/images/game-items/set5-5/bf-sword.png?v1"
             }
         ]
@@ -942,13 +942,13 @@
             {
                 "id": 3,
                 "name": "tear-of-the-goddess",
-                "displayName": "Tear of",
+                "displayName": "Tear Of The Goddess",
                 "src": "https://fastcdn.mobalytics.gg/assets/tft/images/game-items/set5-5/tear-of-the-goddess.png?v1"
             },
             {
                 "id": 6,
                 "name": "bf-sword",
-                "displayName": "Bf sword",
+                "displayName": "Bf Sword",
                 "src": "https://fastcdn.mobalytics.gg/assets/tft/images/game-items/set5-5/bf-sword.png?v1"
             }
         ]
@@ -973,7 +973,7 @@
             {
                 "id": 7,
                 "name": "needlessly-large-rod",
-                "displayName": "Needlessly large",
+                "displayName": "Needlessly Large Rod",
                 "src": "https://fastcdn.mobalytics.gg/assets/tft/images/game-items/set5-5/needlessly-large-rod.png?v1"
             }
         ]
@@ -992,13 +992,13 @@
             {
                 "id": 0,
                 "name": "recurve-bow",
-                "displayName": "Recurve bow",
+                "displayName": "Recurve Bow",
                 "src": "https://fastcdn.mobalytics.gg/assets/tft/images/game-items/set5-5/recurve-bow.png?v1"
             },
             {
                 "id": 3,
                 "name": "tear-of-the-goddess",
-                "displayName": "Tear of",
+                "displayName": "Tear Of The Goddess",
                 "src": "https://fastcdn.mobalytics.gg/assets/tft/images/game-items/set5-5/tear-of-the-goddess.png?v1"
             }
         ]
@@ -1017,13 +1017,13 @@
             {
                 "id": 1,
                 "name": "chain-vest",
-                "displayName": "Chain vest",
+                "displayName": "Chain Vest",
                 "src": "https://fastcdn.mobalytics.gg/assets/tft/images/game-items/set5-5/chain-vest.png?v1"
             },
             {
                 "id": 2,
                 "name": "giants-belt",
-                "displayName": "Giants belt",
+                "displayName": "Giants Belt",
                 "src": "https://fastcdn.mobalytics.gg/assets/tft/images/game-items/set5-5/giants-belt.png?v1"
             }
         ]
@@ -1042,13 +1042,13 @@
             {
                 "id": 4,
                 "name": "sparring-gloves",
-                "displayName": "Sparring gloves",
+                "displayName": "Sparring Gloves",
                 "src": "https://fastcdn.mobalytics.gg/assets/tft/images/game-items/set5-5/sparring-gloves.png?v1"
             },
             {
                 "id": 4,
                 "name": "sparring-gloves",
-                "displayName": "Sparring gloves",
+                "displayName": "Sparring Gloves",
                 "src": "https://fastcdn.mobalytics.gg/assets/tft/images/game-items/set5-5/sparring-gloves.png?v1"
             }
         ]
@@ -1067,13 +1067,13 @@
             {
                 "id": 1,
                 "name": "chain-vest",
-                "displayName": "Chain vest",
+                "displayName": "Chain Vest",
                 "src": "https://fastcdn.mobalytics.gg/assets/tft/images/game-items/set5-5/chain-vest.png?v1"
             },
             {
                 "id": 0,
                 "name": "recurve-bow",
-                "displayName": "Recurve bow",
+                "displayName": "Recurve Bow",
                 "src": "https://fastcdn.mobalytics.gg/assets/tft/images/game-items/set5-5/recurve-bow.png?v1"
             }
         ]
@@ -1092,13 +1092,13 @@
             {
                 "id": 2,
                 "name": "giants-belt",
-                "displayName": "Giants belt",
+                "displayName": "Giants Belt",
                 "src": "https://fastcdn.mobalytics.gg/assets/tft/images/game-items/set5-5/giants-belt.png?v1"
             },
             {
                 "id": 2,
                 "name": "giants-belt",
-                "displayName": "Giants belt",
+                "displayName": "Giants Belt",
                 "src": "https://fastcdn.mobalytics.gg/assets/tft/images/game-items/set5-5/giants-belt.png?v1"
             }
         ]
@@ -1117,13 +1117,13 @@
             {
                 "id": 6,
                 "name": "bf-sword",
-                "displayName": "Bf sword",
+                "displayName": "Bf Sword",
                 "src": "https://fastcdn.mobalytics.gg/assets/tft/images/game-items/set5-5/bf-sword.png?v1"
             },
             {
                 "id": 2,
                 "name": "giants-belt",
-                "displayName": "Giants belt",
+                "displayName": "Giants Belt",
                 "src": "https://fastcdn.mobalytics.gg/assets/tft/images/game-items/set5-5/giants-belt.png?v1"
             }
         ]
@@ -1142,13 +1142,13 @@
             {
                 "id": 5,
                 "name": "negatron-cloak",
-                "displayName": "Negatron cloak",
+                "displayName": "Negatron Cloak",
                 "src": "https://fastcdn.mobalytics.gg/assets/tft/images/game-items/set5-5/negatron-cloak.png?v1"
             },
             {
                 "id": 2,
                 "name": "giants-belt",
-                "displayName": "Giants belt",
+                "displayName": "Giants Belt",
                 "src": "https://fastcdn.mobalytics.gg/assets/tft/images/game-items/set5-5/giants-belt.png?v1"
             }
         ]
@@ -1167,13 +1167,13 @@
             {
                 "id": 2,
                 "name": "giants-belt",
-                "displayName": "Giants belt",
+                "displayName": "Giants Belt",
                 "src": "https://fastcdn.mobalytics.gg/assets/tft/images/game-items/set5-5/giants-belt.png?v1"
             },
             {
                 "id": 0,
                 "name": "recurve-bow",
-                "displayName": "Recurve bow",
+                "displayName": "Recurve Bow",
                 "src": "https://fastcdn.mobalytics.gg/assets/tft/images/game-items/set5-5/recurve-bow.png?v1"
             }
         ]

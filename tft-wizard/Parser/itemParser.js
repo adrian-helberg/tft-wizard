@@ -8,11 +8,12 @@ for (const baseItemElement of baseItemListElement) {
 
     const name = baseItem.getAttribute("alt");
     const tmp = name.split('-');
-    const capital = tmp[0].charAt(0).toUpperCase()
+    let displayName = "";
+    tmp.forEach(x => displayName += (x.charAt(0).toUpperCase() + x.substr(1) + (tmp.indexOf(x) < tmp.length - 1 ? " ": "")));
     items.push({
         id: idCounter++,
         name: name,
-        displayName: capital + tmp[0].substring(tmp[0].indexOf(capital) + 2) + (!!tmp[1] ? " " + tmp[1] : ""),
+        displayName: displayName,
         src: baseItem.getAttribute("src"),
     });
 }

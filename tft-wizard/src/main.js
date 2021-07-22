@@ -1,14 +1,13 @@
 import Vue from "vue";
 import Vuex from "vuex";
 import VueRouter from "vue-router";
+import Axios from "axios";
 import App from "./App.vue";
+// Pages
 import Home from "./pages/Home.vue";
 import Wizard from "./pages/Wizard.vue";
-import Champions from "./pages/Champions.vue";
-import Builds from "./pages/Builds.vue";
-import Items from "./pages/Items.vue";
 import NotFound from "./pages/404.vue";
-import Axios from "axios";
+// JSON
 import BuildsJSON from "./assets/builds.json";
 import ChampionsJSON from "./assets/champions.json";
 import ItemsJSON from "./assets/items.json";
@@ -23,9 +22,9 @@ Vue.use(VueRouter);
 Vue.config.productionTip = false;
 
 const tierRatings = {
-  S: 3,
-  A: 2,
-  B: 1,
+  "s": 3,
+  "a": 2,
+  "b": 1,
 };
 
 const GET_BUILDS = "GET_BUILDS";
@@ -47,26 +46,30 @@ const store = new Vuex.Store({
   mutations: {
     [GET_BUILDS](state, builds) {
       state.builds = builds;
-      // Attach champions and items from own db
-      // state.builds.forEach((build) => {
-      //   let components = [];
-      //   build.champions.forEach((champion) => {
-      //     const foundChampion = state.champions.filter(
-      //       (x) => x.name == champion.name
-      //     )[0];
-      //     champion.id = foundChampion.id;
-      //     const items = [];
-      //     champion.items.forEach((item) => {
-      //       const foundItem = state.items.filter((x) => x.name == item.name);
-      //       if (foundItem.length > 0) {
-      //         items.push(foundItem[0]);
-      //         components = components.concat(foundItem[0].receipe);
-      //       }
-      //     });
-      //     champion.items = items;
-      //   });
-      //   build.components = components;
-      // });
+      // Attach items from own db
+      // Note that champions are not attached (only corresponding ID)
+      state.builds.forEach((build) => {
+        let components = [];
+        build.champions.forEach((champion) => {
+          const foundChampion = state.champions.filter(
+            (x) => x.name == champion.name
+          )[0];
+          champion.id = foundChampion.id;
+          const items = [];
+          champion.items.forEach((item) => {
+            const foundItem = state.items.filter((x) => {
+                const literals = item.split("-");
+                return x.name.includes(literals[0] == "radiant" ? literals[1] : literals[0]);
+            });            
+            if (foundItem.length > 0) {
+              items.push(foundItem[0]);
+              components = components.concat(foundItem[0].receipe);
+            }
+          });
+          champion.items = items;
+        });
+        build.components = components;
+      });
       // Copy all builds as default suggestions
       state.suggestions = JSON.parse(JSON.stringify(builds));
     },
@@ -100,25 +103,24 @@ const store = new Vuex.Store({
         for (const champion of suggestion.champions) {
           maxItems += champion.items.length;
 
-          for (const suggestedItem of state.currentItems) {
-            completedItems += (champion.items.filter(
-              (x) => x.name == suggestedItem.name
-            ).length > 0 ? 1 : 0);
-            currentComponents += (suggestion.components.filter(
-              (x) => x.name == suggestedItem.name
-            ).length > 0 ? 1 : 0);
+          for (const item of champion.items) {
+              const foundItem = state.currentItems.filter(x => x.name == item.name);
+              if (foundItem.length > 0) completedItems++;
           }
         }
+
         suggestion.stats = {
           maxItems: maxItems,
           completedItems: completedItems,
           maxComponents: maxComponents,
           currentComponents: 0,
           score:
-            (completedItems / maxItems) * 10 +
-            (currentComponents / maxComponents) * 10 +
-            tierRatings[suggestion.tier],
+            (completedItems / maxItems) * 10 
+            + (currentComponents / maxComponents) * 10            
+            + tierRatings[suggestion.tier.name],
         };
+
+        console.log(suggestion.stats);
       }
       state.suggestions = s.sort((a, b) =>
         a.stats.score <= b.stats.score
@@ -160,23 +162,13 @@ const router = new VueRouter({
     {
       path: "/wizard",
       name: "Wizard",
-      component: Wizard,
+      component: Wizard
     },
     {
-      path: "/champions",
-      name: "Champions",
-      component: Champions,
-    },
-    {
-      path: "/items",
-      name: "Items",
-      component: Items,
-    },
-    {
-      path: "/builds",
-      name: "Builds",
-      component: Builds,
-    },
+      path: "*",
+      name: "Not Found",
+      component: NotFound
+    }
   ],
 });
 
@@ -184,18 +176,15 @@ new Vue({
   render(h) {
     return h(App);
   },
-  router,
   data: {
     currentRoute: window.location.pathname,
   },
+  router,
   store: store,
   components: {
     App,
     Home,
     Wizard,
-    Champions,
-    Items,
-    Builds,
     NotFound,
   },
   created: function () {
