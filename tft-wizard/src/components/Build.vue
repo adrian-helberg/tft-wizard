@@ -8,7 +8,9 @@
         {{ `(${build.stats.completedItems}/${build.stats.maxItems}) items` }}
       </div>
       <div v-if="build.stats">
-        {{ `(${build.stats.currentComponents}/${build.stats.maxComponents}) components` }}
+        {{
+          `(${build.stats.currentComponents}/${build.stats.maxComponents}) components`
+        }}
       </div>
     </div>
     <div class="champions">
@@ -24,8 +26,8 @@ export default {
   name: "Build",
   props: ["build", "size"],
   components: {
-    ElementList
-  }
+    ElementList,
+  },
 };
 </script>
 
@@ -55,7 +57,7 @@ export default {
     flex-direction: column;
 
     > div:nth-child(2) {
-        color: $text;
+      color: $text;
     }
   }
 

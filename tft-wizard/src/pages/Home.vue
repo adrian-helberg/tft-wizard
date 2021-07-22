@@ -2,26 +2,30 @@
   <div>
     <MainLayout>
       <template v-slot:header>
-          <div>Learning by doing great at Teamfight Tactics
-            <div class="subtitle">- Get better while you play -</div>
-          </div>
+        <div>
+          Learning by doing great at Teamfight Tactics
+          <div class="subtitle">- Get better while you play -</div>
+        </div>
       </template>
       <template v-slot:content>
         <div class="wrapper">
-          <div>Use the tft-wizard to get build suggestions for the current state of your game to climb the ladder</div>
+          <div>
+            Use the tft-wizard to get build suggestions for the current state of
+            your game to climb the ladder
+          </div>
         </div>
       </template>
     </MainLayout>
   </div>
 </template>
 
-<script lang="ts">
-import MainLayout from '../layouts/MainLayout.vue'
+<script>
+import MainLayout from "../layouts/MainLayout.vue";
 export default {
   name: "Home",
   components: {
-    MainLayout
-  }
+    MainLayout,
+  },
 };
 </script>
 

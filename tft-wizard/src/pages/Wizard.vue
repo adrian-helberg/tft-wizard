@@ -1,137 +1,160 @@
 <template>
   <MainLayout>
-      <div>
-          <div>Wizard for set {{this.$store.state.version}}</div>
-      </div>
-      <template v-slot:header>
-          <div>TFT Build Suggestions for the current state of your game</div>
-      </template>
-      <template v-slot:content>
-          <div class="wizard">
-            <button class="button-clear" @click="clear">Clear</button>
-            <hr width="100%">
-            <div class="container">
-                <div class="left">
-                    <div class="left-title-1">Current Items</div>
-                    <div class="left-content-1">
-                        <div class="placeholder" v-if="$store.state.currentItems.length == 0">Select Items to get better suggestions!</div>
-                        <ElementList :elements="$store.state.currentItems" :size="40" :clickFun="removeCurrentItem" />
-                    </div>
-                    <div class="left-title-2">Items</div>
-                    <div class="left-content-2">
-                        <ElementList :elements="$store.state.baseItems" :size="40" :clickFun="addCurrentItem" />
-                        <hr>
-                        <ElementList :elements="$store.state.combinedItems" :size="40" :clickFun="addCurrentItem" />
-                    </div>
-                </div>
-                <div class="right">
-                    <div class="right-title">Build Suggestions</div>
-                    <div class="right-content">
-                        <div v-for="suggestion of $store.state.suggestions" :key="suggestion.id">
-                            <Build :build="suggestion" :size="56" /> 
-                        </div>
-                    </div>
-                </div>
+    <div>
+      <div>Wizard for set {{ this.$store.state.version }}</div>
+    </div>
+    <template v-slot:header>
+      <div>TFT Build Suggestions for the current state of your game</div>
+    </template>
+    <template v-slot:content>
+      <div class="wizard">
+        <button class="button-clear" @click="clear">Clear</button>
+        <hr width="100%" />
+        <div class="container">
+          <div class="left">
+            <div class="left-title-1">Current Items</div>
+            <div class="left-content-1">
+              <div
+                class="placeholder"
+                v-if="$store.state.currentItems.length == 0"
+              >
+                Select Items to get better suggestions!
+              </div>
+              <ElementList
+                :elements="$store.state.currentItems"
+                :size="40"
+                :clickFun="removeCurrentItem"
+              />
+            </div>
+            <div class="left-title-2">Items</div>
+            <div class="left-content-2">
+              <ElementList
+                :elements="$store.state.baseItems"
+                :size="40"
+                :clickFun="addCurrentItem"
+              />
+              <hr />
+              <ElementList
+                :elements="$store.state.combinedItems"
+                :size="40"
+                :clickFun="addCurrentItem"
+              />
             </div>
           </div>
-      </template>
+          <div class="right">
+            <div class="right-title">Build Suggestions</div>
+            <div class="right-content">
+              <div
+                v-for="suggestion of $store.state.suggestions"
+                :key="suggestion.id"
+              >
+                <Build :build="suggestion" :size="56" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </template>
   </MainLayout>
 </template>
 
-<script lang="ts">
-import MainLayout from '../layouts/MainLayout.vue';
-import ElementList from '../components/ElementList.vue';
-import Build from '../components/Build.vue';
+<script>
+import MainLayout from "../layouts/MainLayout.vue";
+import ElementList from "../components/ElementList.vue";
+import Build from "../components/Build.vue";
 
 export default {
-    name: "Wizard",
-    methods: {
-        addCurrentItem(item) {
-            this.$store.dispatch("addCurrentItem", item);
-        },
-        removeCurrentItem(item) {
-            this.$store.dispatch("removeCurrentItem", item);
-        },
-        clear() {
-            this.$store.dispatch("clearCurrentLists");
-        }
+  name: "Wizard",
+  methods: {
+    addCurrentItem(item) {
+      this.$store.dispatch("addCurrentItem", item);
     },
-    components: {
-        MainLayout, ElementList, Build
-    }
-}
+    removeCurrentItem(item) {
+      this.$store.dispatch("removeCurrentItem", item);
+    },
+    clear() {
+      this.$store.dispatch("clearCurrentLists");
+    },
+  },
+  components: {
+    MainLayout,
+    ElementList,
+    Build,
+  },
+};
 </script>
 
 <style scoped lang="scss">
 @import "../styles/colors.scss";
 
 .button-clear {
-    display: flex;
-    cursor: pointer;
-    align-self: flex-end;
-    background-color: $heading;
+  display: flex;
+  cursor: pointer;
+  align-self: flex-end;
+  background-color: $heading;
 }
 
 .placeholder {
-    color: $text;
+  color: $text;
 }
 
 .container {
-    display: grid;
-    grid-template-columns: 0.6fr 1fr;
-    grid-template-rows: 1fr;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    grid-template-areas:
-    "left right";
+  display: grid;
+  grid-template-columns: 0.6fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "left right";
 }
 
 .left {
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: 30px minmax(30px, min-content) 30px min-content;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    grid-template-areas:
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: 30px minmax(30px, min-content) 30px min-content;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
     "left-title-1"
     "left-content-1"
     "left-title-2"
     "left-content-2";
-    grid-area: left;
+  grid-area: left;
 }
 
-.left-title-1 { 
-    grid-area: left-title-1; 
+.left-title-1 {
+  grid-area: left-title-1;
 }
 
-.left-content-1 { 
-    grid-area: left-content-1; 
+.left-content-1 {
+  grid-area: left-content-1;
 }
 
-.left-title-2 { 
-    grid-area: left-title-2; 
+.left-title-2 {
+  grid-area: left-title-2;
 }
 
-.left-content-2 { grid-area: left-content-2; }
+.left-content-2 {
+  grid-area: left-content-2;
+}
 
 .right {
-    margin-left: 12px;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 30px auto;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    grid-template-areas:
+  margin-left: 12px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 30px auto;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
     "right-title"
     "right-content";
-    grid-area: right;
+  grid-area: right;
 }
 
 .right-title {
-    grid-area: right-title; 
+  grid-area: right-title;
 }
 
-.right-content { 
-    grid-area: right-content; 
+.right-content {
+  grid-area: right-content;
 }
 </style>

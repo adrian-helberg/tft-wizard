@@ -1,272 +1,1181 @@
 [
     {
         "id": 0,
-        "name": "B.F. Sword",
-        "img": "https://rerollcdn.com/items/BFSword.png"
+        "name": "recurve-bow",
+        "displayName": "Recurve bow",
+        "src": "https://fastcdn.mobalytics.gg/assets/tft/images/game-items/set5-5/recurve-bow.png?v1"
     },
     {
         "id": 1,
-        "name": "Chain Vest",
-        "img": "https://rerollcdn.com/items/ChainVest.png"
+        "name": "chain-vest",
+        "displayName": "Chain vest",
+        "src": "https://fastcdn.mobalytics.gg/assets/tft/images/game-items/set5-5/chain-vest.png?v1"
     },
     {
         "id": 2,
-        "name": "Giant's Belt",
-        "img": "https://rerollcdn.com/items/GiantsBelt.png"
+        "name": "giants-belt",
+        "displayName": "Giants belt",
+        "src": "https://fastcdn.mobalytics.gg/assets/tft/images/game-items/set5-5/giants-belt.png?v1"
     },
     {
         "id": 3,
-        "name": "Needlessly Large Rod",
-        "img": "https://rerollcdn.com/items/NeedlesslyLargeRod.png"
+        "name": "tear-of-the-goddess",
+        "displayName": "Tear of",
+        "src": "https://fastcdn.mobalytics.gg/assets/tft/images/game-items/set5-5/tear-of-the-goddess.png?v1"
     },
     {
         "id": 4,
-        "name": "Negatron Cloak",
-        "img": "https://rerollcdn.com/items/NegatronCloak.png"
+        "name": "sparring-gloves",
+        "displayName": "Sparring gloves",
+        "src": "https://fastcdn.mobalytics.gg/assets/tft/images/game-items/set5-5/sparring-gloves.png?v1"
     },
     {
         "id": 5,
-        "name": "Recurve Bow",
-        "img": "https://rerollcdn.com/items/RecurveBow.png"
+        "name": "negatron-cloak",
+        "displayName": "Negatron cloak",
+        "src": "https://fastcdn.mobalytics.gg/assets/tft/images/game-items/set5-5/negatron-cloak.png?v1"
     },
     {
         "id": 6,
-        "name": "Sparring Gloves",
-        "img": "https://rerollcdn.com/items/SparringGloves.png"
+        "name": "bf-sword",
+        "displayName": "Bf sword",
+        "src": "https://fastcdn.mobalytics.gg/assets/tft/images/game-items/set5-5/bf-sword.png?v1"
     },
     {
         "id": 7,
-        "name": "Spatula",
-        "img": "https://rerollcdn.com/items/Spatula.png"
+        "name": "needlessly-large-rod",
+        "displayName": "Needlessly large",
+        "src": "https://fastcdn.mobalytics.gg/assets/tft/images/game-items/set5-5/needlessly-large-rod.png?v1"
     },
     {
         "id": 8,
-        "name": "Tear of the Goddess",
-        "img": "https://rerollcdn.com/items/TearoftheGoddess.png"
+        "name": "spatula",
+        "displayName": "Spatula",
+        "src": "https://fastcdn.mobalytics.gg/assets/tft/images/game-items/set5-5/spatula.png?v1"
     },
     {
         "id": 9,
-        "name": "Assassin Emblem",
-        "img": "https://rerollcdn.com/items/AssassinEmblem.png"
+        "name": "archangels-staff",
+        "displayName": "Archangel's Staff",
+        "src": "https://fastcdn.mobalytics.gg/assets/tft/images/game-items/set5-5/archangels-staff.png?v1",
+        "tier": {
+            "name": "b",
+            "src": "https://fastcdn.mobalytics.gg/assets/common/icons/hex-tiers/B.svg?1"
+        },
+        "bonus": "Each time the wearer casts their spell, they gain Spell Power equal to 45% of their max Mana. This bonus Spell Power affects the same cast it was gained from.",
+        "receipe": [
+            {
+                "id": 3,
+                "name": "tear-of-the-goddess",
+                "displayName": "Tear of",
+                "src": "https://fastcdn.mobalytics.gg/assets/tft/images/game-items/set5-5/tear-of-the-goddess.png?v1"
+            },
+            {
+                "id": 7,
+                "name": "needlessly-large-rod",
+                "displayName": "Needlessly large",
+                "src": "https://fastcdn.mobalytics.gg/assets/tft/images/game-items/set5-5/needlessly-large-rod.png?v1"
+            }
+        ]
     },
     {
         "id": 10,
-        "name": "Dawnbringer Emblem",
-        "img": "https://rerollcdn.com/items/DawnbringerEmblem.png"
+        "name": "assassin-emblem",
+        "displayName": "Assassin Emblem",
+        "src": "https://fastcdn.mobalytics.gg/assets/tft/images/game-items/set5-5/assassin-emblem.png?v1",
+        "tier": {
+            "name": "a",
+            "src": "https://fastcdn.mobalytics.gg/assets/common/icons/hex-tiers/A.svg?1"
+        },
+        "bonus": "Unique The holder gains the Assassin trait.",
+        "receipe": [
+            {
+                "id": 8,
+                "name": "spatula",
+                "displayName": "Spatula",
+                "src": "https://fastcdn.mobalytics.gg/assets/tft/images/game-items/set5-5/spatula.png?v1"
+            },
+            {
+                "id": 4,
+                "name": "sparring-gloves",
+                "displayName": "Sparring gloves",
+                "src": "https://fastcdn.mobalytics.gg/assets/tft/images/game-items/set5-5/sparring-gloves.png?v1"
+            }
+        ]
     },
     {
         "id": 11,
-        "name": "Ironclad Emblem",
-        "img": "https://rerollcdn.com/items/IroncladEmblem.png"
+        "name": "trap-claw",
+        "displayName": "Banshee's Claw",
+        "src": "https://fastcdn.mobalytics.gg/assets/tft/images/game-items/set5-5/trap-claw.png?v1",
+        "tier": {
+            "name": "b",
+            "src": "https://fastcdn.mobalytics.gg/assets/common/icons/hex-tiers/B.svg?1"
+        },
+        "bonus": "When combat begins, the holder and all allies within 1 hex(es) in the same row gain a shield that blocks the first enemy Ability.",
+        "receipe": [
+            {
+                "id": 4,
+                "name": "sparring-gloves",
+                "displayName": "Sparring gloves",
+                "src": "https://fastcdn.mobalytics.gg/assets/tft/images/game-items/set5-5/sparring-gloves.png?v1"
+            },
+            {
+                "id": 2,
+                "name": "giants-belt",
+                "displayName": "Giants belt",
+                "src": "https://fastcdn.mobalytics.gg/assets/tft/images/game-items/set5-5/giants-belt.png?v1"
+            }
+        ]
     },
     {
         "id": 12,
-        "name": "Legionnaire Emblem",
-        "img": "https://rerollcdn.com/items/LegionnaireEmblem.png"
+        "name": "bloodthirster",
+        "displayName": "Bloodthirster",
+        "src": "https://fastcdn.mobalytics.gg/assets/tft/images/game-items/set5-5/bloodthirster.png?v1",
+        "tier": {
+            "name": "s",
+            "src": "https://fastcdn.mobalytics.gg/assets/common/icons/hex-tiers/S.svg?1"
+        },
+        "bonus": "Basic Attacks heal the wearer for 33% of the damage dealt. The first time the wearer would fall below 40% Health, they gain a shield equal to 30% max Health for 5 seconds.",
+        "receipe": [
+            {
+                "id": 6,
+                "name": "bf-sword",
+                "displayName": "Bf sword",
+                "src": "https://fastcdn.mobalytics.gg/assets/tft/images/game-items/set5-5/bf-sword.png?v1"
+            },
+            {
+                "id": 5,
+                "name": "negatron-cloak",
+                "displayName": "Negatron cloak",
+                "src": "https://fastcdn.mobalytics.gg/assets/tft/images/game-items/set5-5/negatron-cloak.png?v1"
+            }
+        ]
     },
     {
         "id": 13,
-        "name": "Redeemed Emblem",
-        "img": "https://rerollcdn.com/items/RedeemedEmblem.png"
+        "name": "blue-buff",
+        "displayName": "Blue Buff",
+        "src": "https://fastcdn.mobalytics.gg/assets/tft/images/game-items/set5-5/blue-buff.png?v1",
+        "tier": {
+            "name": "s",
+            "src": "https://fastcdn.mobalytics.gg/assets/common/icons/hex-tiers/S.svg?1"
+        },
+        "bonus": "Unique After casting their spell, the wearer's Mana is set to 20.",
+        "receipe": [
+            {
+                "id": 3,
+                "name": "tear-of-the-goddess",
+                "displayName": "Tear of",
+                "src": "https://fastcdn.mobalytics.gg/assets/tft/images/game-items/set5-5/tear-of-the-goddess.png?v1"
+            },
+            {
+                "id": 3,
+                "name": "tear-of-the-goddess",
+                "displayName": "Tear of",
+                "src": "https://fastcdn.mobalytics.gg/assets/tft/images/game-items/set5-5/tear-of-the-goddess.png?v1"
+            }
+        ]
     },
     {
         "id": 14,
-        "name": "Renewer Emblem",
-        "img": "https://rerollcdn.com/items/RenewerEmblem.png"
+        "name": "bramble-vest",
+        "displayName": "Bramble Vest",
+        "src": "https://fastcdn.mobalytics.gg/assets/tft/images/game-items/set5-5/bramble-vest.png?v1",
+        "tier": {
+            "name": "s",
+            "src": "https://fastcdn.mobalytics.gg/assets/common/icons/hex-tiers/S.svg?1"
+        },
+        "bonus": "Negates bonus damage from incoming critical hits. On being hit by a Basic Attack, deal 80/100/150★ magic damage to all nearby enemies (once every 2.5 seconds max).",
+        "receipe": [
+            {
+                "id": 1,
+                "name": "chain-vest",
+                "displayName": "Chain vest",
+                "src": "https://fastcdn.mobalytics.gg/assets/tft/images/game-items/set5-5/chain-vest.png?v1"
+            },
+            {
+                "id": 1,
+                "name": "chain-vest",
+                "displayName": "Chain vest",
+                "src": "https://fastcdn.mobalytics.gg/assets/tft/images/game-items/set5-5/chain-vest.png?v1"
+            }
+        ]
     },
     {
         "id": 15,
-        "name": "Skirmisher Emblem",
-        "img": "https://rerollcdn.com/items/SkirmisherEmblem.png"
+        "name": "cavalier-buff",
+        "displayName": "Cavalier Emblem",
+        "src": "https://fastcdn.mobalytics.gg/assets/tft/images/game-items/set5-5/cavalier-buff.png?v1",
+        "tier": {
+            "name": "a",
+            "src": "https://fastcdn.mobalytics.gg/assets/common/icons/hex-tiers/A.svg?1"
+        },
+        "bonus": "Unique The holder gains the Cavalier trait.",
+        "receipe": [
+            {
+                "id": 1,
+                "name": "chain-vest",
+                "displayName": "Chain vest",
+                "src": "https://fastcdn.mobalytics.gg/assets/tft/images/game-items/set5-5/chain-vest.png?v1"
+            },
+            {
+                "id": 8,
+                "name": "spatula",
+                "displayName": "Spatula",
+                "src": "https://fastcdn.mobalytics.gg/assets/tft/images/game-items/set5-5/spatula.png?v1"
+            }
+        ]
     },
     {
         "id": 16,
-        "name": "Spellweaver Emblem",
-        "img": "https://rerollcdn.com/items/SpellweaverEmblem.png"
+        "name": "chalice-of-power",
+        "displayName": "Chalice of Power",
+        "src": "https://fastcdn.mobalytics.gg/assets/tft/images/game-items/set5-5/chalice-of-power.png?v1",
+        "tier": {
+            "name": "s",
+            "src": "https://fastcdn.mobalytics.gg/assets/common/icons/hex-tiers/S.svg?1"
+        },
+        "bonus": "When combat begins, the wearer and all allies within 1 hex in the same row gain 30 Ability Power for the rest of combat.",
+        "receipe": [
+            {
+                "id": 3,
+                "name": "tear-of-the-goddess",
+                "displayName": "Tear of",
+                "src": "https://fastcdn.mobalytics.gg/assets/tft/images/game-items/set5-5/tear-of-the-goddess.png?v1"
+            },
+            {
+                "id": 5,
+                "name": "negatron-cloak",
+                "displayName": "Negatron cloak",
+                "src": "https://fastcdn.mobalytics.gg/assets/tft/images/game-items/set5-5/negatron-cloak.png?v1"
+            }
+        ]
     },
     {
         "id": 17,
-        "name": "Archangel's Staff",
-        "img": "https://rerollcdn.com/items/ArchangelsStaff.png"
+        "name": "dawnbringer-emblem",
+        "displayName": "Dawnbringer Emblem",
+        "src": "https://fastcdn.mobalytics.gg/assets/tft/images/game-items/set5-5/dawnbringer-emblem.png?v1",
+        "tier": {
+            "name": "a",
+            "src": "https://fastcdn.mobalytics.gg/assets/common/icons/hex-tiers/A.svg?1"
+        },
+        "bonus": "Unique The holder gains the Dawnbringer trait.",
+        "receipe": [
+            {
+                "id": 8,
+                "name": "spatula",
+                "displayName": "Spatula",
+                "src": "https://fastcdn.mobalytics.gg/assets/tft/images/game-items/set5-5/spatula.png?v1"
+            },
+            {
+                "id": 2,
+                "name": "giants-belt",
+                "displayName": "Giants belt",
+                "src": "https://fastcdn.mobalytics.gg/assets/tft/images/game-items/set5-5/giants-belt.png?v1"
+            }
+        ]
     },
     {
         "id": 18,
-        "name": "Bloodthirster",
-        "img": "https://rerollcdn.com/items/Bloodthirster.png"
+        "name": "deathblade",
+        "displayName": "Deathblade",
+        "src": "https://fastcdn.mobalytics.gg/assets/tft/images/game-items/set5-5/deathblade.png?v1",
+        "tier": {
+            "name": "a",
+            "src": "https://fastcdn.mobalytics.gg/assets/common/icons/hex-tiers/A.svg?1"
+        },
+        "bonus": "Contributing to a kill grants +10 Attack Damage for the remainder of combat. This effect can stack any number of times (starting at 4).",
+        "receipe": [
+            {
+                "id": 6,
+                "name": "bf-sword",
+                "displayName": "Bf sword",
+                "src": "https://fastcdn.mobalytics.gg/assets/tft/images/game-items/set5-5/bf-sword.png?v1"
+            },
+            {
+                "id": 6,
+                "name": "bf-sword",
+                "displayName": "Bf sword",
+                "src": "https://fastcdn.mobalytics.gg/assets/tft/images/game-items/set5-5/bf-sword.png?v1"
+            }
+        ]
     },
     {
         "id": 19,
-        "name": "Blue Buff",
-        "img": "https://rerollcdn.com/items/BlueBuff.png"
+        "name": "dragons-claw",
+        "displayName": "Dragon's Claw",
+        "src": "https://fastcdn.mobalytics.gg/assets/tft/images/game-items/set5-5/dragons-claw.png?v1",
+        "tier": {
+            "name": "a",
+            "src": "https://fastcdn.mobalytics.gg/assets/common/icons/hex-tiers/A.svg?1"
+        },
+        "bonus": "Grants 200 bonus Magic Resist (including components). On being hit by magic or true damage from an Ability, launch a fireball at the Ability's caster that deals true damage equal to 30% of their max Health (1 second cooldown).",
+        "receipe": [
+            {
+                "id": 5,
+                "name": "negatron-cloak",
+                "displayName": "Negatron cloak",
+                "src": "https://fastcdn.mobalytics.gg/assets/tft/images/game-items/set5-5/negatron-cloak.png?v1"
+            },
+            {
+                "id": 5,
+                "name": "negatron-cloak",
+                "displayName": "Negatron cloak",
+                "src": "https://fastcdn.mobalytics.gg/assets/tft/images/game-items/set5-5/negatron-cloak.png?v1"
+            }
+        ]
     },
     {
         "id": 20,
-        "name": "Bramble Vest",
-        "img": "https://rerollcdn.com/items/BrambleVest.png"
+        "name": "force-of-nature",
+        "displayName": "Force of Nature",
+        "src": "https://fastcdn.mobalytics.gg/assets/tft/images/game-items/set5-5/force-of-nature.png?v1",
+        "tier": {
+            "name": "s",
+            "src": "https://fastcdn.mobalytics.gg/assets/common/icons/hex-tiers/S.svg?1"
+        },
+        "bonus": "Gain +1 team size.",
+        "receipe": [
+            {
+                "id": 8,
+                "name": "spatula",
+                "displayName": "Spatula",
+                "src": "https://fastcdn.mobalytics.gg/assets/tft/images/game-items/set5-5/spatula.png?v1"
+            },
+            {
+                "id": 8,
+                "name": "spatula",
+                "displayName": "Spatula",
+                "src": "https://fastcdn.mobalytics.gg/assets/tft/images/game-items/set5-5/spatula.png?v1"
+            }
+        ]
     },
     {
         "id": 21,
-        "name": "Chalice of Power",
-        "img": "https://rerollcdn.com/items/ChaliceofPower.png"
+        "name": "frozen-heart",
+        "displayName": "Frozen Heart",
+        "src": "https://fastcdn.mobalytics.gg/assets/tft/images/game-items/set5-5/frozen-heart.png?v1",
+        "tier": {
+            "name": "b",
+            "src": "https://fastcdn.mobalytics.gg/assets/common/icons/hex-tiers/B.svg?1"
+        },
+        "bonus": "Unique Reduces the Attack Speed of enemies within 2 hexes by 25%.",
+        "receipe": [
+            {
+                "id": 3,
+                "name": "tear-of-the-goddess",
+                "displayName": "Tear of",
+                "src": "https://fastcdn.mobalytics.gg/assets/tft/images/game-items/set5-5/tear-of-the-goddess.png?v1"
+            },
+            {
+                "id": 1,
+                "name": "chain-vest",
+                "displayName": "Chain vest",
+                "src": "https://fastcdn.mobalytics.gg/assets/tft/images/game-items/set5-5/chain-vest.png?v1"
+            }
+        ]
     },
     {
         "id": 22,
-        "name": "Deathblade",
-        "img": "https://rerollcdn.com/items/Deathblade.png"
+        "name": "gargoyle-stoneplate",
+        "displayName": "Gargoyle Stoneplate",
+        "src": "https://fastcdn.mobalytics.gg/assets/tft/images/game-items/set5-5/gargoyle-stoneplate.png?v1",
+        "tier": {
+            "name": "s",
+            "src": "https://fastcdn.mobalytics.gg/assets/common/icons/hex-tiers/S.svg?1"
+        },
+        "bonus": "The holder gains 18 Armor and Magic Resist for each enemy targeting them.",
+        "receipe": [
+            {
+                "id": 1,
+                "name": "chain-vest",
+                "displayName": "Chain vest",
+                "src": "https://fastcdn.mobalytics.gg/assets/tft/images/game-items/set5-5/chain-vest.png?v1"
+            },
+            {
+                "id": 5,
+                "name": "negatron-cloak",
+                "displayName": "Negatron cloak",
+                "src": "https://fastcdn.mobalytics.gg/assets/tft/images/game-items/set5-5/negatron-cloak.png?v1"
+            }
+        ]
     },
     {
         "id": 23,
-        "name": "Dragon's Claw",
-        "img": "https://rerollcdn.com/items/DragonsClaw.png"
+        "name": "giant-slayer",
+        "displayName": "Giant Slayer",
+        "src": "https://fastcdn.mobalytics.gg/assets/tft/images/game-items/set5-5/giant-slayer.png?v1",
+        "tier": {
+            "name": "b",
+            "src": "https://fastcdn.mobalytics.gg/assets/common/icons/hex-tiers/B.svg?1"
+        },
+        "bonus": "The holder's spells and basic attacks do 10% bonus damage. If the target has more than 1650 maximum Health, the bonus increases to 75%.",
+        "receipe": [
+            {
+                "id": 6,
+                "name": "bf-sword",
+                "displayName": "Bf sword",
+                "src": "https://fastcdn.mobalytics.gg/assets/tft/images/game-items/set5-5/bf-sword.png?v1"
+            },
+            {
+                "id": 0,
+                "name": "recurve-bow",
+                "displayName": "Recurve bow",
+                "src": "https://fastcdn.mobalytics.gg/assets/tft/images/game-items/set5-5/recurve-bow.png?v1"
+            }
+        ]
     },
     {
         "id": 24,
-        "name": "Force of Nature",
-        "img": "https://rerollcdn.com/items/ForceofNature.png"
+        "name": "guardian-angel",
+        "displayName": "Guardian Angel",
+        "src": "https://fastcdn.mobalytics.gg/assets/tft/images/game-items/set5-5/guardian-angel.png?v1",
+        "tier": {
+            "name": "s",
+            "src": "https://fastcdn.mobalytics.gg/assets/common/icons/hex-tiers/S.svg?1"
+        },
+        "bonus": "Prevents the wearer's first death, placing them in stasis instead. After 2 seconds, they return with 400 Health and shed all negative effects.",
+        "receipe": [
+            {
+                "id": 1,
+                "name": "chain-vest",
+                "displayName": "Chain vest",
+                "src": "https://fastcdn.mobalytics.gg/assets/tft/images/game-items/set5-5/chain-vest.png?v1"
+            },
+            {
+                "id": 6,
+                "name": "bf-sword",
+                "displayName": "Bf sword",
+                "src": "https://fastcdn.mobalytics.gg/assets/tft/images/game-items/set5-5/bf-sword.png?v1"
+            }
+        ]
     },
     {
         "id": 25,
-        "name": "Frozen Heart",
-        "img": "https://rerollcdn.com/items/FrozenHeart.png"
+        "name": "guinsoos-rageblade",
+        "displayName": "Guinsoo's Rageblade",
+        "src": "https://fastcdn.mobalytics.gg/assets/tft/images/game-items/set5-5/guinsoos-rageblade.png?v1",
+        "tier": {
+            "name": "s",
+            "src": "https://fastcdn.mobalytics.gg/assets/common/icons/hex-tiers/S.svg?1"
+        },
+        "bonus": "Basic Attacks grant +6% bonus Attack Speed for the rest of combat. This effect can stack any number of times.",
+        "receipe": [
+            {
+                "id": 7,
+                "name": "needlessly-large-rod",
+                "displayName": "Needlessly large",
+                "src": "https://fastcdn.mobalytics.gg/assets/tft/images/game-items/set5-5/needlessly-large-rod.png?v1"
+            },
+            {
+                "id": 0,
+                "name": "recurve-bow",
+                "displayName": "Recurve bow",
+                "src": "https://fastcdn.mobalytics.gg/assets/tft/images/game-items/set5-5/recurve-bow.png?v1"
+            }
+        ]
     },
     {
         "id": 26,
-        "name": "Gargoyle Stoneplate",
-        "img": "https://rerollcdn.com/items/GargoyleStoneplate.png"
+        "name": "hand-of-justice",
+        "displayName": "Hand of Justice",
+        "src": "https://fastcdn.mobalytics.gg/assets/tft/images/game-items/set5-5/hand-of-justice.png?v1",
+        "tier": {
+            "name": "a",
+            "src": "https://fastcdn.mobalytics.gg/assets/common/icons/hex-tiers/A.svg?1"
+        },
+        "bonus": "The holder gains both of the following:",
+        "receipe": [
+            {
+                "id": 3,
+                "name": "tear-of-the-goddess",
+                "displayName": "Tear of",
+                "src": "https://fastcdn.mobalytics.gg/assets/tft/images/game-items/set5-5/tear-of-the-goddess.png?v1"
+            },
+            {
+                "id": 4,
+                "name": "sparring-gloves",
+                "displayName": "Sparring gloves",
+                "src": "https://fastcdn.mobalytics.gg/assets/tft/images/game-items/set5-5/sparring-gloves.png?v1"
+            }
+        ]
     },
     {
         "id": 27,
-        "name": "Giant Slayer",
-        "img": "https://rerollcdn.com/items/GiantSlayer.png"
+        "name": "hellion-buff",
+        "displayName": "Hellion Emblem",
+        "src": "https://fastcdn.mobalytics.gg/assets/tft/images/game-items/set5-5/hellion-buff.png?v1",
+        "tier": {
+            "name": "a",
+            "src": "https://fastcdn.mobalytics.gg/assets/common/icons/hex-tiers/A.svg?1"
+        },
+        "bonus": "Unique The holder gains the Hellion trait.",
+        "receipe": [
+            {
+                "id": 0,
+                "name": "recurve-bow",
+                "displayName": "Recurve bow",
+                "src": "https://fastcdn.mobalytics.gg/assets/tft/images/game-items/set5-5/recurve-bow.png?v1"
+            },
+            {
+                "id": 8,
+                "name": "spatula",
+                "displayName": "Spatula",
+                "src": "https://fastcdn.mobalytics.gg/assets/tft/images/game-items/set5-5/spatula.png?v1"
+            }
+        ]
     },
     {
         "id": 28,
-        "name": "Guardian Angel",
-        "img": "https://rerollcdn.com/items/GuardianAngel.png"
+        "name": "hextech-gunblade",
+        "displayName": "Hextech Gunblade",
+        "src": "https://fastcdn.mobalytics.gg/assets/tft/images/game-items/set5-5/hextech-gunblade.png?v1",
+        "tier": {
+            "name": "s",
+            "src": "https://fastcdn.mobalytics.gg/assets/common/icons/hex-tiers/S.svg?1"
+        },
+        "bonus": "The holder's spells heal them for 33% of the damage dealt. Excess healing fuels a shield that protects the holder against up to 300 damage.",
+        "receipe": [
+            {
+                "id": 6,
+                "name": "bf-sword",
+                "displayName": "Bf sword",
+                "src": "https://fastcdn.mobalytics.gg/assets/tft/images/game-items/set5-5/bf-sword.png?v1"
+            },
+            {
+                "id": 7,
+                "name": "needlessly-large-rod",
+                "displayName": "Needlessly large",
+                "src": "https://fastcdn.mobalytics.gg/assets/tft/images/game-items/set5-5/needlessly-large-rod.png?v1"
+            }
+        ]
     },
     {
         "id": 29,
-        "name": "Guinsoo's Rageblade",
-        "img": "https://rerollcdn.com/items/GuinsoosRageblade.png"
+        "name": "infinity-edge",
+        "displayName": "Infinity Edge",
+        "src": "https://fastcdn.mobalytics.gg/assets/tft/images/game-items/set5-5/infinity-edge.png?v1",
+        "tier": {
+            "name": "s",
+            "src": "https://fastcdn.mobalytics.gg/assets/common/icons/hex-tiers/S.svg?1"
+        },
+        "bonus": "Unique The user gains 75% Critical Strike Chance (including base components). The user gains 10% Critical Strike Damage. Each point of Critical Strike Chance above 100% is converted to 0.5% Critical Strike Damage.",
+        "receipe": [
+            {
+                "id": 6,
+                "name": "bf-sword",
+                "displayName": "Bf sword",
+                "src": "https://fastcdn.mobalytics.gg/assets/tft/images/game-items/set5-5/bf-sword.png?v1"
+            },
+            {
+                "id": 4,
+                "name": "sparring-gloves",
+                "displayName": "Sparring gloves",
+                "src": "https://fastcdn.mobalytics.gg/assets/tft/images/game-items/set5-5/sparring-gloves.png?v1"
+            }
+        ]
     },
     {
         "id": 30,
-        "name": "Hand of Justice",
-        "img": "https://rerollcdn.com/items/HandofJustice.png"
+        "name": "ionic-spark",
+        "displayName": "Ionic Spark",
+        "src": "https://fastcdn.mobalytics.gg/assets/tft/images/game-items/set5-5/ionic-spark.png?v1",
+        "tier": {
+            "name": "b",
+            "src": "https://fastcdn.mobalytics.gg/assets/common/icons/hex-tiers/B.svg?1"
+        },
+        "bonus": "Enemies within 2 hexes have their Magic Resist reduced by 50% (does not stack). When they cast a spell, they are zapped taking magic damage equal to 250% of their max Mana.",
+        "receipe": [
+            {
+                "id": 7,
+                "name": "needlessly-large-rod",
+                "displayName": "Needlessly large",
+                "src": "https://fastcdn.mobalytics.gg/assets/tft/images/game-items/set5-5/needlessly-large-rod.png?v1"
+            },
+            {
+                "id": 5,
+                "name": "negatron-cloak",
+                "displayName": "Negatron cloak",
+                "src": "https://fastcdn.mobalytics.gg/assets/tft/images/game-items/set5-5/negatron-cloak.png?v1"
+            }
+        ]
     },
     {
         "id": 31,
-        "name": "Hextech Gunblade",
-        "img": "https://rerollcdn.com/items/HextechGunblade.png"
+        "name": "jeweled-gauntlet",
+        "displayName": "Jeweled Gauntlet",
+        "src": "https://fastcdn.mobalytics.gg/assets/tft/images/game-items/set5-5/jeweled-gauntlet.png?v1",
+        "tier": {
+            "name": "s",
+            "src": "https://fastcdn.mobalytics.gg/assets/common/icons/hex-tiers/S.svg?1"
+        },
+        "bonus": "The holder's spells can cause critical hits, and holder gains +40% Critical Strike Damage.",
+        "receipe": [
+            {
+                "id": 7,
+                "name": "needlessly-large-rod",
+                "displayName": "Needlessly large",
+                "src": "https://fastcdn.mobalytics.gg/assets/tft/images/game-items/set5-5/needlessly-large-rod.png?v1"
+            },
+            {
+                "id": 4,
+                "name": "sparring-gloves",
+                "displayName": "Sparring gloves",
+                "src": "https://fastcdn.mobalytics.gg/assets/tft/images/game-items/set5-5/sparring-gloves.png?v1"
+            }
+        ]
     },
     {
         "id": 32,
-        "name": "Infinity Edge",
-        "img": "https://rerollcdn.com/items/InfinityEdge.png"
+        "name": "last-whisper",
+        "displayName": "Last Whisper",
+        "src": "https://fastcdn.mobalytics.gg/assets/tft/images/game-items/set5-5/last-whisper.png?v1",
+        "tier": {
+            "name": "s",
+            "src": "https://fastcdn.mobalytics.gg/assets/common/icons/hex-tiers/S.svg?1"
+        },
+        "bonus": "Unique When the wearer inflicts a critical hit, the target's Armor is reduced by 70% for 5 seconds. This effect does not stack.",
+        "receipe": [
+            {
+                "id": 0,
+                "name": "recurve-bow",
+                "displayName": "Recurve bow",
+                "src": "https://fastcdn.mobalytics.gg/assets/tft/images/game-items/set5-5/recurve-bow.png?v1"
+            },
+            {
+                "id": 4,
+                "name": "sparring-gloves",
+                "displayName": "Sparring gloves",
+                "src": "https://fastcdn.mobalytics.gg/assets/tft/images/game-items/set5-5/sparring-gloves.png?v1"
+            }
+        ]
     },
     {
         "id": 33,
-        "name": "Ionic Spark",
-        "img": "https://rerollcdn.com/items/IonicSpark.png"
+        "name": "locket-of-the-iron-solari",
+        "displayName": "Locket of the Iron Solari",
+        "src": "https://fastcdn.mobalytics.gg/assets/tft/images/game-items/set5-5/locket-of-the-iron-solari.png?v1",
+        "tier": {
+            "name": "b",
+            "src": "https://fastcdn.mobalytics.gg/assets/common/icons/hex-tiers/B.svg?1"
+        },
+        "bonus": "When combat begins, the wearer and all allies within 2 hexes in the same row gain a shield that blocks 300/350/450★ damage for 8 seconds.",
+        "receipe": [
+            {
+                "id": 7,
+                "name": "needlessly-large-rod",
+                "displayName": "Needlessly large",
+                "src": "https://fastcdn.mobalytics.gg/assets/tft/images/game-items/set5-5/needlessly-large-rod.png?v1"
+            },
+            {
+                "id": 1,
+                "name": "chain-vest",
+                "displayName": "Chain vest",
+                "src": "https://fastcdn.mobalytics.gg/assets/tft/images/game-items/set5-5/chain-vest.png?v1"
+            }
+        ]
     },
     {
         "id": 34,
-        "name": "Jeweled Gauntlet",
-        "img": "https://rerollcdn.com/items/JeweledGauntlet.png"
+        "name": "morellonomicon",
+        "displayName": "Morellonomicon",
+        "src": "https://fastcdn.mobalytics.gg/assets/tft/images/game-items/set5-5/morellonomicon.png?v1",
+        "tier": {
+            "name": "s",
+            "src": "https://fastcdn.mobalytics.gg/assets/common/icons/hex-tiers/S.svg?1"
+        },
+        "bonus": "Unique When the holder deals damage with their spell, they burn the target, dealing 25% of the target's maximum Health as true damage over 10 seconds and reducing healing by 50% for the duration of the burn.",
+        "receipe": [
+            {
+                "id": 7,
+                "name": "needlessly-large-rod",
+                "displayName": "Needlessly large",
+                "src": "https://fastcdn.mobalytics.gg/assets/tft/images/game-items/set5-5/needlessly-large-rod.png?v1"
+            },
+            {
+                "id": 2,
+                "name": "giants-belt",
+                "displayName": "Giants belt",
+                "src": "https://fastcdn.mobalytics.gg/assets/tft/images/game-items/set5-5/giants-belt.png?v1"
+            }
+        ]
     },
     {
         "id": 35,
-        "name": "Last Whisper",
-        "img": "https://rerollcdn.com/items/LastWhisper.png"
+        "name": "quicksilver",
+        "displayName": "Quicksilver",
+        "src": "https://fastcdn.mobalytics.gg/assets/tft/images/game-items/set5-5/quicksilver.png?v1",
+        "tier": {
+            "name": "a",
+            "src": "https://fastcdn.mobalytics.gg/assets/common/icons/hex-tiers/A.svg?1"
+        },
+        "bonus": "Unique The wearer is immune to crowd control for the first 12 seconds of combat.",
+        "receipe": [
+            {
+                "id": 4,
+                "name": "sparring-gloves",
+                "displayName": "Sparring gloves",
+                "src": "https://fastcdn.mobalytics.gg/assets/tft/images/game-items/set5-5/sparring-gloves.png?v1"
+            },
+            {
+                "id": 5,
+                "name": "negatron-cloak",
+                "displayName": "Negatron cloak",
+                "src": "https://fastcdn.mobalytics.gg/assets/tft/images/game-items/set5-5/negatron-cloak.png?v1"
+            }
+        ]
     },
     {
         "id": 36,
-        "name": "Locket of the Iron Solari",
-        "img": "https://rerollcdn.com/items/LocketoftheIronSolari.png"
+        "name": "rabadons-deathcap",
+        "displayName": "Rabadon's Deathcap",
+        "src": "https://fastcdn.mobalytics.gg/assets/tft/images/game-items/set5-5/rabadons-deathcap.png?v1",
+        "tier": {
+            "name": "a",
+            "src": "https://fastcdn.mobalytics.gg/assets/common/icons/hex-tiers/A.svg?1"
+        },
+        "bonus": "The holder gains 50 additional Ability Power.",
+        "receipe": [
+            {
+                "id": 7,
+                "name": "needlessly-large-rod",
+                "displayName": "Needlessly large",
+                "src": "https://fastcdn.mobalytics.gg/assets/tft/images/game-items/set5-5/needlessly-large-rod.png?v1"
+            },
+            {
+                "id": 7,
+                "name": "needlessly-large-rod",
+                "displayName": "Needlessly large",
+                "src": "https://fastcdn.mobalytics.gg/assets/tft/images/game-items/set5-5/needlessly-large-rod.png?v1"
+            }
+        ]
     },
     {
         "id": 37,
-        "name": "Morellonomicon",
-        "img": "https://rerollcdn.com/items/Morellonomicon.png"
+        "name": "rapid-firecannon",
+        "displayName": "Rapid Firecannon",
+        "src": "https://fastcdn.mobalytics.gg/assets/tft/images/game-items/set5-5/rapid-firecannon.png?v1",
+        "tier": {
+            "name": "a",
+            "src": "https://fastcdn.mobalytics.gg/assets/common/icons/hex-tiers/A.svg?1"
+        },
+        "bonus": "Increases the wearer's Attack Range by 1 hex and grants 20% bonus Attack Speed. The wearer's Basic Attacks can no longer miss.",
+        "receipe": [
+            {
+                "id": 0,
+                "name": "recurve-bow",
+                "displayName": "Recurve bow",
+                "src": "https://fastcdn.mobalytics.gg/assets/tft/images/game-items/set5-5/recurve-bow.png?v1"
+            },
+            {
+                "id": 0,
+                "name": "recurve-bow",
+                "displayName": "Recurve bow",
+                "src": "https://fastcdn.mobalytics.gg/assets/tft/images/game-items/set5-5/recurve-bow.png?v1"
+            }
+        ]
     },
     {
         "id": 38,
-        "name": "Quicksilver",
-        "img": "https://rerollcdn.com/items/Quicksilver.png"
+        "name": "redeemed-emblem",
+        "displayName": "Redeemed Emblem",
+        "src": "https://fastcdn.mobalytics.gg/assets/tft/images/game-items/set5-5/redeemed-emblem.png?v1",
+        "tier": {
+            "name": "a",
+            "src": "https://fastcdn.mobalytics.gg/assets/common/icons/hex-tiers/A.svg?1"
+        },
+        "bonus": "Unique The holder gains the Redeemed trait.",
+        "receipe": [
+            {
+                "id": 8,
+                "name": "spatula",
+                "displayName": "Spatula",
+                "src": "https://fastcdn.mobalytics.gg/assets/tft/images/game-items/set5-5/spatula.png?v1"
+            },
+            {
+                "id": 5,
+                "name": "negatron-cloak",
+                "displayName": "Negatron cloak",
+                "src": "https://fastcdn.mobalytics.gg/assets/tft/images/game-items/set5-5/negatron-cloak.png?v1"
+            }
+        ]
     },
     {
         "id": 39,
-        "name": "Rabadon's Deathcap",
-        "img": "https://rerollcdn.com/items/RabadonsDeathcap.png"
+        "name": "redemption",
+        "displayName": "Redemption",
+        "src": "https://fastcdn.mobalytics.gg/assets/tft/images/game-items/set5-5/redemption.png?v1",
+        "tier": {
+            "name": "s",
+            "src": "https://fastcdn.mobalytics.gg/assets/common/icons/hex-tiers/S.svg?1"
+        },
+        "bonus": "The wearer radiates an aura to allies within 1 Hex, healing them for 20% of their missing Health every 5 seconds. Allies affected by the aura take 25% reduced damage from area-of-effect attacks.",
+        "receipe": [
+            {
+                "id": 3,
+                "name": "tear-of-the-goddess",
+                "displayName": "Tear of",
+                "src": "https://fastcdn.mobalytics.gg/assets/tft/images/game-items/set5-5/tear-of-the-goddess.png?v1"
+            },
+            {
+                "id": 2,
+                "name": "giants-belt",
+                "displayName": "Giants belt",
+                "src": "https://fastcdn.mobalytics.gg/assets/tft/images/game-items/set5-5/giants-belt.png?v1"
+            }
+        ]
     },
     {
         "id": 40,
-        "name": "Rapid Firecannon",
-        "img": "https://rerollcdn.com/items/RapidFirecannon.png"
+        "name": "renewer-emblem",
+        "displayName": "Renewer Emblem",
+        "src": "https://fastcdn.mobalytics.gg/assets/tft/images/game-items/set5-5/renewer-emblem.png?v1",
+        "tier": {
+            "name": "a",
+            "src": "https://fastcdn.mobalytics.gg/assets/common/icons/hex-tiers/A.svg?1"
+        },
+        "bonus": "Unique The holder gains the Renewer trait.",
+        "receipe": [
+            {
+                "id": 8,
+                "name": "spatula",
+                "displayName": "Spatula",
+                "src": "https://fastcdn.mobalytics.gg/assets/tft/images/game-items/set5-5/spatula.png?v1"
+            },
+            {
+                "id": 3,
+                "name": "tear-of-the-goddess",
+                "displayName": "Tear of",
+                "src": "https://fastcdn.mobalytics.gg/assets/tft/images/game-items/set5-5/tear-of-the-goddess.png?v1"
+            }
+        ]
     },
     {
         "id": 41,
-        "name": "Redemption",
-        "img": "https://rerollcdn.com/items/Redemption.png"
+        "name": "runaans-hurricane",
+        "displayName": "Runaan's Hurricane",
+        "src": "https://fastcdn.mobalytics.gg/assets/tft/images/game-items/set5-5/runaans-hurricane.png?v1",
+        "tier": {
+            "name": "s",
+            "src": "https://fastcdn.mobalytics.gg/assets/common/icons/hex-tiers/S.svg?1"
+        },
+        "bonus": "Basic Attacks fire a bolt at another nearby enemy, dealing 75% of the wearer's Attack Damage and applying on-hit effects. These bolts can critically strike.",
+        "receipe": [
+            {
+                "id": 0,
+                "name": "recurve-bow",
+                "displayName": "Recurve bow",
+                "src": "https://fastcdn.mobalytics.gg/assets/tft/images/game-items/set5-5/recurve-bow.png?v1"
+            },
+            {
+                "id": 5,
+                "name": "negatron-cloak",
+                "displayName": "Negatron cloak",
+                "src": "https://fastcdn.mobalytics.gg/assets/tft/images/game-items/set5-5/negatron-cloak.png?v1"
+            }
+        ]
     },
     {
         "id": 42,
-        "name": "Runaan's Hurricane",
-        "img": "https://rerollcdn.com/items/RunaansHurricane.png"
+        "name": "shroud-of-stillness",
+        "displayName": "Shroud of Stillness",
+        "src": "https://fastcdn.mobalytics.gg/assets/tft/images/game-items/set5-5/shroud-of-stillness.png?v1",
+        "tier": {
+            "name": "a",
+            "src": "https://fastcdn.mobalytics.gg/assets/common/icons/hex-tiers/A.svg?1"
+        },
+        "bonus": "Unique When combat begins, shoots a beam straight ahead that delays affected enemies' first spellcast, increasing their max Mana by 35% until they cast.",
+        "receipe": [
+            {
+                "id": 4,
+                "name": "sparring-gloves",
+                "displayName": "Sparring gloves",
+                "src": "https://fastcdn.mobalytics.gg/assets/tft/images/game-items/set5-5/sparring-gloves.png?v1"
+            },
+            {
+                "id": 1,
+                "name": "chain-vest",
+                "displayName": "Chain vest",
+                "src": "https://fastcdn.mobalytics.gg/assets/tft/images/game-items/set5-5/chain-vest.png?v1"
+            }
+        ]
     },
     {
         "id": 43,
-        "name": "Shroud of Stillness",
-        "img": "https://rerollcdn.com/items/ShroudofStillness.png"
+        "name": "skirmisher-emblem",
+        "displayName": "Skirmisher Emblem",
+        "src": "https://fastcdn.mobalytics.gg/assets/tft/images/game-items/set5-5/skirmisher-emblem.png?v1",
+        "tier": {
+            "name": "a",
+            "src": "https://fastcdn.mobalytics.gg/assets/common/icons/hex-tiers/A.svg?1"
+        },
+        "bonus": "Unique The holder gains the Skirmisher trait.",
+        "receipe": [
+            {
+                "id": 8,
+                "name": "spatula",
+                "displayName": "Spatula",
+                "src": "https://fastcdn.mobalytics.gg/assets/tft/images/game-items/set5-5/spatula.png?v1"
+            },
+            {
+                "id": 6,
+                "name": "bf-sword",
+                "displayName": "Bf sword",
+                "src": "https://fastcdn.mobalytics.gg/assets/tft/images/game-items/set5-5/bf-sword.png?v1"
+            }
+        ]
     },
     {
         "id": 44,
-        "name": "Spear of Shojin",
-        "img": "https://rerollcdn.com/items/SpearofShojin.png"
+        "name": "spear-of-shojin",
+        "displayName": "Spear of Shojin",
+        "src": "https://fastcdn.mobalytics.gg/assets/tft/images/game-items/set5-5/spear-of-shojin.png?v1",
+        "tier": {
+            "name": "s",
+            "src": "https://fastcdn.mobalytics.gg/assets/common/icons/hex-tiers/S.svg?1"
+        },
+        "bonus": "The holder's basic attacks restore 5 Mana on-hit.",
+        "receipe": [
+            {
+                "id": 3,
+                "name": "tear-of-the-goddess",
+                "displayName": "Tear of",
+                "src": "https://fastcdn.mobalytics.gg/assets/tft/images/game-items/set5-5/tear-of-the-goddess.png?v1"
+            },
+            {
+                "id": 6,
+                "name": "bf-sword",
+                "displayName": "Bf sword",
+                "src": "https://fastcdn.mobalytics.gg/assets/tft/images/game-items/set5-5/bf-sword.png?v1"
+            }
+        ]
     },
     {
         "id": 45,
-        "name": "Statikk Shiv",
-        "img": "https://rerollcdn.com/items/StatikkShiv.png"
+        "name": "spellweaver-emblem",
+        "displayName": "Spellweaver Emblem",
+        "src": "https://fastcdn.mobalytics.gg/assets/tft/images/game-items/set5-5/spellweaver-emblem.png?v1",
+        "tier": {
+            "name": "a",
+            "src": "https://fastcdn.mobalytics.gg/assets/common/icons/hex-tiers/A.svg?1"
+        },
+        "bonus": "Unique The holder gains the Spellweaver trait.",
+        "receipe": [
+            {
+                "id": 8,
+                "name": "spatula",
+                "displayName": "Spatula",
+                "src": "https://fastcdn.mobalytics.gg/assets/tft/images/game-items/set5-5/spatula.png?v1"
+            },
+            {
+                "id": 7,
+                "name": "needlessly-large-rod",
+                "displayName": "Needlessly large",
+                "src": "https://fastcdn.mobalytics.gg/assets/tft/images/game-items/set5-5/needlessly-large-rod.png?v1"
+            }
+        ]
     },
     {
         "id": 46,
-        "name": "Sunfire Cape",
-        "img": "https://rerollcdn.com/items/SunfireCape.png"
+        "name": "statikk-shiv",
+        "displayName": "Statikk Shiv",
+        "src": "https://fastcdn.mobalytics.gg/assets/tft/images/game-items/set5-5/statikk-shiv.png?v1",
+        "tier": {
+            "name": "a",
+            "src": "https://fastcdn.mobalytics.gg/assets/common/icons/hex-tiers/A.svg?1"
+        },
+        "bonus": "Every third Basic Attack from the wearer deals 70 magic damage to 4 enemies. Critical strikes from this effect reduce the targets' Magic Resist by 50% for 6 seconds.",
+        "receipe": [
+            {
+                "id": 0,
+                "name": "recurve-bow",
+                "displayName": "Recurve bow",
+                "src": "https://fastcdn.mobalytics.gg/assets/tft/images/game-items/set5-5/recurve-bow.png?v1"
+            },
+            {
+                "id": 3,
+                "name": "tear-of-the-goddess",
+                "displayName": "Tear of",
+                "src": "https://fastcdn.mobalytics.gg/assets/tft/images/game-items/set5-5/tear-of-the-goddess.png?v1"
+            }
+        ]
     },
     {
         "id": 47,
-        "name": "Thief's Gloves",
-        "img": "https://rerollcdn.com/items/ThiefsGloves.png"
+        "name": "sunfire-cape",
+        "displayName": "Sunfire Cape",
+        "src": "https://fastcdn.mobalytics.gg/assets/tft/images/game-items/set5-5/sunfire-cape.png?v1",
+        "tier": {
+            "name": "b",
+            "src": "https://fastcdn.mobalytics.gg/assets/common/icons/hex-tiers/B.svg?1"
+        },
+        "bonus": "At the start of combat and every 2.5 seconds thereafter, a random enemy within 2 hexes is burned for 25% of their maximum health over 10 seconds. Any healing they receive is reduced by 50%.",
+        "receipe": [
+            {
+                "id": 1,
+                "name": "chain-vest",
+                "displayName": "Chain vest",
+                "src": "https://fastcdn.mobalytics.gg/assets/tft/images/game-items/set5-5/chain-vest.png?v1"
+            },
+            {
+                "id": 2,
+                "name": "giants-belt",
+                "displayName": "Giants belt",
+                "src": "https://fastcdn.mobalytics.gg/assets/tft/images/game-items/set5-5/giants-belt.png?v1"
+            }
+        ]
     },
     {
         "id": 48,
-        "name": "Titan's Resolve",
-        "img": "https://rerollcdn.com/items/TitansResolve.png"
+        "name": "thiefs-gloves",
+        "displayName": "Thief's Gloves",
+        "src": "https://fastcdn.mobalytics.gg/assets/tft/images/game-items/set5-5/thiefs-gloves.png?v1",
+        "tier": {
+            "name": "b",
+            "src": "https://fastcdn.mobalytics.gg/assets/common/icons/hex-tiers/B.svg?1"
+        },
+        "bonus": "At the beginning of each planning phase, the wearer equips 2 temporary items. Temporary items increase in power based on your player level (consumes 3 item slots).",
+        "receipe": [
+            {
+                "id": 4,
+                "name": "sparring-gloves",
+                "displayName": "Sparring gloves",
+                "src": "https://fastcdn.mobalytics.gg/assets/tft/images/game-items/set5-5/sparring-gloves.png?v1"
+            },
+            {
+                "id": 4,
+                "name": "sparring-gloves",
+                "displayName": "Sparring gloves",
+                "src": "https://fastcdn.mobalytics.gg/assets/tft/images/game-items/set5-5/sparring-gloves.png?v1"
+            }
+        ]
     },
     {
         "id": 49,
-        "name": "Trap Claw",
-        "img": "https://rerollcdn.com/items/TrapClaw.png"
+        "name": "titans-resolve",
+        "displayName": "Titan's Resolve",
+        "src": "https://fastcdn.mobalytics.gg/assets/tft/images/game-items/set5-5/titans-resolve.png?v1",
+        "tier": {
+            "name": "a",
+            "src": "https://fastcdn.mobalytics.gg/assets/common/icons/hex-tiers/A.svg?1"
+        },
+        "bonus": "When the holder attacks or takes damage, they gain 2 Attack Damage and Ability Power. This stacks up to 25 times, at which point the holder gains 25 Armor and Magic Resist.",
+        "receipe": [
+            {
+                "id": 1,
+                "name": "chain-vest",
+                "displayName": "Chain vest",
+                "src": "https://fastcdn.mobalytics.gg/assets/tft/images/game-items/set5-5/chain-vest.png?v1"
+            },
+            {
+                "id": 0,
+                "name": "recurve-bow",
+                "displayName": "Recurve bow",
+                "src": "https://fastcdn.mobalytics.gg/assets/tft/images/game-items/set5-5/recurve-bow.png?v1"
+            }
+        ]
     },
     {
         "id": 50,
-        "name": "Warmog's Armor",
-        "img": "https://rerollcdn.com/items/WarmogsArmor.png"
+        "name": "warmogs-armor",
+        "displayName": "Warmog's Armor",
+        "src": "https://fastcdn.mobalytics.gg/assets/tft/images/game-items/set5-5/warmogs-armor.png?v1",
+        "tier": {
+            "name": "s",
+            "src": "https://fastcdn.mobalytics.gg/assets/common/icons/hex-tiers/S.svg?1"
+        },
+        "bonus": "Grants 1000 bonus Health (including components).",
+        "receipe": [
+            {
+                "id": 2,
+                "name": "giants-belt",
+                "displayName": "Giants belt",
+                "src": "https://fastcdn.mobalytics.gg/assets/tft/images/game-items/set5-5/giants-belt.png?v1"
+            },
+            {
+                "id": 2,
+                "name": "giants-belt",
+                "displayName": "Giants belt",
+                "src": "https://fastcdn.mobalytics.gg/assets/tft/images/game-items/set5-5/giants-belt.png?v1"
+            }
+        ]
     },
     {
         "id": 51,
-        "name": "Zeke's Herald",
-        "img": "https://rerollcdn.com/items/ZekesHerald.png"
+        "name": "zekes-herald",
+        "displayName": "Zeke's Herald",
+        "src": "https://fastcdn.mobalytics.gg/assets/tft/images/game-items/set5-5/zekes-herald.png?v1",
+        "tier": {
+            "name": "a",
+            "src": "https://fastcdn.mobalytics.gg/assets/common/icons/hex-tiers/A.svg?1"
+        },
+        "bonus": "When combat begins, the wearer and all allies within 1 hex in the same row gain 30% bonus Attack Speed for the rest of combat.",
+        "receipe": [
+            {
+                "id": 6,
+                "name": "bf-sword",
+                "displayName": "Bf sword",
+                "src": "https://fastcdn.mobalytics.gg/assets/tft/images/game-items/set5-5/bf-sword.png?v1"
+            },
+            {
+                "id": 2,
+                "name": "giants-belt",
+                "displayName": "Giants belt",
+                "src": "https://fastcdn.mobalytics.gg/assets/tft/images/game-items/set5-5/giants-belt.png?v1"
+            }
+        ]
     },
     {
         "id": 52,
-        "name": "Zephyr",
-        "img": "https://rerollcdn.com/items/Zephyr.png"
+        "name": "zephyr",
+        "displayName": "Zephyr",
+        "src": "https://fastcdn.mobalytics.gg/assets/tft/images/game-items/set5-5/zephyr.png?v1",
+        "tier": {
+            "name": "a",
+            "src": "https://fastcdn.mobalytics.gg/assets/common/icons/hex-tiers/A.svg?1"
+        },
+        "bonus": "Unique When combat begins, the wearer summons a whirlwind on the opposite side of the arena that removes the closest enemy from combat for 5 seconds. This effect pierces CC immunity.",
+        "receipe": [
+            {
+                "id": 5,
+                "name": "negatron-cloak",
+                "displayName": "Negatron cloak",
+                "src": "https://fastcdn.mobalytics.gg/assets/tft/images/game-items/set5-5/negatron-cloak.png?v1"
+            },
+            {
+                "id": 2,
+                "name": "giants-belt",
+                "displayName": "Giants belt",
+                "src": "https://fastcdn.mobalytics.gg/assets/tft/images/game-items/set5-5/giants-belt.png?v1"
+            }
+        ]
     },
     {
         "id": 53,
-        "name": "Zz'Rot Portal",
-        "img": "https://rerollcdn.com/items/ZzRotPortal.png"
+        "name": "zzrot-portal",
+        "displayName": "Zz'Rot Portal",
+        "src": "https://fastcdn.mobalytics.gg/assets/tft/images/game-items/set5-5/zzrot-portal.png?v1",
+        "tier": {
+            "name": "b",
+            "src": "https://fastcdn.mobalytics.gg/assets/common/icons/hex-tiers/B.svg?1"
+        },
+        "bonus": "At the start of combat, the wearer taunts enemies within 2 hexes for 1 second. When the wearer dies, a Construct with 1500/2250/3000 (Scales with Stage) Health arises and taunts all nearby enemies again. Zz’Rot Portal Voidspawns that arise from summoned units are 25% effective.",
+        "receipe": [
+            {
+                "id": 2,
+                "name": "giants-belt",
+                "displayName": "Giants belt",
+                "src": "https://fastcdn.mobalytics.gg/assets/tft/images/game-items/set5-5/giants-belt.png?v1"
+            },
+            {
+                "id": 0,
+                "name": "recurve-bow",
+                "displayName": "Recurve bow",
+                "src": "https://fastcdn.mobalytics.gg/assets/tft/images/game-items/set5-5/recurve-bow.png?v1"
+            }
+        ]
     }
 ]

@@ -1,11 +1,13 @@
 <template>
   <MainLayout>
     <template v-slot:header>
-        <div>Champion Overview</div>
+      <div>Champion Overview</div>
     </template>
     <template v-slot:content>
       <div class="champions">
-        <ElementList :elements="$store.state.champions" :size="60" />
+        <div v-for="champion of $store.state.champions" :key="champion.key">
+            <Champion :champion="champion" />
+        </div>
       </div>
     </template>
     <template v-slot:footer>
@@ -15,20 +17,27 @@
 </template>
 
 <script>
-  import MainLayout from '../layouts/MainLayout.vue'
-  import ElementList from '../components/ElementList.vue';
+import MainLayout from "../layouts/MainLayout.vue";
+import Champion from '../components/Champion.vue';
 
-  export default {
-    name: "Champions",
-    components: {
-      MainLayout, ElementList
-    }
-  }
+
+export default {
+  name: "Champions",
+  components: {
+    MainLayout,
+    Champion,
+  },
+};
 </script>
 
 <style lang="scss">
 .champions {
   display: flex;
   flex-wrap: wrap;
+
+  > div {
+    width: 200px;
+    height: 175px;  
+  }
 }
 </style>

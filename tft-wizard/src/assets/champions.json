@@ -2,291 +2,1181 @@
     {
         "id": 0,
         "name": "Aatrox",
-        "img": "https://rerollcdn.com/characters/Skin/5/Aatrox.png"
+        "costs": "1",
+        "style": "background-image: url(\"https://fastcdn.mobalytics.gg/assets/tft/images/champions/thumbnail/set5-5/aatrox.jpg\");",
+        "tier": {
+            "name": "b",
+            "src": "https://fastcdn.mobalytics.gg/assets/common/icons/hex-tiers/B.svg?1"
+        },
+        "traits": [
+            {
+                "name": "Redeemed",
+                "src": "https://fastcdn.mobalytics.gg/assets/tft/images/synergies/set5-5/redeemed-gold.svg"
+            },
+            {
+                "name": "Legionnaire",
+                "src": "https://fastcdn.mobalytics.gg/assets/tft/images/synergies/set5-5/legionnaire-gold.svg"
+            }
+        ]
     },
     {
         "id": 1,
-        "name": "Aphelios",
-        "img": "https://rerollcdn.com/characters/Skin/5/Aphelios.png"
+        "name": "Akshan",
+        "costs": "5",
+        "style": "background-image: url(\"https://fastcdn.mobalytics.gg/assets/tft/images/champions/thumbnail/set5-5/akshan.jpg\");",
+        "tier": {
+            "name": "s",
+            "src": "https://fastcdn.mobalytics.gg/assets/common/icons/hex-tiers/S.svg?1"
+        },
+        "traits": [
+            {
+                "name": "Ranger",
+                "src": "https://fastcdn.mobalytics.gg/assets/tft/images/synergies/set5-5/ranger-gold.svg"
+            },
+            {
+                "name": "Sentinel",
+                "src": "https://fastcdn.mobalytics.gg/assets/tft/images/synergies/set5-5/sentinel-gold.svg"
+            }
+        ]
     },
     {
         "id": 2,
-        "name": "Ashe",
-        "img": "https://rerollcdn.com/characters/Skin/5/Ashe.png"
+        "name": "Aphelios",
+        "costs": "4",
+        "style": "background-image: url(\"https://fastcdn.mobalytics.gg/assets/tft/images/champions/thumbnail/set5-5/aphelios.jpg\");",
+        "tier": {
+            "name": "s",
+            "src": "https://fastcdn.mobalytics.gg/assets/common/icons/hex-tiers/S.svg?1"
+        },
+        "traits": [
+            {
+                "name": "Nightbringer",
+                "src": "https://fastcdn.mobalytics.gg/assets/tft/images/synergies/set5-5/nightbringer-gold.svg"
+            },
+            {
+                "name": "Ranger",
+                "src": "https://fastcdn.mobalytics.gg/assets/tft/images/synergies/set5-5/ranger-gold.svg"
+            }
+        ]
     },
     {
         "id": 3,
-        "name": "Brand",
-        "img": "https://rerollcdn.com/characters/Skin/5/Brand.png"
+        "name": "Ashe",
+        "costs": "3",
+        "style": "background-image: url(\"https://fastcdn.mobalytics.gg/assets/tft/images/champions/thumbnail/set5-5/ashe.jpg\");",
+        "tier": {
+            "name": "b",
+            "src": "https://fastcdn.mobalytics.gg/assets/common/icons/hex-tiers/B.svg?1"
+        },
+        "traits": [
+            {
+                "name": "Draconic",
+                "src": "https://fastcdn.mobalytics.gg/assets/tft/images/synergies/set5-5/draconic-gold.svg"
+            },
+            {
+                "name": "Ranger",
+                "src": "https://fastcdn.mobalytics.gg/assets/tft/images/synergies/set5-5/ranger-gold.svg"
+            }
+        ]
     },
     {
         "id": 4,
-        "name": "Darius",
-        "img": "https://rerollcdn.com/characters/Skin/5/Darius.png"
+        "name": "Brand",
+        "costs": "2",
+        "style": "background-image: url(\"https://fastcdn.mobalytics.gg/assets/tft/images/champions/thumbnail/set5-5/brand.jpg\");",
+        "tier": {
+            "name": "s",
+            "src": "https://fastcdn.mobalytics.gg/assets/common/icons/hex-tiers/S.svg?1"
+        },
+        "traits": [
+            {
+                "name": "Abomination",
+                "src": "https://fastcdn.mobalytics.gg/assets/tft/images/synergies/set5-5/abomination-gold.svg"
+            },
+            {
+                "name": "Spellweaver",
+                "src": "https://fastcdn.mobalytics.gg/assets/tft/images/synergies/set5-5/spellweaver-gold.svg"
+            }
+        ]
     },
     {
         "id": 5,
         "name": "Diana",
-        "img": "https://rerollcdn.com/characters/Skin/5/Diana.png"
+        "costs": "4",
+        "style": "background-image: url(\"https://fastcdn.mobalytics.gg/assets/tft/images/champions/thumbnail/set5-5/diana.jpg\");",
+        "tier": {
+            "name": "s",
+            "src": "https://fastcdn.mobalytics.gg/assets/common/icons/hex-tiers/S.svg?1"
+        },
+        "traits": [
+            {
+                "name": "Nightbringer",
+                "src": "https://fastcdn.mobalytics.gg/assets/tft/images/synergies/set5-5/nightbringer-gold.svg"
+            },
+            {
+                "name": "Assassin",
+                "src": "https://fastcdn.mobalytics.gg/assets/tft/images/synergies/set5-5/assassin-gold.svg"
+            }
+        ]
     },
     {
         "id": 6,
         "name": "Draven",
-        "img": "https://rerollcdn.com/characters/Skin/5/Draven.png"
+        "costs": "4",
+        "style": "background-image: url(\"https://fastcdn.mobalytics.gg/assets/tft/images/champions/thumbnail/set5-5/draven.jpg\");",
+        "tier": {
+            "name": "a",
+            "src": "https://fastcdn.mobalytics.gg/assets/common/icons/hex-tiers/A.svg?1"
+        },
+        "traits": [
+            {
+                "name": "Forgotten",
+                "src": "https://fastcdn.mobalytics.gg/assets/tft/images/synergies/set5-5/forgotten-gold.svg"
+            },
+            {
+                "name": "Legionnaire",
+                "src": "https://fastcdn.mobalytics.gg/assets/tft/images/synergies/set5-5/legionnaire-gold.svg"
+            }
+        ]
     },
     {
         "id": 7,
-        "name": "Garen",
-        "img": "https://rerollcdn.com/characters/Skin/5/Garen.png"
+        "name": "Fiddlesticks",
+        "costs": "4",
+        "style": "background-image: url(\"https://fastcdn.mobalytics.gg/assets/tft/images/champions/thumbnail/set5-5/fiddlesticks.jpg\");",
+        "tier": {
+            "name": "s",
+            "src": "https://fastcdn.mobalytics.gg/assets/common/icons/hex-tiers/S.svg?1"
+        },
+        "traits": [
+            {
+                "name": "Mystic",
+                "src": "https://fastcdn.mobalytics.gg/assets/tft/images/synergies/set5-5/mystic-gold.svg"
+            },
+            {
+                "name": "Abomination",
+                "src": "https://fastcdn.mobalytics.gg/assets/tft/images/synergies/set5-5/abomination-gold.svg"
+            },
+            {
+                "name": "Revenant",
+                "src": "https://fastcdn.mobalytics.gg/assets/tft/images/synergies/set5-5/revenant-gold.svg"
+            }
+        ]
     },
     {
         "id": 8,
-        "name": "Gragas",
-        "img": "https://rerollcdn.com/characters/Skin/5/Gragas.png"
+        "name": "Galio",
+        "costs": "4",
+        "style": "background-image: url(\"https://fastcdn.mobalytics.gg/assets/tft/images/champions/thumbnail/set5-5/galio.jpg\");",
+        "tier": {
+            "name": "s",
+            "src": "https://fastcdn.mobalytics.gg/assets/common/icons/hex-tiers/S.svg?1"
+        },
+        "traits": [
+            {
+                "name": "Draconic",
+                "src": "https://fastcdn.mobalytics.gg/assets/tft/images/synergies/set5-5/draconic-gold.svg"
+            },
+            {
+                "name": "Sentinel",
+                "src": "https://fastcdn.mobalytics.gg/assets/tft/images/synergies/set5-5/sentinel-gold.svg"
+            },
+            {
+                "name": "Knight",
+                "src": "https://fastcdn.mobalytics.gg/assets/tft/images/synergies/set5-5/knight-gold.svg"
+            }
+        ]
     },
     {
         "id": 9,
-        "name": "Hecarim",
-        "img": "https://rerollcdn.com/characters/Skin/5/Hecarim.png"
+        "name": "Garen",
+        "costs": "5",
+        "style": "background-image: url(\"https://fastcdn.mobalytics.gg/assets/tft/images/champions/thumbnail/set5-5/garen.jpg\");",
+        "tier": {
+            "name": "s",
+            "src": "https://fastcdn.mobalytics.gg/assets/common/icons/hex-tiers/S.svg?1"
+        },
+        "traits": [
+            {
+                "name": "Dawnbringer",
+                "src": "https://fastcdn.mobalytics.gg/assets/tft/images/synergies/set5-5/dawnbringer-gold.svg"
+            },
+            {
+                "name": "Knight",
+                "src": "https://fastcdn.mobalytics.gg/assets/tft/images/synergies/set5-5/knight-gold.svg"
+            },
+            {
+                "name": "Victorious",
+                "src": "https://fastcdn.mobalytics.gg/assets/tft/images/synergies/set5-5/victorious-gold.svg"
+            }
+        ]
     },
     {
         "id": 10,
-        "name": "Heimerdinger",
-        "img": "https://rerollcdn.com/characters/Skin/5/Heimerdinger.png"
+        "name": "Gragas",
+        "costs": "1",
+        "style": "background-image: url(\"https://fastcdn.mobalytics.gg/assets/tft/images/champions/thumbnail/set5-5/gragas.jpg\");",
+        "tier": {
+            "name": "a",
+            "src": "https://fastcdn.mobalytics.gg/assets/common/icons/hex-tiers/A.svg?1"
+        },
+        "traits": [
+            {
+                "name": "Dawnbringer",
+                "src": "https://fastcdn.mobalytics.gg/assets/tft/images/synergies/set5-5/dawnbringer-gold.svg"
+            },
+            {
+                "name": "Brawler",
+                "src": "https://fastcdn.mobalytics.gg/assets/tft/images/synergies/set5-5/brawler-gold.svg"
+            }
+        ]
     },
     {
         "id": 11,
-        "name": "Ivern",
-        "img": "https://rerollcdn.com/characters/Skin/5/Ivern.png"
+        "name": "Gwen",
+        "costs": "5",
+        "style": "background-image: url(\"https://fastcdn.mobalytics.gg/assets/tft/images/champions/thumbnail/set5-5/gwen.jpg\");",
+        "tier": {
+            "name": "s",
+            "src": "https://fastcdn.mobalytics.gg/assets/common/icons/hex-tiers/S.svg?1"
+        },
+        "traits": [
+            {
+                "name": "Mystic",
+                "src": "https://fastcdn.mobalytics.gg/assets/tft/images/synergies/set5-5/mystic-gold.svg"
+            },
+            {
+                "name": "Inanimate",
+                "src": "https://fastcdn.mobalytics.gg/assets/tft/images/synergies/set5-5/inanimate-gold.svg"
+            }
+        ]
     },
     {
         "id": 12,
-        "name": "Jax",
-        "img": "https://rerollcdn.com/characters/Skin/5/Jax.png"
+        "name": "Hecarim",
+        "costs": "2",
+        "style": "background-image: url(\"https://fastcdn.mobalytics.gg/assets/tft/images/champions/thumbnail/set5-5/hecarim.jpg\");",
+        "tier": {
+            "name": "s",
+            "src": "https://fastcdn.mobalytics.gg/assets/common/icons/hex-tiers/S.svg?1"
+        },
+        "traits": [
+            {
+                "name": "Forgotten",
+                "src": "https://fastcdn.mobalytics.gg/assets/tft/images/synergies/set5-5/forgotten-gold.svg"
+            },
+            {
+                "name": "Cavalier",
+                "src": "https://fastcdn.mobalytics.gg/assets/tft/images/synergies/set5-5/cavalier-gold.svg"
+            }
+        ]
     },
     {
         "id": 13,
-        "name": "Kalista",
-        "img": "https://rerollcdn.com/characters/Skin/5/Kalista.png"
+        "name": "Heimerdinger",
+        "costs": "5",
+        "style": "background-image: url(\"https://fastcdn.mobalytics.gg/assets/tft/images/champions/thumbnail/set5-5/heimerdinger.jpg\");",
+        "tier": {
+            "name": "s",
+            "src": "https://fastcdn.mobalytics.gg/assets/common/icons/hex-tiers/S.svg?1"
+        },
+        "traits": [
+            {
+                "name": "Renewer",
+                "src": "https://fastcdn.mobalytics.gg/assets/tft/images/synergies/set5-5/renewer-gold.svg"
+            },
+            {
+                "name": "Draconic",
+                "src": "https://fastcdn.mobalytics.gg/assets/tft/images/synergies/set5-5/draconic-gold.svg"
+            },
+            {
+                "name": "Caretaker",
+                "src": "https://fastcdn.mobalytics.gg/assets/tft/images/synergies/set5-5/caretaker-gold.svg"
+            }
+        ]
     },
     {
         "id": 14,
-        "name": "Karma",
-        "img": "https://rerollcdn.com/characters/Skin/5/Karma.png"
+        "name": "Irelia",
+        "costs": "2",
+        "style": "background-image: url(\"https://fastcdn.mobalytics.gg/assets/tft/images/champions/thumbnail/set5-5/irelia.jpg\");",
+        "tier": {
+            "name": "a",
+            "src": "https://fastcdn.mobalytics.gg/assets/common/icons/hex-tiers/A.svg?1"
+        },
+        "traits": [
+            {
+                "name": "Legionnaire",
+                "src": "https://fastcdn.mobalytics.gg/assets/tft/images/synergies/set5-5/legionnaire-gold.svg"
+            },
+            {
+                "name": "Sentinel",
+                "src": "https://fastcdn.mobalytics.gg/assets/tft/images/synergies/set5-5/sentinel-gold.svg"
+            },
+            {
+                "name": "Skirmisher",
+                "src": "https://fastcdn.mobalytics.gg/assets/tft/images/synergies/set5-5/skirmisher-gold.svg"
+            }
+        ]
     },
     {
         "id": 15,
-        "name": "Katarina",
-        "img": "https://rerollcdn.com/characters/Skin/5/Katarina.png"
+        "name": "Ivern",
+        "costs": "4",
+        "style": "background-image: url(\"https://fastcdn.mobalytics.gg/assets/tft/images/champions/thumbnail/set5-5/ivern.jpg\");",
+        "tier": {
+            "name": "s",
+            "src": "https://fastcdn.mobalytics.gg/assets/common/icons/hex-tiers/S.svg?1"
+        },
+        "traits": [
+            {
+                "name": "Revenant",
+                "src": "https://fastcdn.mobalytics.gg/assets/tft/images/synergies/set5-5/revenant-gold.svg"
+            },
+            {
+                "name": "Renewer",
+                "src": "https://fastcdn.mobalytics.gg/assets/tft/images/synergies/set5-5/renewer-gold.svg"
+            },
+            {
+                "name": "Invoker",
+                "src": "https://fastcdn.mobalytics.gg/assets/tft/images/synergies/set5-5/invoker-gold.svg"
+            }
+        ]
     },
     {
         "id": 16,
-        "name": "Kayle",
-        "img": "https://rerollcdn.com/characters/Skin/5/Kayle.png"
+        "name": "Jax",
+        "costs": "4",
+        "style": "background-image: url(\"https://fastcdn.mobalytics.gg/assets/tft/images/champions/thumbnail/set5-5/jax.jpg\");",
+        "tier": {
+            "name": "a",
+            "src": "https://fastcdn.mobalytics.gg/assets/common/icons/hex-tiers/A.svg?1"
+        },
+        "traits": [
+            {
+                "name": "Ironclad",
+                "src": "https://fastcdn.mobalytics.gg/assets/tft/images/synergies/set5-5/ironclad-gold.svg"
+            },
+            {
+                "name": "Skirmisher",
+                "src": "https://fastcdn.mobalytics.gg/assets/tft/images/synergies/set5-5/skirmisher-gold.svg"
+            }
+        ]
     },
     {
         "id": 17,
-        "name": "Kennen",
-        "img": "https://rerollcdn.com/characters/Skin/5/Kennen.png"
+        "name": "Kalista",
+        "costs": "1",
+        "style": "background-image: url(\"https://fastcdn.mobalytics.gg/assets/tft/images/champions/thumbnail/set5-5/kalista.jpg\");",
+        "tier": {
+            "name": "a",
+            "src": "https://fastcdn.mobalytics.gg/assets/common/icons/hex-tiers/A.svg?1"
+        },
+        "traits": [
+            {
+                "name": "Abomination",
+                "src": "https://fastcdn.mobalytics.gg/assets/tft/images/synergies/set5-5/abomination-gold.svg"
+            },
+            {
+                "name": "Legionnaire",
+                "src": "https://fastcdn.mobalytics.gg/assets/tft/images/synergies/set5-5/legionnaire-gold.svg"
+            }
+        ]
     },
     {
         "id": 18,
-        "name": "Khazix",
-        "img": "https://rerollcdn.com/characters/Skin/5/Khazix.png"
+        "name": "Karma",
+        "costs": "4",
+        "style": "background-image: url(\"https://fastcdn.mobalytics.gg/assets/tft/images/champions/thumbnail/set5-5/karma.jpg\");",
+        "tier": {
+            "name": "s",
+            "src": "https://fastcdn.mobalytics.gg/assets/common/icons/hex-tiers/S.svg?1"
+        },
+        "traits": [
+            {
+                "name": "Dawnbringer",
+                "src": "https://fastcdn.mobalytics.gg/assets/tft/images/synergies/set5-5/dawnbringer-gold.svg"
+            },
+            {
+                "name": "Invoker",
+                "src": "https://fastcdn.mobalytics.gg/assets/tft/images/synergies/set5-5/invoker-gold.svg"
+            }
+        ]
     },
     {
         "id": 19,
-        "name": "Kindred",
-        "img": "https://rerollcdn.com/characters/Skin/5/Kindred.png"
+        "name": "Kayle",
+        "costs": "5",
+        "style": "background-image: url(\"https://fastcdn.mobalytics.gg/assets/tft/images/champions/thumbnail/set5-5/kayle.jpg\");",
+        "tier": {
+            "name": "a",
+            "src": "https://fastcdn.mobalytics.gg/assets/common/icons/hex-tiers/A.svg?1"
+        },
+        "traits": [
+            {
+                "name": "Redeemed",
+                "src": "https://fastcdn.mobalytics.gg/assets/tft/images/synergies/set5-5/redeemed-gold.svg"
+            },
+            {
+                "name": "Legionnaire",
+                "src": "https://fastcdn.mobalytics.gg/assets/tft/images/synergies/set5-5/legionnaire-gold.svg"
+            }
+        ]
     },
     {
         "id": 20,
-        "name": "Kled",
-        "img": "https://rerollcdn.com/characters/Skin/5/Kled.png"
+        "name": "Kennen",
+        "costs": "2",
+        "style": "background-image: url(\"https://fastcdn.mobalytics.gg/assets/tft/images/champions/thumbnail/set5-5/kennen.jpg\");",
+        "tier": {
+            "name": "a",
+            "src": "https://fastcdn.mobalytics.gg/assets/common/icons/hex-tiers/A.svg?1"
+        },
+        "traits": [
+            {
+                "name": "Hellion",
+                "src": "https://fastcdn.mobalytics.gg/assets/tft/images/synergies/set5-5/hellion-gold.svg"
+            },
+            {
+                "name": "Skirmisher",
+                "src": "https://fastcdn.mobalytics.gg/assets/tft/images/synergies/set5-5/skirmisher-gold.svg"
+            }
+        ]
     },
     {
         "id": 21,
-        "name": "Leblanc",
-        "img": "https://rerollcdn.com/characters/Skin/5/Leblanc.png"
+        "name": "Kha'Zix",
+        "costs": "1",
+        "style": "background-image: url(\"https://fastcdn.mobalytics.gg/assets/tft/images/champions/thumbnail/set5-5/khazix.jpg\");",
+        "tier": {
+            "name": "a",
+            "src": "https://fastcdn.mobalytics.gg/assets/common/icons/hex-tiers/A.svg?1"
+        },
+        "traits": [
+            {
+                "name": "Dawnbringer",
+                "src": "https://fastcdn.mobalytics.gg/assets/tft/images/synergies/set5-5/dawnbringer-gold.svg"
+            },
+            {
+                "name": "Assassin",
+                "src": "https://fastcdn.mobalytics.gg/assets/tft/images/synergies/set5-5/assassin-gold.svg"
+            }
+        ]
     },
     {
         "id": 22,
-        "name": "Lee Sin",
-        "img": "https://rerollcdn.com/characters/Skin/5/LeeSin.png"
+        "name": "Kled",
+        "costs": "1",
+        "style": "background-image: url(\"https://fastcdn.mobalytics.gg/assets/tft/images/champions/thumbnail/set5-5/kled.jpg\");",
+        "tier": {
+            "name": "a",
+            "src": "https://fastcdn.mobalytics.gg/assets/common/icons/hex-tiers/A.svg?1"
+        },
+        "traits": [
+            {
+                "name": "Hellion",
+                "src": "https://fastcdn.mobalytics.gg/assets/tft/images/synergies/set5-5/hellion-gold.svg"
+            },
+            {
+                "name": "Cavalier",
+                "src": "https://fastcdn.mobalytics.gg/assets/tft/images/synergies/set5-5/cavalier-gold.svg"
+            }
+        ]
     },
     {
         "id": 23,
-        "name": "Leona",
-        "img": "https://rerollcdn.com/characters/Skin/5/Leona.png"
+        "name": "Lee Sin",
+        "costs": "3",
+        "style": "background-image: url(\"https://fastcdn.mobalytics.gg/assets/tft/images/champions/thumbnail/set5-5/lee-sin.jpg\");",
+        "tier": {
+            "name": "a",
+            "src": "https://fastcdn.mobalytics.gg/assets/common/icons/hex-tiers/A.svg?1"
+        },
+        "traits": [
+            {
+                "name": "Nightbringer",
+                "src": "https://fastcdn.mobalytics.gg/assets/tft/images/synergies/set5-5/nightbringer-gold.svg"
+            },
+            {
+                "name": "Skirmisher",
+                "src": "https://fastcdn.mobalytics.gg/assets/tft/images/synergies/set5-5/skirmisher-gold.svg"
+            }
+        ]
     },
     {
         "id": 24,
-        "name": "Lissandra",
-        "img": "https://rerollcdn.com/characters/Skin/5/Lissandra.png"
+        "name": "Leona",
+        "costs": "1",
+        "style": "background-image: url(\"https://fastcdn.mobalytics.gg/assets/tft/images/champions/thumbnail/set5-5/leona.jpg\");",
+        "tier": {
+            "name": "a",
+            "src": "https://fastcdn.mobalytics.gg/assets/common/icons/hex-tiers/A.svg?1"
+        },
+        "traits": [
+            {
+                "name": "Redeemed",
+                "src": "https://fastcdn.mobalytics.gg/assets/tft/images/synergies/set5-5/redeemed-gold.svg"
+            },
+            {
+                "name": "Knight",
+                "src": "https://fastcdn.mobalytics.gg/assets/tft/images/synergies/set5-5/knight-gold.svg"
+            }
+        ]
     },
     {
         "id": 25,
-        "name": "Lulu",
-        "img": "https://rerollcdn.com/characters/Skin/5/Lulu.png"
+        "name": "Lucian",
+        "costs": "4",
+        "style": "background-image: url(\"https://fastcdn.mobalytics.gg/assets/tft/images/champions/thumbnail/set5-5/lucian.jpg\");",
+        "tier": {
+            "name": "s",
+            "src": "https://fastcdn.mobalytics.gg/assets/common/icons/hex-tiers/S.svg?1"
+        },
+        "traits": [
+            {
+                "name": "Sentinel",
+                "src": "https://fastcdn.mobalytics.gg/assets/tft/images/synergies/set5-5/sentinel-gold.svg"
+            },
+            {
+                "name": "Cannoneer",
+                "src": "https://fastcdn.mobalytics.gg/assets/tft/images/synergies/set5-5/cannoneer-gold.svg"
+            }
+        ]
     },
     {
         "id": 26,
-        "name": "Lux",
-        "img": "https://rerollcdn.com/characters/Skin/5/Lux.png"
+        "name": "Lulu",
+        "costs": "3",
+        "style": "background-image: url(\"https://fastcdn.mobalytics.gg/assets/tft/images/champions/thumbnail/set5-5/lulu.jpg\");",
+        "tier": {
+            "name": "a",
+            "src": "https://fastcdn.mobalytics.gg/assets/common/icons/hex-tiers/A.svg?1"
+        },
+        "traits": [
+            {
+                "name": "Hellion",
+                "src": "https://fastcdn.mobalytics.gg/assets/tft/images/synergies/set5-5/hellion-gold.svg"
+            },
+            {
+                "name": "Mystic",
+                "src": "https://fastcdn.mobalytics.gg/assets/tft/images/synergies/set5-5/mystic-gold.svg"
+            }
+        ]
     },
     {
         "id": 27,
-        "name": "Mordekaiser",
-        "img": "https://rerollcdn.com/characters/Skin/5/Mordekaiser.png"
+        "name": "Lux",
+        "costs": "3",
+        "style": "background-image: url(\"https://fastcdn.mobalytics.gg/assets/tft/images/champions/thumbnail/set5-5/lux.jpg\");",
+        "tier": {
+            "name": "a",
+            "src": "https://fastcdn.mobalytics.gg/assets/common/icons/hex-tiers/A.svg?1"
+        },
+        "traits": [
+            {
+                "name": "Redeemed",
+                "src": "https://fastcdn.mobalytics.gg/assets/tft/images/synergies/set5-5/redeemed-gold.svg"
+            },
+            {
+                "name": "Mystic",
+                "src": "https://fastcdn.mobalytics.gg/assets/tft/images/synergies/set5-5/mystic-gold.svg"
+            }
+        ]
     },
     {
         "id": 28,
-        "name": "Morgana",
-        "img": "https://rerollcdn.com/characters/Skin/5/Morgana.png"
+        "name": "Miss Fortune",
+        "costs": "3",
+        "style": "background-image: url(\"https://fastcdn.mobalytics.gg/assets/tft/images/champions/thumbnail/set5-5/missfortune.jpg\");",
+        "tier": {
+            "name": "a",
+            "src": "https://fastcdn.mobalytics.gg/assets/common/icons/hex-tiers/A.svg?1"
+        },
+        "traits": [
+            {
+                "name": "Forgotten",
+                "src": "https://fastcdn.mobalytics.gg/assets/tft/images/synergies/set5-5/forgotten-gold.svg"
+            },
+            {
+                "name": "Cannoneer",
+                "src": "https://fastcdn.mobalytics.gg/assets/tft/images/synergies/set5-5/cannoneer-gold.svg"
+            }
+        ]
     },
     {
         "id": 29,
         "name": "Nautilus",
-        "img": "https://rerollcdn.com/characters/Skin/5/Nautilus.png"
+        "costs": "2",
+        "style": "background-image: url(\"https://fastcdn.mobalytics.gg/assets/tft/images/champions/thumbnail/set5-5/nautilus.jpg\");",
+        "tier": {
+            "name": "a",
+            "src": "https://fastcdn.mobalytics.gg/assets/common/icons/hex-tiers/A.svg?1"
+        },
+        "traits": [
+            {
+                "name": "Ironclad",
+                "src": "https://fastcdn.mobalytics.gg/assets/tft/images/synergies/set5-5/ironclad-gold.svg"
+            },
+            {
+                "name": "Knight",
+                "src": "https://fastcdn.mobalytics.gg/assets/tft/images/synergies/set5-5/knight-gold.svg"
+            }
+        ]
     },
     {
         "id": 30,
         "name": "Nidalee",
-        "img": "https://rerollcdn.com/characters/Skin/5/Nidalee.png"
+        "costs": "3",
+        "style": "background-image: url(\"https://fastcdn.mobalytics.gg/assets/tft/images/champions/thumbnail/set5-5/nidalee.jpg\");",
+        "tier": {
+            "name": "a",
+            "src": "https://fastcdn.mobalytics.gg/assets/common/icons/hex-tiers/A.svg?1"
+        },
+        "traits": [
+            {
+                "name": "Dawnbringer",
+                "src": "https://fastcdn.mobalytics.gg/assets/tft/images/synergies/set5-5/dawnbringer-gold.svg"
+            },
+            {
+                "name": "Skirmisher",
+                "src": "https://fastcdn.mobalytics.gg/assets/tft/images/synergies/set5-5/skirmisher-gold.svg"
+            }
+        ]
     },
     {
         "id": 31,
         "name": "Nocturne",
-        "img": "https://rerollcdn.com/characters/Skin/5/Nocturne.png"
+        "costs": "3",
+        "style": "background-image: url(\"https://fastcdn.mobalytics.gg/assets/tft/images/champions/thumbnail/set5-5/nocturne.jpg\");",
+        "tier": {
+            "name": "s",
+            "src": "https://fastcdn.mobalytics.gg/assets/common/icons/hex-tiers/S.svg?1"
+        },
+        "traits": [
+            {
+                "name": "Revenant",
+                "src": "https://fastcdn.mobalytics.gg/assets/tft/images/synergies/set5-5/revenant-gold.svg"
+            },
+            {
+                "name": "Assassin",
+                "src": "https://fastcdn.mobalytics.gg/assets/tft/images/synergies/set5-5/assassin-gold.svg"
+            }
+        ]
     },
     {
         "id": 32,
         "name": "Nunu",
-        "img": "https://rerollcdn.com/characters/Skin/5/Nunu.png"
+        "costs": "3",
+        "style": "background-image: url(\"https://fastcdn.mobalytics.gg/assets/tft/images/champions/thumbnail/set5-5/nunu.jpg\");",
+        "tier": {
+            "name": "a",
+            "src": "https://fastcdn.mobalytics.gg/assets/common/icons/hex-tiers/A.svg?1"
+        },
+        "traits": [
+            {
+                "name": "Brawler",
+                "src": "https://fastcdn.mobalytics.gg/assets/tft/images/synergies/set5-5/brawler-gold.svg"
+            },
+            {
+                "name": "Abomination",
+                "src": "https://fastcdn.mobalytics.gg/assets/tft/images/synergies/set5-5/abomination-gold.svg"
+            }
+        ]
     },
     {
         "id": 33,
-        "name": "Pantheon",
-        "img": "https://rerollcdn.com/characters/Skin/5/Pantheon.png"
+        "name": "Olaf",
+        "costs": "1",
+        "style": "background-image: url(\"https://fastcdn.mobalytics.gg/assets/tft/images/champions/thumbnail/set5-5/olaf.jpg\");",
+        "tier": {
+            "name": "b",
+            "src": "https://fastcdn.mobalytics.gg/assets/common/icons/hex-tiers/B.svg?1"
+        },
+        "traits": [
+            {
+                "name": "Sentinel",
+                "src": "https://fastcdn.mobalytics.gg/assets/tft/images/synergies/set5-5/sentinel-gold.svg"
+            },
+            {
+                "name": "Skirmisher",
+                "src": "https://fastcdn.mobalytics.gg/assets/tft/images/synergies/set5-5/skirmisher-gold.svg"
+            }
+        ]
     },
     {
         "id": 34,
         "name": "Poppy",
-        "img": "https://rerollcdn.com/characters/Skin/5/Poppy.png"
+        "costs": "1",
+        "style": "background-image: url(\"https://fastcdn.mobalytics.gg/assets/tft/images/champions/thumbnail/set5-5/poppy.jpg\");",
+        "tier": {
+            "name": "a",
+            "src": "https://fastcdn.mobalytics.gg/assets/common/icons/hex-tiers/A.svg?1"
+        },
+        "traits": [
+            {
+                "name": "Hellion",
+                "src": "https://fastcdn.mobalytics.gg/assets/tft/images/synergies/set5-5/hellion-gold.svg"
+            },
+            {
+                "name": "Knight",
+                "src": "https://fastcdn.mobalytics.gg/assets/tft/images/synergies/set5-5/knight-gold.svg"
+            }
+        ]
     },
     {
         "id": 35,
-        "name": "Rell",
-        "img": "https://rerollcdn.com/characters/Skin/5/Rell.png"
+        "name": "Pyke",
+        "costs": "2",
+        "style": "background-image: url(\"https://fastcdn.mobalytics.gg/assets/tft/images/champions/thumbnail/set5-5/pyke.jpg\");",
+        "tier": {
+            "name": "s",
+            "src": "https://fastcdn.mobalytics.gg/assets/common/icons/hex-tiers/S.svg?1"
+        },
+        "traits": [
+            {
+                "name": "Sentinel",
+                "src": "https://fastcdn.mobalytics.gg/assets/tft/images/synergies/set5-5/sentinel-gold.svg"
+            },
+            {
+                "name": "Assassin",
+                "src": "https://fastcdn.mobalytics.gg/assets/tft/images/synergies/set5-5/assassin-gold.svg"
+            }
+        ]
     },
     {
         "id": 36,
-        "name": "Riven",
-        "img": "https://rerollcdn.com/characters/Skin/5/Riven.png"
+        "name": "Rakan",
+        "costs": "3",
+        "style": "background-image: url(\"https://fastcdn.mobalytics.gg/assets/tft/images/champions/thumbnail/set5-5/rakan.jpg\");",
+        "tier": {
+            "name": "b",
+            "src": "https://fastcdn.mobalytics.gg/assets/common/icons/hex-tiers/B.svg?1"
+        },
+        "traits": [
+            {
+                "name": "Sentinel",
+                "src": "https://fastcdn.mobalytics.gg/assets/tft/images/synergies/set5-5/sentinel-gold.svg"
+            },
+            {
+                "name": "Renewer",
+                "src": "https://fastcdn.mobalytics.gg/assets/tft/images/synergies/set5-5/renewer-gold.svg"
+            }
+        ]
     },
     {
         "id": 37,
-        "name": "Ryze",
-        "img": "https://rerollcdn.com/characters/Skin/5/Ryze.png"
+        "name": "Rell",
+        "costs": "4",
+        "style": "background-image: url(\"https://fastcdn.mobalytics.gg/assets/tft/images/champions/thumbnail/set5-5/rell.jpg\");",
+        "tier": {
+            "name": "s",
+            "src": "https://fastcdn.mobalytics.gg/assets/common/icons/hex-tiers/S.svg?1"
+        },
+        "traits": [
+            {
+                "name": "Ironclad",
+                "src": "https://fastcdn.mobalytics.gg/assets/tft/images/synergies/set5-5/ironclad-gold.svg"
+            },
+            {
+                "name": "Cavalier",
+                "src": "https://fastcdn.mobalytics.gg/assets/tft/images/synergies/set5-5/cavalier-gold.svg"
+            },
+            {
+                "name": "Redeemed",
+                "src": "https://fastcdn.mobalytics.gg/assets/tft/images/synergies/set5-5/redeemed-gold.svg"
+            }
+        ]
     },
     {
         "id": 38,
-        "name": "Sejuani",
-        "img": "https://rerollcdn.com/characters/Skin/5/Sejuani.png"
+        "name": "Riven",
+        "costs": "3",
+        "style": "background-image: url(\"https://fastcdn.mobalytics.gg/assets/tft/images/champions/thumbnail/set5-5/riven.jpg\");",
+        "tier": {
+            "name": "a",
+            "src": "https://fastcdn.mobalytics.gg/assets/common/icons/hex-tiers/A.svg?1"
+        },
+        "traits": [
+            {
+                "name": "Dawnbringer",
+                "src": "https://fastcdn.mobalytics.gg/assets/tft/images/synergies/set5-5/dawnbringer-gold.svg"
+            },
+            {
+                "name": "Legionnaire",
+                "src": "https://fastcdn.mobalytics.gg/assets/tft/images/synergies/set5-5/legionnaire-gold.svg"
+            }
+        ]
     },
     {
         "id": 39,
-        "name": "Sett",
-        "img": "https://rerollcdn.com/characters/Skin/5/Sett.png"
+        "name": "Sejuani",
+        "costs": "2",
+        "style": "background-image: url(\"https://fastcdn.mobalytics.gg/assets/tft/images/champions/thumbnail/set5-5/sejuani.jpg\");",
+        "tier": {
+            "name": "s",
+            "src": "https://fastcdn.mobalytics.gg/assets/common/icons/hex-tiers/S.svg?1"
+        },
+        "traits": [
+            {
+                "name": "Nightbringer",
+                "src": "https://fastcdn.mobalytics.gg/assets/tft/images/synergies/set5-5/nightbringer-gold.svg"
+            },
+            {
+                "name": "Cavalier",
+                "src": "https://fastcdn.mobalytics.gg/assets/tft/images/synergies/set5-5/cavalier-gold.svg"
+            },
+            {
+                "name": "Brawler",
+                "src": "https://fastcdn.mobalytics.gg/assets/tft/images/synergies/set5-5/brawler-gold.svg"
+            }
+        ]
     },
     {
         "id": 40,
-        "name": "Soraka",
-        "img": "https://rerollcdn.com/characters/Skin/5/Soraka.png"
+        "name": "Senna",
+        "costs": "1",
+        "style": "background-image: url(\"https://fastcdn.mobalytics.gg/assets/tft/images/champions/thumbnail/set5-5/senna.jpg\");",
+        "tier": {
+            "name": "a",
+            "src": "https://fastcdn.mobalytics.gg/assets/common/icons/hex-tiers/A.svg?1"
+        },
+        "traits": [
+            {
+                "name": "Sentinel",
+                "src": "https://fastcdn.mobalytics.gg/assets/tft/images/synergies/set5-5/sentinel-gold.svg"
+            },
+            {
+                "name": "Cannoneer",
+                "src": "https://fastcdn.mobalytics.gg/assets/tft/images/synergies/set5-5/cannoneer-gold.svg"
+            }
+        ]
     },
     {
         "id": 41,
-        "name": "Syndra",
-        "img": "https://rerollcdn.com/characters/Skin/5/Syndra.png"
+        "name": "Sett",
+        "costs": "2",
+        "style": "background-image: url(\"https://fastcdn.mobalytics.gg/assets/tft/images/champions/thumbnail/set5-5/sett.jpg\");",
+        "tier": {
+            "name": "a",
+            "src": "https://fastcdn.mobalytics.gg/assets/common/icons/hex-tiers/A.svg?1"
+        },
+        "traits": [
+            {
+                "name": "Brawler",
+                "src": "https://fastcdn.mobalytics.gg/assets/tft/images/synergies/set5-5/brawler-gold.svg"
+            },
+            {
+                "name": "Draconic",
+                "src": "https://fastcdn.mobalytics.gg/assets/tft/images/synergies/set5-5/draconic-gold.svg"
+            }
+        ]
     },
     {
         "id": 42,
-        "name": "Taric",
-        "img": "https://rerollcdn.com/characters/Skin/5/Taric.png"
+        "name": "Soraka",
+        "costs": "2",
+        "style": "background-image: url(\"https://fastcdn.mobalytics.gg/assets/tft/images/champions/thumbnail/set5-5/soraka.jpg\");",
+        "tier": {
+            "name": "a",
+            "src": "https://fastcdn.mobalytics.gg/assets/common/icons/hex-tiers/A.svg?1"
+        },
+        "traits": [
+            {
+                "name": "Renewer",
+                "src": "https://fastcdn.mobalytics.gg/assets/tft/images/synergies/set5-5/renewer-gold.svg"
+            },
+            {
+                "name": "Dawnbringer",
+                "src": "https://fastcdn.mobalytics.gg/assets/tft/images/synergies/set5-5/dawnbringer-gold.svg"
+            }
+        ]
     },
     {
         "id": 43,
-        "name": "Teemo",
-        "img": "https://rerollcdn.com/characters/Skin/5/Teemo.png"
+        "name": "Syndra",
+        "costs": "2",
+        "style": "background-image: url(\"https://fastcdn.mobalytics.gg/assets/tft/images/champions/thumbnail/set5-5/syndra.jpg\");",
+        "tier": {
+            "name": "Redeemed",
+            "src": "https://fastcdn.mobalytics.gg/assets/tft/images/synergies/set5-5/redeemed-gold.svg"
+        },
+        "traits": [
+            {
+                "name": "Champion cost 2",
+                "src": "https://fastcdn.mobalytics.gg/assets/tft/images/rarity/cost-2.png"
+            },
+            {
+                "name": "Invoker",
+                "src": "https://fastcdn.mobalytics.gg/assets/tft/images/synergies/set5-5/invoker-gold.svg"
+            }
+        ]
     },
     {
         "id": 44,
-        "name": "Thresh",
-        "img": "https://rerollcdn.com/characters/Skin/5/Thresh.png"
+        "name": "Teemo",
+        "costs": "5",
+        "style": "background-image: url(\"https://fastcdn.mobalytics.gg/assets/tft/images/champions/thumbnail/set5-5/teemo.jpg\");",
+        "tier": {
+            "name": "s",
+            "src": "https://fastcdn.mobalytics.gg/assets/common/icons/hex-tiers/S.svg?1"
+        },
+        "traits": [
+            {
+                "name": "Cruel",
+                "src": "https://fastcdn.mobalytics.gg/assets/tft/images/synergies/set5-5/cruel-gold.svg"
+            },
+            {
+                "name": "Invoker",
+                "src": "https://fastcdn.mobalytics.gg/assets/tft/images/synergies/set5-5/invoker-gold.svg"
+            },
+            {
+                "name": "Hellion",
+                "src": "https://fastcdn.mobalytics.gg/assets/tft/images/synergies/set5-5/hellion-gold.svg"
+            }
+        ]
     },
     {
         "id": 45,
-        "name": "Trundle",
-        "img": "https://rerollcdn.com/characters/Skin/5/Trundle.png"
+        "name": "Thresh",
+        "costs": "2",
+        "style": "background-image: url(\"https://fastcdn.mobalytics.gg/assets/tft/images/champions/thumbnail/set5-5/thresh.jpg\");",
+        "tier": {
+            "name": "a",
+            "src": "https://fastcdn.mobalytics.gg/assets/common/icons/hex-tiers/A.svg?1"
+        },
+        "traits": [
+            {
+                "name": "Forgotten",
+                "src": "https://fastcdn.mobalytics.gg/assets/tft/images/synergies/set5-5/forgotten-gold.svg"
+            },
+            {
+                "name": "Knight",
+                "src": "https://fastcdn.mobalytics.gg/assets/tft/images/synergies/set5-5/knight-gold.svg"
+            }
+        ]
     },
     {
         "id": 46,
-        "name": "Udyr",
-        "img": "https://rerollcdn.com/characters/Skin/5/Udyr.png"
+        "name": "Tristana",
+        "costs": "2",
+        "style": "background-image: url(\"https://fastcdn.mobalytics.gg/assets/tft/images/champions/thumbnail/set5-5/tristana.jpg\");",
+        "tier": {
+            "name": "s",
+            "src": "https://fastcdn.mobalytics.gg/assets/common/icons/hex-tiers/S.svg?1"
+        },
+        "traits": [
+            {
+                "name": "Hellion",
+                "src": "https://fastcdn.mobalytics.gg/assets/tft/images/synergies/set5-5/hellion-gold.svg"
+            },
+            {
+                "name": "Cannoneer",
+                "src": "https://fastcdn.mobalytics.gg/assets/tft/images/synergies/set5-5/cannoneer-gold.svg"
+            }
+        ]
     },
     {
         "id": 47,
-        "name": "Varus",
-        "img": "https://rerollcdn.com/characters/Skin/5/Varus.png"
+        "name": "Udyr",
+        "costs": "1",
+        "style": "background-image: url(\"https://fastcdn.mobalytics.gg/assets/tft/images/champions/thumbnail/set5-5/udyr.jpg\");",
+        "tier": {
+            "name": "a",
+            "src": "https://fastcdn.mobalytics.gg/assets/common/icons/hex-tiers/A.svg?1"
+        },
+        "traits": [
+            {
+                "name": "Draconic",
+                "src": "https://fastcdn.mobalytics.gg/assets/tft/images/synergies/set5-5/draconic-gold.svg"
+            },
+            {
+                "name": "Skirmisher",
+                "src": "https://fastcdn.mobalytics.gg/assets/tft/images/synergies/set5-5/skirmisher-gold.svg"
+            }
+        ]
     },
     {
         "id": 48,
-        "name": "Vayne",
-        "img": "https://rerollcdn.com/characters/Skin/5/Vayne.png"
+        "name": "Varus",
+        "costs": "2",
+        "style": "background-image: url(\"https://fastcdn.mobalytics.gg/assets/tft/images/champions/thumbnail/set5-5/varus.jpg\");",
+        "tier": {
+            "name": "a",
+            "src": "https://fastcdn.mobalytics.gg/assets/common/icons/hex-tiers/A.svg?1"
+        },
+        "traits": [
+            {
+                "name": "Redeemed",
+                "src": "https://fastcdn.mobalytics.gg/assets/tft/images/synergies/set5-5/redeemed-gold.svg"
+            },
+            {
+                "name": "Ranger",
+                "src": "https://fastcdn.mobalytics.gg/assets/tft/images/synergies/set5-5/ranger-gold.svg"
+            }
+        ]
     },
     {
         "id": 49,
-        "name": "Velkoz",
-        "img": "https://rerollcdn.com/characters/Skin/5/Velkoz.png"
+        "name": "Vayne",
+        "costs": "1",
+        "style": "background-image: url(\"https://fastcdn.mobalytics.gg/assets/tft/images/champions/thumbnail/set5-5/vayne.jpg\");",
+        "tier": {
+            "name": "b",
+            "src": "https://fastcdn.mobalytics.gg/assets/common/icons/hex-tiers/B.svg?1"
+        },
+        "traits": [
+            {
+                "name": "Forgotten",
+                "src": "https://fastcdn.mobalytics.gg/assets/tft/images/synergies/set5-5/forgotten-gold.svg"
+            },
+            {
+                "name": "Ranger",
+                "src": "https://fastcdn.mobalytics.gg/assets/tft/images/synergies/set5-5/ranger-gold.svg"
+            }
+        ]
     },
     {
         "id": 50,
-        "name": "Viego",
-        "img": "https://rerollcdn.com/characters/Skin/5/Viego.png"
+        "name": "Vel'Koz",
+        "costs": "4",
+        "style": "background-image: url(\"https://fastcdn.mobalytics.gg/assets/tft/images/champions/thumbnail/set5-5/velkoz.jpg\");",
+        "tier": {
+            "name": "s",
+            "src": "https://fastcdn.mobalytics.gg/assets/common/icons/hex-tiers/S.svg?1"
+        },
+        "traits": [
+            {
+                "name": "Redeemed",
+                "src": "https://fastcdn.mobalytics.gg/assets/tft/images/synergies/set5-5/redeemed-gold.svg"
+            },
+            {
+                "name": "Spellweaver",
+                "src": "https://fastcdn.mobalytics.gg/assets/tft/images/synergies/set5-5/spellweaver-gold.svg"
+            }
+        ]
     },
     {
         "id": 51,
-        "name": "Viktor",
-        "img": "https://rerollcdn.com/characters/Skin/5/Viktor.png"
+        "name": "Viego",
+        "costs": "5",
+        "style": "background-image: url(\"https://fastcdn.mobalytics.gg/assets/tft/images/champions/thumbnail/set5-5/viego.jpg\");",
+        "tier": {
+            "name": "s",
+            "src": "https://fastcdn.mobalytics.gg/assets/common/icons/hex-tiers/S.svg?1"
+        },
+        "traits": [
+            {
+                "name": "Forgotten",
+                "src": "https://fastcdn.mobalytics.gg/assets/tft/images/synergies/set5-5/forgotten-gold.svg"
+            },
+            {
+                "name": "Assassin",
+                "src": "https://fastcdn.mobalytics.gg/assets/tft/images/synergies/set5-5/assassin-gold.svg"
+            },
+            {
+                "name": "Skirmisher",
+                "src": "https://fastcdn.mobalytics.gg/assets/tft/images/synergies/set5-5/skirmisher-gold.svg"
+            }
+        ]
     },
     {
         "id": 52,
         "name": "Vladimir",
-        "img": "https://rerollcdn.com/characters/Skin/5/Vladimir.png"
+        "costs": "1",
+        "style": "background-image: url(\"https://fastcdn.mobalytics.gg/assets/tft/images/champions/thumbnail/set5-5/vladimir.jpg\");",
+        "tier": {
+            "name": "b",
+            "src": "https://fastcdn.mobalytics.gg/assets/common/icons/hex-tiers/B.svg?1"
+        },
+        "traits": [
+            {
+                "name": "Nightbringer",
+                "src": "https://fastcdn.mobalytics.gg/assets/tft/images/synergies/set5-5/nightbringer-gold.svg"
+            },
+            {
+                "name": "Renewer",
+                "src": "https://fastcdn.mobalytics.gg/assets/tft/images/synergies/set5-5/renewer-gold.svg"
+            }
+        ]
     },
     {
         "id": 53,
         "name": "Volibear",
-        "img": "https://rerollcdn.com/characters/Skin/5/Volibear.png"
+        "costs": "5",
+        "style": "background-image: url(\"https://fastcdn.mobalytics.gg/assets/tft/images/champions/thumbnail/set5-5/volibear.jpg\");",
+        "tier": {
+            "name": "s",
+            "src": "https://fastcdn.mobalytics.gg/assets/common/icons/hex-tiers/S.svg?1"
+        },
+        "traits": [
+            {
+                "name": "Revenant",
+                "src": "https://fastcdn.mobalytics.gg/assets/tft/images/synergies/set5-5/revenant-gold.svg"
+            },
+            {
+                "name": "Brawler",
+                "src": "https://fastcdn.mobalytics.gg/assets/tft/images/synergies/set5-5/brawler-gold.svg"
+            }
+        ]
     },
     {
         "id": 54,
-        "name": "Warwick",
-        "img": "https://rerollcdn.com/characters/Skin/5/Warwick.png"
+        "name": "Yasuo",
+        "costs": "3",
+        "style": "background-image: url(\"https://fastcdn.mobalytics.gg/assets/tft/images/champions/thumbnail/set5-5/yasuo.jpg\");",
+        "tier": {
+            "name": "s",
+            "src": "https://fastcdn.mobalytics.gg/assets/common/icons/hex-tiers/S.svg?1"
+        },
+        "traits": [
+            {
+                "name": "Nightbringer",
+                "src": "https://fastcdn.mobalytics.gg/assets/tft/images/synergies/set5-5/nightbringer-gold.svg"
+            },
+            {
+                "name": "Legionnaire",
+                "src": "https://fastcdn.mobalytics.gg/assets/tft/images/synergies/set5-5/legionnaire-gold.svg"
+            }
+        ]
     },
     {
         "id": 55,
-        "name": "Yasuo",
-        "img": "https://rerollcdn.com/characters/Skin/5/Yasuo.png"
+        "name": "Ziggs",
+        "costs": "1",
+        "style": "background-image: url(\"https://fastcdn.mobalytics.gg/assets/tft/images/champions/thumbnail/set5-5/ziggs.jpg\");",
+        "tier": {
+            "name": "a",
+            "src": "https://fastcdn.mobalytics.gg/assets/common/icons/hex-tiers/A.svg?1"
+        },
+        "traits": [
+            {
+                "name": "Hellion",
+                "src": "https://fastcdn.mobalytics.gg/assets/tft/images/synergies/set5-5/hellion-gold.svg"
+            },
+            {
+                "name": "Spellweaver",
+                "src": "https://fastcdn.mobalytics.gg/assets/tft/images/synergies/set5-5/spellweaver-gold.svg"
+            }
+        ]
     },
     {
         "id": 56,
-        "name": "Ziggs",
-        "img": "https://rerollcdn.com/characters/Skin/5/Ziggs.png"
-    },
-    {
-        "id": 57,
         "name": "Zyra",
-        "img": "https://rerollcdn.com/characters/Skin/5/Zyra.png"
+        "costs": "3",
+        "style": "background-image: url(\"https://fastcdn.mobalytics.gg/assets/tft/images/champions/thumbnail/set5-5/zyra.jpg\");",
+        "tier": {
+            "name": "a",
+            "src": "https://fastcdn.mobalytics.gg/assets/common/icons/hex-tiers/A.svg?1"
+        },
+        "traits": [
+            {
+                "name": "Draconic",
+                "src": "https://fastcdn.mobalytics.gg/assets/tft/images/synergies/set5-5/draconic-gold.svg"
+            },
+            {
+                "name": "Spellweaver",
+                "src": "https://fastcdn.mobalytics.gg/assets/tft/images/synergies/set5-5/spellweaver-gold.svg"
+            }
+        ]
     }
 ]

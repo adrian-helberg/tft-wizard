@@ -4,10 +4,15 @@
       <header>
         <div class="head-line">
           <a href="/">
-            <img src="../assets/wizard.png" width="30px" height="30px" alt="tft-wizard" />
+            <img
+              src="../assets/wizard.png"
+              width="30px"
+              height="30px"
+              alt="tft-wizard"
+            />
             <div id="heading">tft-wizard</div>
           </a>
-        </div>        
+        </div>
         <div class="navigation">
           <Link href="/wizard">Wizard</Link>
           <Link href="/champions">Champions</Link>
@@ -18,16 +23,22 @@
       <content>
         <div class="content-header">
           <slot name="header"></slot>
-          </div>
+        </div>
         <div class="content-text">
           <slot name="content"></slot>
-          </div>
+        </div>
         <div class="content-footer">
           <slot name="footer"></slot>
         </div>
       </content>
       <footer>
-        <div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+        <div>
+          Icons made by
+          <a href="https://www.freepik.com" title="Freepik">Freepik</a> from
+          <a href="https://www.flaticon.com/" title="Flaticon"
+            >www.flaticon.com</a
+          >
+        </div>
       </footer>
     </div>
   </div>
@@ -39,7 +50,7 @@ import Link from "../components/Link.vue";
 export default {
   name: "MainLayout",
   components: {
-    Link
+    Link,
   },
 };
 </script>
@@ -55,7 +66,8 @@ body {
 .App {
   display: flex;
   flex-direction: column;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
   height: 100vh;
   background: #051622 url("https://slumber.fm/assets/img/bg_star.png") repeat-y;
   background-size: cover;
@@ -63,7 +75,7 @@ body {
 
 header {
   color: $heading;
-  
+
   .head-line {
     display: flex;
     justify-content: center;
@@ -78,12 +90,15 @@ header {
         margin: 6px;
       }
 
-      &:link, &:visited, &:hover, &:active {
-          color: $heading;
+      &:link,
+      &:visited,
+      &:hover,
+      &:active {
+        color: $heading;
       }
 
       &:hover {
-        color: $text
+        color: $text;
       }
     }
   }
