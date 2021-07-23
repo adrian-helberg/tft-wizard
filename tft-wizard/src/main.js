@@ -78,6 +78,10 @@ const store = new Vuex.Store({
     },
     [GET_ITEMS](state, items) {
       state.items = items;
+      // Items are base items when they do not have receipe items
+      state.items.forEach(item => {
+        item.isBaseItem = !item.receipe;
+      });
     },
     [ADD_CURRENT_ITEM](state, item) {
       state.currentItems.push(item);
@@ -103,24 +107,33 @@ const store = new Vuex.Store({
         for (const champion of suggestion.champions) {
           maxItems += champion.items.length;
 
-          for (const item of champion.items) {
-              const foundItem = state.currentItems.filter(x => x.name == item.name);
+          // Handle item scoring
+          champion.items.forEach(i => {
+            const foundItem = state.currentItems.filter(x => x.name == i.name);
               if (foundItem.length > 0) completedItems++;
-          }
+          });
         }
+
+        // Handle component scoring
+        let _components = JSON.parse(JSON.stringify(suggestion.components));
+        state.currentItems.forEach(c => {
+            const foundItems = _components.filter(cI => cI.id == c.id);
+            if (foundItems.length > 0) {
+              _components.splice(_components.indexOf(foundItems[0]), 1);
+            };
+        });
+        currentComponents = maxComponents - _components.length;
 
         suggestion.stats = {
           maxItems: maxItems,
           completedItems: completedItems,
           maxComponents: maxComponents,
-          currentComponents: 0,
+          currentComponents: currentComponents,
           score:
             (completedItems / maxItems) * 10 
             + (currentComponents / maxComponents) * 10            
             + tierRatings[suggestion.tier.name],
         };
-
-        console.log(suggestion.stats);
       }
       state.suggestions = s.sort((a, b) =>
         a.stats.score <= b.stats.score

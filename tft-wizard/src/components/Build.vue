@@ -4,8 +4,9 @@
       <img :src="build.tier.src" :title="build.tier.name" />
     </div>
     <div class="comb">
-      <div>{{ build.name }}</div>
+      <div class="name">{{ build.name }}</div>
       <div>{{ build.playstyle }}</div>
+      <div>{{ build.difficulty }}</div>
       <div v-if="build.stats">
         {{ `(${build.stats.completedItems}/${build.stats.maxItems}) items` }}
       </div>
@@ -57,7 +58,12 @@ export default {
     display: flex;
     flex-direction: column;
 
-    > div:nth-child(2) {
+    .name {
+      font-size: 1.2em;
+      font-style: oblique;
+    }
+
+    > div:not(.name) {
       color: $text;
     }
   }
