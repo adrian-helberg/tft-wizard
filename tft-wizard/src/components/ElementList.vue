@@ -1,6 +1,6 @@
 <template>
   <div class="list">
-    <div
+    <div :class="element.highlight ? 'active' : null"
       v-for="(element, index) in elements"
       :key="index"
       @click="clickFun(element)"
@@ -12,7 +12,7 @@
         :style="{ width: size + 'px', height: size + 'px' }"
       />
       <div class="item" v-if="element.hasOwnProperty('items')">
-        <ElementList :elements="element.items" :size="size / 4" />
+        <ElementList :elements="element.items" :clickFun="highlight" :size="size / 4" />
       </div>
     </div>
   </div>
@@ -29,8 +29,13 @@ export default {
       default: function () {
         return;
       },
-    },
+    }
   },
+  methods: {
+    highlight(element) {
+      this.$store.dispatch("highlight", element);
+    }
+  }
 };
 </script>
 
@@ -40,6 +45,10 @@ export default {
 .list {
   display: flex;
   flex-wrap: wrap;
+
+  .active {
+    background-color: green;
+  }
 
   > div {
     padding: 2px;

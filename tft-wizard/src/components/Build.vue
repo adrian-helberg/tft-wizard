@@ -30,7 +30,7 @@ export default {
   props: ["build", "size"],
   components: {
     ElementList,
-  },
+  }
 };
 </script>
 

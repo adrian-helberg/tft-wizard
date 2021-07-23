@@ -35,6 +35,8 @@ const REMOVE_CURRENT_ITEM = "REMOVE_CURRENT_ITEMS";
 const CLEAR_CURRENT_LISTS = "CLEAR_CURRENT_LISTS";
 const UPDATE_SUGGESTIONS = "UPDATE_SUGGESTIONS";
 
+const HIGHLIGHT = "HIGHLIGHT";
+
 const store = new Vuex.Store({
   state: {
     builds: [],
@@ -81,6 +83,7 @@ const store = new Vuex.Store({
       // Items are base items when they do not have receipe items
       state.items.forEach(item => {
         item.isBaseItem = !item.receipe;
+        item.highlight = false;
       });
     },
     [ADD_CURRENT_ITEM](state, item) {
@@ -143,6 +146,11 @@ const store = new Vuex.Store({
           : 0
       );
     },
+    [HIGHLIGHT](state, element) {
+      element.receipe.forEach(i => {
+        state.items.filter(x => x.id == i.id)[0].highlight = true;
+      });
+    }
   },
   actions: {
     load({ commit }) {
@@ -162,6 +170,9 @@ const store = new Vuex.Store({
       commit(CLEAR_CURRENT_LISTS);
       commit(UPDATE_SUGGESTIONS);
     },
+    highlight({ commit }, element) {
+      commit(HIGHLIGHT, element);
+    }
   },
 });
 

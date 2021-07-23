@@ -68,7 +68,7 @@ export default {
     },
     clear() {
       this.$store.dispatch("clearCurrentLists");
-    },
+    }
   },
   components: {
     MainLayout,
