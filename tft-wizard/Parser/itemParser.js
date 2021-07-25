@@ -37,7 +37,7 @@ for (const itemElement of itemListElement) {
             src: itemElement.children[1].getAttribute('src'),
         },
         bonus: itemElement.children[2].children[0].textContent,
-        receipe: receipeItems,
+        recipe: receipeItems,
     });
 }
 copy(items);

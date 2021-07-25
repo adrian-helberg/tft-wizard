@@ -6,7 +6,7 @@ import App from "./App.vue";
 // Pages
 import Home from "./pages/Home.vue";
 import Wizard from "./pages/Wizard.vue";
-import NotFound from "./pages/404.vue";
+import Catalog from "./pages/Catalog.vue";
 // JSON
 import BuildsJSON from "./assets/builds.json";
 import ChampionsJSON from "./assets/champions.json";
@@ -65,7 +65,7 @@ const store = new Vuex.Store({
             });            
             if (foundItem.length > 0) {
               items.push(foundItem[0]);
-              components = components.concat(foundItem[0].receipe);
+              components = components.concat(foundItem[0].recipe);
             }
           });
           champion.items = items;
@@ -80,9 +80,9 @@ const store = new Vuex.Store({
     },
     [GET_ITEMS](state, items) {
       state.items = items;
-      // Items are base items when they do not have receipe items
+      // Items are base items when they do not have recipe items
       state.items.forEach(item => {
-        item.isBaseItem = !item.receipe;
+        item.isBaseItem = !item.recipe;
         item.highlight = false;
       });
     },
@@ -95,7 +95,6 @@ const store = new Vuex.Store({
     },
     [CLEAR_CURRENT_LISTS](state) {
       state.currentItems = [];
-      // Reset suggestion with a copy of builds
       state.suggestions = JSON.parse(JSON.stringify(state.builds));
     },
     [UPDATE_SUGGESTIONS](state) {
@@ -147,7 +146,7 @@ const store = new Vuex.Store({
       );
     },
     [HIGHLIGHT](state, element) {
-      element.receipe.forEach(i => {
+      element.recipe.forEach(i => {
         state.items.filter(x => x.id == i.id)[0].highlight = true;
       });
     }
@@ -189,9 +188,9 @@ const router = new VueRouter({
       component: Wizard
     },
     {
-      path: "*",
-      name: "Not Found",
-      component: NotFound
+      path: "/catalog",
+      name: "Catalog",
+      component: Catalog
     }
   ],
 });
@@ -209,7 +208,7 @@ new Vue({
     App,
     Home,
     Wizard,
-    NotFound,
+    Catalog
   },
   created: function () {
     this.$store.dispatch("load");

@@ -17,20 +17,16 @@
       </div>
     </div>
     <div class="champions">
-      <ElementList :size="size" :elements="build.champions" />
+      
     </div>
   </div>
 </template>
 
 <script>
-import ElementList from "../components/ElementList.vue";
 
 export default {
   name: "Build",
-  props: ["build", "size"],
-  components: {
-    ElementList,
-  }
+  props: ["build"]
 };
 </script>
 

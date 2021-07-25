@@ -53,10 +53,6 @@
 </template>
 
 <script>
-import MainLayout from "../layouts/MainLayout.vue";
-import ElementList from "../components/ElementList.vue";
-import Build from "../components/Build.vue";
-
 export default {
   name: "Wizard",
   methods: {
@@ -69,12 +65,7 @@ export default {
     clear() {
       this.$store.dispatch("clearCurrentLists");
     }
-  },
-  components: {
-    MainLayout,
-    ElementList,
-    Build,
-  },
+  }
 };
 </script>
 

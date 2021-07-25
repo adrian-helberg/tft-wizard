@@ -15,6 +15,7 @@
         </div>
         <div class="navigation">
           <Link href="/wizard">Wizard</Link>
+          <Link href="/catalog">Catalog</Link>
         </div>
       </header>
       <content>
@@ -42,13 +43,9 @@
 </template>
 
 <script>
-import Link from "../components/Link.vue";
 
 export default {
-  name: "MainLayout",
-  components: {
-    Link,
-  },
+  name: "MainLayout"
 };
 </script>
 

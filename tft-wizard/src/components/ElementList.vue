@@ -1,9 +1,10 @@
 <template>
   <div class="list">
-    <div :class="element.highlight ? 'active' : null"
+    <div 
       v-for="(element, index) in elements"
       :key="index"
       @click="clickFun(element)"
+      :class="element.highlight ? 'active' : null"
     >
       <img
         :src="element.src"
@@ -12,7 +13,7 @@
         :style="{ width: size + 'px', height: size + 'px' }"
       />
       <div class="item" v-if="element.hasOwnProperty('items')">
-        <ElementList :elements="element.items" :clickFun="highlight" :size="size / 4" />
+        <ElementList :elements="element.items" @click="highlight" :clickFun="highlight" :size="size / 4" />
       </div>
     </div>
   </div>
@@ -34,6 +35,12 @@ export default {
   methods: {
     highlight(element) {
       this.$store.dispatch("highlight", element);
+    }
+  },
+  watch: {
+    elements: {
+      deep: true,
+      handler() {console.log('changed')}
     }
   }
 };
