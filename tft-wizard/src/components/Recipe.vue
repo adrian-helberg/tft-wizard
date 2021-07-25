@@ -1,13 +1,16 @@
 <template>
   <div class="recipe">
-      <Item :item="recipe[0]" />
+      <Item :item="recipe[0]">
+        {{recipe[0].displayName}}
+      </Item>
       <div class="sign">+</div>
-      <Item :item="recipe[1]" />
+      <Item :item="recipe[1]">
+        {{recipe[0].displayName}}
+      </Item>
   </div>
 </template>
 
 <script>
-
 export default {
     name: "Recipe",
     props: ["recipe"]

@@ -20,19 +20,11 @@
               >
                 Select Items to get better suggestions!
               </div>
-              <ElementList
-                :elements="$store.state.currentItems"
-                :size="40"
-                :clickFun="removeCurrentItem"
-              />
+              <div>#TODO</div>
             </div>
             <div class="left-title-2">Items</div>
             <div class="left-content-2">
-              <ElementList
-                :elements="$store.state.items"
-                :size="40"
-                :clickFun="addCurrentItem"
-              />
+              <div>#TODO</div>
             </div>
           </div>
           <div class="right">
