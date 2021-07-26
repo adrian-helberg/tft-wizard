@@ -7,7 +7,7 @@
         <div class="catalog">
             <div>
                 Component
-                <Item :item="$store.state.items[0]" />
+                <Item :item="$store.state.items[0]" :size="50" />
             </div>
             <div>
                 Item

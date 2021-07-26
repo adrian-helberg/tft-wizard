@@ -20,11 +20,15 @@
               >
                 Select Items to get better suggestions!
               </div>
-              <div>#TODO</div>
+              <div v-for="(currentItem, index) of $store.state.currentItems" :key="index">
+                <Item :item="currentItem" :size="30" />
+              </div>
             </div>
             <div class="left-title-2">Items</div>
             <div class="left-content-2">
-              <div>#TODO</div>
+              <div v-for="(item, index) of $store.state.items" :key="index">
+                <Item :item="item" :size="50" />
+              </div>
             </div>
           </div>
           <div class="right">
@@ -112,6 +116,8 @@ export default {
 
 .left-content-2 {
   grid-area: left-content-2;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .right {

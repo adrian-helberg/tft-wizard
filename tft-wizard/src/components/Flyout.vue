@@ -1,5 +1,5 @@
 <template>
-   <div class="flyout" :style="{ left: right + 'px' }">
+   <div class="flyout no-wrap" :style="{ left: offset + 10 + 'px' }">
         <slot></slot>
     </div>
 </template>
@@ -7,7 +7,7 @@
 <script>
 export default {
     name: "Flyout",
-    props: ["right"]
+    props: ["offset"]
 }
 </script>
 
@@ -17,9 +17,12 @@ export default {
 .flyout {
     display: inline;
     position: absolute;
-    top: 0;
     border: 1px solid $heading;
     background-color: $background;
     z-index: 1;
+    padding: 6px;
+}
+.no-wrap {
+    white-space: nowrap;
 }
 </style>
