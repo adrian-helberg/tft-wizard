@@ -7,7 +7,7 @@
         :alt="item.displayName" 
         :style="{ width: size + 'px', height: size + 'px' }"/>
       <Flyout v-if="flyoutVisible" :offset="size">
-        <slot>{{item.displayName}}</slot>
+        <slot></slot>
       </Flyout>
   </div>
 </template>

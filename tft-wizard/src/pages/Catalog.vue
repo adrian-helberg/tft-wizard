@@ -7,20 +7,21 @@
         <div class="catalog">
             <div>
                 Component
-                <Item :item="$store.state.items[0]" :size="50" />
+                <Item :item="$store.state.items[0]" :size="50">
+                    {{$store.state.items[0].displayName}}
+                </Item>
             </div>
             <div>
                 Item
                 <Item :item="$store.state.items[13]" :size="50">
-                    <div>
-                        {{$store.state.items[13].displayName}}
-                        <Recipe :recipe="$store.state.items[13].recipe" />
-                    </div>
+                    <Recipe :recipe="$store.state.items[13].recipe" />
                 </Item>
             </div>
             <div>
                 Champion
-                <Champion :champion="$store.state.builds[0].champions[0]" />
+                <Champion :champion="$store.state.builds[0].champions[0]" :size="50">
+                    {{$store.state.builds[0].champions[0].name}}
+                </Champion>
             </div>
             <div>
                 Tier

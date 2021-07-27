@@ -21,7 +21,10 @@
                 Select Items to get better suggestions!
               </div>
               <div v-for="(currentItem, index) of $store.state.currentItems" :key="index">
-                <Item :item="currentItem" :size="30" />
+                <Item :item="currentItem" :size="30">
+                  {{currentItem.displayName}}
+                  <Recipe :recipe="currentItem.recipe" />
+                </Item>
               </div>
             </div>
             <div class="left-title-2">Items</div>

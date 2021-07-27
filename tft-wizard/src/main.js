@@ -201,11 +201,6 @@ const router = new VueRouter({
       component: Catalog
     },
     {
-      path: "/items",
-      name: "Items",
-      component: Items
-    },
-    {
       path: "/champions",
       name: "Champions",
       component: Champions

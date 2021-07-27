@@ -20,7 +20,7 @@ export default {
     border: 1px solid $heading;
     background-color: $background;
     z-index: 1;
-    padding: 6px;
+    padding: 0 6px;
 }
 .no-wrap {
     white-space: nowrap;
