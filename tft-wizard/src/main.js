@@ -7,6 +7,9 @@ import App from "./App.vue";
 import Home from "./pages/Home.vue";
 import Wizard from "./pages/Wizard.vue";
 import Catalog from "./pages/Catalog.vue";
+import Items from "./pages/Items.vue";
+import Champions from "./pages/Champions.vue";
+import Builds from "./pages/Builds.vue";
 // JSON
 import BuildsJSON from "./assets/builds.json";
 import ChampionsJSON from "./assets/champions.json";
@@ -188,9 +191,29 @@ const router = new VueRouter({
       component: Wizard
     },
     {
+      path: "/items",
+      name: "Items",
+      component: Items
+    },
+    {
       path: "/catalog",
       name: "Catalog",
       component: Catalog
+    },
+    {
+      path: "/items",
+      name: "Items",
+      component: Items
+    },
+    {
+      path: "/champions",
+      name: "Champions",
+      component: Champions
+    },
+    {
+      path: "/builds",
+      name: "Builds",
+      component: Builds
     }
   ],
 });
@@ -208,7 +231,10 @@ new Vue({
     App,
     Home,
     Wizard,
-    Catalog
+    Catalog,
+    Items,
+    Champions,
+    Builds
   },
   created: function () {
     this.$store.dispatch("load");

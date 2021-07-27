@@ -15,6 +15,10 @@
         </div>
         <div class="navigation">
           <Link href="/wizard">Wizard</Link>
+          <Link href="/items">Items</Link>
+          <Link href="/items">Items</Link>
+          <Link href="/champions">Champions</Link>
+          <Link href="/builds">Builds</Link>
           <Link href="/catalog">Catalog</Link>
         </div>
       </header>

@@ -14,6 +14,7 @@ import Item from "./components/Item.vue";
 import Link from "./components/Link.vue";
 import Recipe from "./components/Recipe.vue";
 import Tier from "./components/Tier.vue";
+import IFrame from "./components/IFrame.vue";
 // Register lyouts
 import MainLayout from "./layouts/MainLayout.vue";
 // Register SFCs
@@ -24,6 +25,7 @@ Vue.component("Item", Item);
 Vue.component("Link", Link);
 Vue.component("Recipe", Recipe);
 Vue.component("Tier", Tier);
+Vue.component("IFrame", IFrame);
 Vue.component("MainLayout", MainLayout);
 
 export default {
