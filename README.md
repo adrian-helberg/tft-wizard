@@ -26,7 +26,7 @@ As a user, I want to:
 - View win conditions and key units needed for each recommended composition
 
 # Tech Stack
-
+```
 TFT-Wizard/
 ├── frontend/                 # SvelteJS
 │   ├── src/
@@ -40,3 +40,4 @@ TFT-Wizard/
 └── backend-analytics/       # Rust (Future)
     ├── composition-engine/
     └── real-time-analyzer/
+```
