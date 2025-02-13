@@ -1,7 +1,0 @@
-D:\git\tft-wizard\App\obj\Debug\net8.0\App.csproj.AssemblyReference.cache
-D:\git\tft-wizard\App\obj\Debug\net8.0\App.GeneratedMSBuildEditorConfig.editorconfig
-D:\git\tft-wizard\App\obj\Debug\net8.0\App.AssemblyInfoInputs.cache
-D:\git\tft-wizard\App\obj\Debug\net8.0\App.AssemblyInfo.cs
-D:\git\tft-wizard\App\obj\Debug\net8.0\App.csproj.CoreCompileInputs.cache
-D:\git\tft-wizard\App\obj\Debug\net8.0\App.MvcApplicationPartsAssemblyInfo.cache
-D:\git\tft-wizard\App\obj\Debug\net8.0\App.sourcelink.json
